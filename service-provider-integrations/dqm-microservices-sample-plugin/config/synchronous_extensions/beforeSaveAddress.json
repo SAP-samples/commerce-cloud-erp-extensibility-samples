@@ -1,0 +1,10 @@
+{
+  "id": "beforeSaveAddress",
+  "name": "beforeSaveAddress",
+  "extensionPointId": "sap.cxcommerce.address.saveAddress.beforeSaveAddress",
+  "destinationId": "dqm",
+  "type": "SYNCHRONOUS_EXTENSION",
+  "inboundMappingDefinitionId": "beforeSaveAddress_inbound",
+  "outboundMappingDefinitionId": "beforeSaveAddress_outbound"
+ 
+}

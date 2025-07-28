@@ -1,0 +1,9 @@
+{
+  "id": "avaplugin",
+  "name": "avaplugin",
+  "extensionPointId": "sap.cxcommerce.tax.simulateTax.simulateTax",
+  "destinationId": "tax-avalara",
+  "type": "SYNCHRONOUS_EXTENSION",
+  "inboundMappingDefinitionId": "avaplugin_inbound",
+  "outboundMappingDefinitionId": "avaplugin_outbound"
+}

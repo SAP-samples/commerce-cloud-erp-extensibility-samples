@@ -1,0 +1,31 @@
+name: "dqm_plugin"
+version: 0.0.3
+sourceSubscriptionCode: "SAP"
+sourceEnvironmentCode: "SAP"
+description: "dqm_plugin"
+author: null
+license: Apache-2.0
+homepage: https://github.tools.sap/I319024/commerce-cloud-saas-samples
+repository: https://github.tools.sap/I319024/commerce-cloud-saas-samples
+logo: null
+keywords: null
+pluginId: "SAP.dqm_plugin"
+components:
+  - type: synchronous_extension
+    componentId: "beforeSaveAddress"
+    path: "config/synchronous_extensions/beforeSaveAddress.json"
+  - type: synchronous_extension
+    componentId: "validateAddress"
+    path: "config/synchronous_extensions/validateAddress.json"
+  - type: "data_mapper"
+    componentId: "beforeSaveAddress_inbound"
+    path: "config/data_mappers/beforeSaveAddress_inbound.json"
+  - type: "data_mapper"
+    componentId: "beforeSaveAddress_outbound"
+    path: "config/data_mappers/beforeSaveAddress_outbound.json"
+  - type: "data_mapper"
+    componentId: "validateAddress_inbound"
+    path: "config/data_mappers/validateAddress_inbound.json"
+  - type: "data_mapper"
+    componentId: "validateAddress_outbound"
+    path: "config/data_mappers/validateAddress_outbound.json"

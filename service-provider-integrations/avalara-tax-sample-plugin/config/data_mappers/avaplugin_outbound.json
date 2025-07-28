@@ -1,0 +1,308 @@
+{
+    "id":"avaplugin_outbound",
+    "type": "DATA_MAPPER",
+    "mappingDefinition": {
+      "sourceSchema": {
+      "name": "de.hybris.platform.extensibilityservices.data.InternalBO",
+      "mappingSchemaType": "BUSINESS_OBJECT",
+      "attributes": [
+        {
+          "name": "data",
+          "path": "/data",
+          "dataType": "OBJECT",
+          "required": false,
+          "multiple": false,
+          "attributes": [
+            {
+              "name": "orderId",
+              "path": "/orderId",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "type",
+              "path": "/type",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "customerId",
+              "path": "/customerId",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "orderedAt",
+              "path": "/orderedAt",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "currencyCode",
+              "path": "/currencyCode",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "commit",
+              "path": "/commit",
+              "dataType": "BOOLEAN",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "items",
+              "path": "/items",
+              "dataType": "OBJECT",
+              "required": false,
+              "multiple": true,
+              "attributes": [
+                {
+                  "name": "id",
+                  "path": "/items/id",
+                  "dataType": "STRING",
+                  "required": false,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "productId",
+                  "path": "/items/productId",
+                  "dataType": "STRING",
+                  "required": false,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "basePrice",
+                  "path": "/items/basePrice",
+                  "dataType": "NUMBER",
+                  "required": false,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "quantity",
+                  "path": "/items/quantity",
+                  "dataType": "NUMBER",
+                  "required": false,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "subTotal",
+                  "path": "/items/subTotal",
+                  "dataType": "NUMBER",
+                  "required": false,
+                  "multiple": false,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "addresses",
+              "path": "/addresses",
+              "dataType": "OBJECT",
+              "required": false,
+              "multiple": true,
+              "attributes": [
+                {
+                  "name": "type",
+                  "path": "/addresses/type",
+                  "dataType": "STRING",
+                  "required": false,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "addressLine1",
+                  "path": "/addresses/addressLine1",
+                  "dataType": "STRING",
+                  "required": false,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "addressLine2",
+                  "path": "/addresses/addressLine2",
+                  "dataType": "STRING",
+                  "required": false,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "regionCode",
+                  "path": "/addresses/regionCode",
+                  "dataType": "STRING",
+                  "required": false,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "postalCode",
+                  "path": "/addresses/postalCode",
+                  "dataType": "STRING",
+                  "required": false,
+                  "multiple": false,
+                  "attributes": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "targetSchema": {
+      "name": "avalara_outbound_target_name",
+      "mappingSchemaType": "APPLICATION_JSON",
+      "attributes": [
+        {
+          "name": "code",
+          "path": "/code",
+          "dataType": "STRING",
+          "required": false,
+          "multiple": false,
+          "attributes": []
+        },
+        {
+          "name": "date",
+          "path": "/date",
+          "dataType": "STRING",
+          "required": false,
+          "multiple": false,
+          "attributes": []
+        },
+        {
+          "name": "customerCode",
+          "path": "/customerCode",
+          "dataType": "STRING",
+          "required": false,
+          "multiple": false,
+          "attributes": []
+        },
+        {
+          "name": "currencyCode",
+          "path": "/currencyCode",
+          "dataType": "STRING",
+          "required": false,
+          "multiple": false,
+          "attributes": []
+        },
+        {
+          "name": "commit",
+          "path": "/commit",
+          "dataType": "BOOLEAN",
+          "required": false,
+          "multiple": false,
+          "attributes": []
+        },
+        {
+          "name": "lines",
+          "path": "/lines",
+          "dataType": "OBJECT",
+          "required": false,
+          "multiple": true,
+          "attributes": [
+            {
+              "name": "number",
+              "path": "/lines/number",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "quantity",
+              "path": "/lines/quantity",
+              "dataType": "NUMBER",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "amount",
+              "path": "/lines/amount",
+              "dataType": "NUMBER",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "itemCode",
+              "path": "/lines/itemCode",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            }
+          ]
+        },
+        {
+          "name": "addresses",
+          "path": "/addresses",
+          "dataType": "OBJECT",
+          "required": false,
+          "multiple": false,
+          "attributes": [
+            {
+              "name": "singleLocation",
+              "path": "/addresses/singleLocation",
+              "dataType": "OBJECT",
+              "required": false,
+              "multiple": false,
+              "attributes": [
+                {
+                  "name": "line1",
+                  "path": "/addresses/singleLocation/line1",
+                  "dataType": "STRING",
+                  "required": false,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "line2",
+                  "path": "/addresses/singleLocation/line2",
+                  "dataType": "STRING",
+                  "required": false,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "region",
+                  "path": "/addresses/singleLocation/region",
+                  "dataType": "STRING",
+                  "required": false,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "postalCode",
+                  "path": "/addresses/singleLocation/postalCode",
+                  "dataType": "STRING",
+                  "required": false,
+                  "multiple": false,
+                  "attributes": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "schemaTransformations": {
+      "type": "FUNCTION",
+      "functionId": "avaoutbound"
+    }
+    }
+  }

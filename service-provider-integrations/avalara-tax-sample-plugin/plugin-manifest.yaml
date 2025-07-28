@@ -1,0 +1,25 @@
+name: Avalara Tax Sample
+version: 1.0.7
+sourceSubscriptionCode: "tenantAvalara"
+sourceEnvironmentCode: "avalaratest"
+description: Avalara Tax Sample Plugin
+author: Jane Doe
+license: Apache-2.0
+homepage: https://github.tools.sap/I319024/commerce-cloud-saas-samples
+repository: https://github.tools.sap/I319024/commerce-cloud-saas-samples
+logo: https://my-charity-roundup.com/logo.svg
+keywords: [charity, rounding, pricing]
+pluginId: avalaraTaxSample
+components:
+  - type: synchronous_extension
+    componentId: avaplugin
+    path: "config/synchronous_extensions/simulateTax.json"
+  - type: "commerce_function"
+    componentId: "avaoutbound"
+    path: "config/commerce_functions/avalaraOutbound.json"
+  - type: "data_mapper"
+    componentId: "avaplugin_inbound"
+    path: "config/data_mappers/avaplugin_inbound.json"
+  - type: "data_mapper"
+    componentId: "avaplugin_outbound"
+    path: "config/data_mappers/avaplugin_outbound.json"

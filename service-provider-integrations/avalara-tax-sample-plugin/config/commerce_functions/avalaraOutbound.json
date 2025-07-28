@@ -1,0 +1,17 @@
+{
+    "id": "avaoutbound",    
+    "hashKey": "1441a7909c087dbbe7ce59881b9df8b9",
+    "type": "COMMERCE_FUNCTION",
+    "pluginId": "avaplugin",
+    "binaryResources": [
+        {
+            "id": "avaoutbound",
+            "type": "ZIP",
+            "size": 807
+        }
+    ],
+    "updatedAt": "2024-06-11T09:05:20.404Z",
+    "createdAt": "2024-06-11T09:05:20.361Z",
+    "numberOfFiles": 1,
+    "size": 287
+}
