@@ -6,19 +6,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
-## [0.0.4] - 2025-09-25
+## [1.0.8] - 2025-09-25
 
 ### Changed
 
 - Update pluginId and componentId to comply with the UUID format
-- Remove uriTransformations, headerTransformations, uriTemplate in the inbound.json and outbound.json
+- Change commerce_function to function
+- Remove hashKey and pluginId in the avalaraOutbound.json
+- Add conditionFilter in the simulateTax.json
 
 
-## [0.0.3] - 2025-07-01
+## [1.0.7] - 2025-07-01
 
 ### Added
 
-- Sample DQM Microservices sample plugin.
+- Sample Avalara tax sample plugin.
 
 
 

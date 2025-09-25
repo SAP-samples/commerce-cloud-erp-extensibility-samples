@@ -1,5 +1,5 @@
 {
-  "id":"validateAddress_outbound",
+  "id":"a43a7a88-cce3-4b08-8837-d0efe644080a",
   "type": "DATA_MAPPER",
   "mappingDefinition": {
     "sourceSchema": {
@@ -268,9 +268,6 @@
           "targetAttributePath": "/generateTypeAheadSuggestionList"
         }
       ]
-    },
-    "uriTransformations": {},
-    "headerTransformations": {},
-    "uriTemplate": "http://locahost/api/addressValidation?apiKey=123"
+    }
   }
 }
