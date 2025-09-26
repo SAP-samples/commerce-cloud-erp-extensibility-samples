@@ -1,9 +1,9 @@
 {
-  "id": "validateAddress",
+  "id": "a030c4df-dbe4-40d0-9677-da3d97d7fceb",
   "name": "validateAddress",
   "extensionPointId": "sap.cxcommerce.address.validateAddress.validateAddress",
   "destinationId": "dqm",
   "type": "SYNCHRONOUS_EXTENSION",
-  "inboundMappingDefinitionId": "validateAddress_inbound",
-  "outboundMappingDefinitionId": "validateAddress_outbound"
+  "inboundMappingDefinitionId": "9577584b-9d25-4b68-b1da-feefcd4f13b0",
+  "outboundMappingDefinitionId": "a43a7a88-cce3-4b08-8837-d0efe644080a"
 }

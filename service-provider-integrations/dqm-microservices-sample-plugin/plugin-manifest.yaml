@@ -1,31 +1,27 @@
 name: "dqm_plugin"
-version: 0.0.3
-sourceSubscriptionCode: "SAP"
-sourceEnvironmentCode: "SAP"
+version: 0.0.4
+sourceAccountId: "SAP"
+sourceTenantId: "SAP"
 description: "dqm_plugin"
-author: null
 license: Apache-2.0
-homepage: https://github.tools.sap/I319024/commerce-cloud-saas-samples
 repository: https://github.tools.sap/I319024/commerce-cloud-saas-samples
-logo: null
-keywords: null
-pluginId: "SAP.dqm_plugin"
+pluginId: "8c116fde-2be1-49b2-8d0d-8221b4f609b6"
 components:
   - type: synchronous_extension
-    componentId: "beforeSaveAddress"
+    componentId: "ea363eb5-bb53-4378-8cd0-13efbd9f2edf"
     path: "config/synchronous_extensions/beforeSaveAddress.json"
   - type: synchronous_extension
-    componentId: "validateAddress"
+    componentId: "a030c4df-dbe4-40d0-9677-da3d97d7fceb"
     path: "config/synchronous_extensions/validateAddress.json"
   - type: "data_mapper"
-    componentId: "beforeSaveAddress_inbound"
+    componentId: "205edafe-7ecd-4bae-89ed-8691515332f2"
     path: "config/data_mappers/beforeSaveAddress_inbound.json"
   - type: "data_mapper"
-    componentId: "beforeSaveAddress_outbound"
+    componentId: "75fc1817-fa8c-44e1-ba46-f5724b0aa1cf"
     path: "config/data_mappers/beforeSaveAddress_outbound.json"
   - type: "data_mapper"
-    componentId: "validateAddress_inbound"
+    componentId: "9577584b-9d25-4b68-b1da-feefcd4f13b0"
     path: "config/data_mappers/validateAddress_inbound.json"
   - type: "data_mapper"
-    componentId: "validateAddress_outbound"
+    componentId: "a43a7a88-cce3-4b08-8837-d0efe644080a"
     path: "config/data_mappers/validateAddress_outbound.json"

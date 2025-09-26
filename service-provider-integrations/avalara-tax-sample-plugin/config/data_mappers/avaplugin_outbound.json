@@ -1,8 +1,8 @@
 {
-    "id":"avaplugin_outbound",
-    "type": "DATA_MAPPER",
-    "mappingDefinition": {
-      "sourceSchema": {
+  "id":"f7a75f04-ea93-47fb-b461-3a8d262e5e5e",
+  "type": "DATA_MAPPER",
+  "mappingDefinition": {
+    "sourceSchema": {
       "name": "de.hybris.platform.extensibilityservices.data.InternalBO",
       "mappingSchemaType": "BUSINESS_OBJECT",
       "attributes": [
@@ -256,15 +256,15 @@
           "multiple": false,
           "attributes": [
             {
-              "name": "singleLocation",
-              "path": "/addresses/singleLocation",
+              "name": "shipTo",
+              "path": "/addresses/shipTo",
               "dataType": "OBJECT",
               "required": false,
               "multiple": false,
               "attributes": [
                 {
                   "name": "line1",
-                  "path": "/addresses/singleLocation/line1",
+                  "path": "/addresses/shipTo/line1",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -272,7 +272,7 @@
                 },
                 {
                   "name": "line2",
-                  "path": "/addresses/singleLocation/line2",
+                  "path": "/addresses/shipTo/line2",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -280,7 +280,7 @@
                 },
                 {
                   "name": "region",
-                  "path": "/addresses/singleLocation/region",
+                  "path": "/addresses/shipTo/region",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -288,7 +288,7 @@
                 },
                 {
                   "name": "postalCode",
-                  "path": "/addresses/singleLocation/postalCode",
+                  "path": "/addresses/shipTo/postalCode",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -302,7 +302,7 @@
     },
     "schemaTransformations": {
       "type": "FUNCTION",
-      "functionId": "avaoutbound"
-    }
+      "functionId": "55ddf908-5190-4d10-8837-92c28eeeadb4"
     }
   }
+}
