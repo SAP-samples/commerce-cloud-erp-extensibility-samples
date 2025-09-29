@@ -1,11 +1,12 @@
 name: Avalara Tax Sample
-version: 1.0.8
-sourceAccountId: "tenantAvalara"
-sourceTenantId: "avalaratest"
+version: 1.0.0
+sourceAccountId: "SAP"
+sourceTenantId: "SAP_CCS"
 description: Avalara Tax Sample Plugin
+author: SAP Commerce Cloud
 pluginId: a6683439-de46-464f-a59e-fb6397b625e2
 license: Apache-2.0
-repository: https://github.tools.sap/I319024/commerce-cloud-saas-samples
+repository: https://github.tools.sap/cx-commerce/cxmc-customization-samples/tree/main/service-provider-integrations/avalara-tax-sample-plugin
 components:
   - type: synchronous_extension
     componentId: 604e9e20-c8fe-4b4e-a270-74c6dd1a9bad
@@ -19,3 +20,5 @@ components:
   - type: "data_mapper"
     componentId: "f7a75f04-ea93-47fb-b461-3a8d262e5e5e"
     path: "config/data_mappers/avaplugin_outbound.json"
+categories:
+  - "Tax Provider"
