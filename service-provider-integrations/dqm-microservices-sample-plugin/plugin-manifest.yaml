@@ -1,27 +1,27 @@
-name: "dqm_plugin"
+name: "SAP Data Quality Management (DQM)"
 version: 0.0.4
 sourceAccountId: "SAP"
 sourceTenantId: "SAP"
-description: "dqm_plugin"
+description: "Integrates with Data Quality Management (DQM) microservices to validate and correct addresses."
+pluginId: "8c116fde-2be1-49b2-8d0d-8221b4f609b6"
 license: Apache-2.0
 repository: https://github.tools.sap/I319024/commerce-cloud-saas-samples
-pluginId: "8c116fde-2be1-49b2-8d0d-8221b4f609b6"
 components:
   - type: synchronous_extension
     componentId: "ea363eb5-bb53-4378-8cd0-13efbd9f2edf"
-    path: "config/synchronous_extensions/beforeSaveAddress.json"
+    path: "config/synchronous_extensions/before_save_address.json"
   - type: synchronous_extension
     componentId: "a030c4df-dbe4-40d0-9677-da3d97d7fceb"
-    path: "config/synchronous_extensions/validateAddress.json"
+    path: "config/synchronous_extensions/validate_address.json"
   - type: "data_mapper"
     componentId: "205edafe-7ecd-4bae-89ed-8691515332f2"
-    path: "config/data_mappers/beforeSaveAddress_inbound.json"
+    path: "config/data_mappers/before_save_address_inbound.json"
   - type: "data_mapper"
     componentId: "75fc1817-fa8c-44e1-ba46-f5724b0aa1cf"
-    path: "config/data_mappers/beforeSaveAddress_outbound.json"
+    path: "config/data_mappers/before_save_address_outbound.json"
   - type: "data_mapper"
     componentId: "9577584b-9d25-4b68-b1da-feefcd4f13b0"
-    path: "config/data_mappers/validateAddress_inbound.json"
+    path: "config/data_mappers/validate_address_inbound.json"
   - type: "data_mapper"
     componentId: "a43a7a88-cce3-4b08-8837-d0efe644080a"
-    path: "config/data_mappers/validateAddress_outbound.json"
+    path: "config/data_mappers/validate_address_outbound.json"
