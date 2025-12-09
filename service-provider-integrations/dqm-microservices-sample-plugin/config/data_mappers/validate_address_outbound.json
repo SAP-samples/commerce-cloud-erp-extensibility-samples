@@ -1,6 +1,7 @@
 {
   "id":"a43a7a88-cce3-4b08-8837-d0efe644080a",
   "type": "DATA_MAPPER",
+  "name": "Address Validation Outbound",
   "mappingDefinition": {
     "sourceSchema": {
       "name": "InternalBOForADdress",

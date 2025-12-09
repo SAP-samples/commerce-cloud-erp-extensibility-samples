@@ -5,22 +5,6 @@
   "destinationId": "tax-avalara",
   "type": "SYNCHRONOUS_EXTENSION",
   "inboundMappingDefinitionId": "4eb58b0a-4531-44a8-9dda-9cd5d4b59ad0",
-  "outboundMappingDefinitionId": "f7a75f04-ea93-47fb-b461-3a8d262e5e5e",
-  "conditionFilter": {
-    "conditions": [
-      {
-        "name": "Store Condition",
-        "conditionOperator": "AND",
-        "expressions": [
-          {
-            "operator": "equal",
-            "parameters": [
-              "/commerceContext/storeId",
-              "'b2c-us'"
-            ]
-          }
-        ]
-      }
-    ]
-  }
+  "outboundMappingDefinitionId": "f7a75f04-ea93-47fb-b461-3a8d262e5e5e"
 }
+

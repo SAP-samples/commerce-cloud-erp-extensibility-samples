@@ -1,6 +1,7 @@
 {
   "id": "75fc1817-fa8c-44e1-ba46-f5724b0aa1cf",
   "type": "DATA_MAPPER",
+  "name": "Before Save Address Outbound",
   "mappingDefinition": {
     "sourceSchema": {
       "name": "InternalBOForAddress",

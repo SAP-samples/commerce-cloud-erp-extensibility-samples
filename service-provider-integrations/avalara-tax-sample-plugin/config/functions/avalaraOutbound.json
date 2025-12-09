@@ -1,6 +1,7 @@
 {
   "id": "55ddf908-5190-4d10-8837-92c28eeeadb4",
   "type": "FUNCTION",
+  "name": "avalaraOutbound",
   "binaryResources": [
     {
       "id": "avaoutbound",

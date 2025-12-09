@@ -1,6 +1,7 @@
 {
   "id":"205edafe-7ecd-4bae-89ed-8691515332f2",
   "type": "DATA_MAPPER",
+  "name":"Before Save Address Inbound",
   "mappingDefinition": {
     "sourceSchema": {
       "name": "dqm_inbound_validate_source",
