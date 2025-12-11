@@ -1,6 +1,7 @@
 {
-  "id":"f7a75f04-ea93-47fb-b461-3a8d262e5e5e",
+  "id": "f7a75f04-ea93-47fb-b461-3a8d262e5e5e",
   "type": "DATA_MAPPER",
+  "name": "avalara Outbound",
   "mappingDefinition": {
     "sourceSchema": {
       "name": "de.hybris.platform.extensibilityservices.data.InternalBO",

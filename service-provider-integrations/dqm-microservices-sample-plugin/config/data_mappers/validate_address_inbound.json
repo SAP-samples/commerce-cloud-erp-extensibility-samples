@@ -1,6 +1,7 @@
 {
   "id":"9577584b-9d25-4b68-b1da-feefcd4f13b0",
   "type": "DATA_MAPPER",
+  "name": "Address Validation Inbound",
   "mappingDefinition": {
     "sourceSchema": {
       "name": "dqm_inbound_validate_source",

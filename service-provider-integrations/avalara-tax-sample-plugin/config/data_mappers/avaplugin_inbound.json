@@ -1,6 +1,7 @@
 {
   "id":"4eb58b0a-4531-44a8-9dda-9cd5d4b59ad0",
   "type": "DATA_MAPPER",
+  "name": "avalara Inbound",
   "mappingDefinition": {
     "sourceSchema": {
       "name": "avalara_inbound_source",

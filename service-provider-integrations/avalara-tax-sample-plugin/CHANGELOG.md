@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2025-12-09
+
+### Changed
+
+- Add name in the avaplugin_outbound.json
+- Add name in the avaplugin_inbound.json
+- Add name in the simulateTax.json
+- Add name in the avalaraOutbound.json
+- Remove conditionFilter in the simulateTax.json
+
 
 ## [1.0.0] - 2025-09-29
 
