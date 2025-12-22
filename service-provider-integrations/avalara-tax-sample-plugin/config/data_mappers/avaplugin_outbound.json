@@ -1,9 +1,9 @@
 {
-  "id": "f7a75f04-ea93-47fb-b461-3a8d262e5e5e",
-  "type": "DATA_MAPPER",
-  "name": "avalara Outbound",
-  "mappingDefinition": {
-    "sourceSchema": {
+    "id":"f7a75f04-ea93-47fb-b461-3a8d262e5e5e",
+    "type": "DATA_MAPPER",
+    "name": "avalaraOutbound",
+    "mappingDefinition": {
+      "sourceSchema": {
       "name": "de.hybris.platform.extensibilityservices.data.InternalBO",
       "mappingSchemaType": "BUSINESS_OBJECT",
       "attributes": [
@@ -15,8 +15,8 @@
           "multiple": false,
           "attributes": [
             {
-              "name": "orderId",
-              "path": "/orderId",
+              "name": "cartId",
+              "path": "/cartId",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -39,8 +39,8 @@
               "attributes": []
             },
             {
-              "name": "orderedAt",
-              "path": "/orderedAt",
+              "name": "simulatedAt",
+              "path": "/simulatedAt",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -50,14 +50,6 @@
               "name": "currencyCode",
               "path": "/currencyCode",
               "dataType": "STRING",
-              "required": false,
-              "multiple": false,
-              "attributes": []
-            },
-            {
-              "name": "commit",
-              "path": "/commit",
-              "dataType": "BOOLEAN",
               "required": false,
               "multiple": false,
               "attributes": []
@@ -201,14 +193,6 @@
           "attributes": []
         },
         {
-          "name": "commit",
-          "path": "/commit",
-          "dataType": "BOOLEAN",
-          "required": false,
-          "multiple": false,
-          "attributes": []
-        },
-        {
           "name": "lines",
           "path": "/lines",
           "dataType": "OBJECT",
@@ -303,7 +287,7 @@
     },
     "schemaTransformations": {
       "type": "FUNCTION",
-      "functionId": "55ddf908-5190-4d10-8837-92c28eeeadb4"
+      "functionId": "eb55eb53-a313-4dd4-8ccc-dc3de11c48ac"
+    }
     }
   }
-}
