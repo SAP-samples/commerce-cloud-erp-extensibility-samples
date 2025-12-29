@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Rename orderId to be cartId in the avaplugin_outbound.json
 - Rename orderedAt to be simulatedAt in the avaplugin_outbound.json
-- Rename commit in the avaplugin_outbound.json
+- Remove commit from source business object in the avaplugin_outbound.json
 
 
 ## [1.0.0] - 2025-12-09
