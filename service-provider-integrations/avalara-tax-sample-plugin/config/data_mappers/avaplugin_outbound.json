@@ -55,14 +55,6 @@
               "attributes": []
             },
             {
-              "name": "commit",
-              "path": "/commit",
-              "dataType": "BOOLEAN",
-              "required": false,
-              "multiple": false,
-              "attributes": []
-            },
-            {
               "name": "items",
               "path": "/items",
               "dataType": "OBJECT",
