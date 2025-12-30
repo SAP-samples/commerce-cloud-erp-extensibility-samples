@@ -22,3 +22,4 @@ components:
     path: "config/data_mappers/avaplugin_outbound.json"
 categories:
   - "Tax Provider"
+
