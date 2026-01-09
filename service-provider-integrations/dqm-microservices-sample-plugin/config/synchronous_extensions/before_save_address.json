@@ -1,7 +1,7 @@
 {
   "id": "ea363eb5-bb53-4378-8cd0-13efbd9f2edf",
   "name": "Validate Address",
-  "extensionPointId": "sap.cxcommerce.address.saveAddress.beforeSaveAddress",
+  "extensionPointId": "sap.ccm.address.saveAddress.beforeSaveAddress",
   "destinationId": "dqm",
   "type": "SYNCHRONOUS_EXTENSION",
   "inboundMappingDefinitionId": "205edafe-7ecd-4bae-89ed-8691515332f2",
