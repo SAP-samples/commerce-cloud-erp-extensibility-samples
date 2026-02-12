@@ -1,7 +1,6 @@
 {
-  "id":"9577584b-9d25-4b68-b1da-feefcd4f13b0",
+  "id":"73a5d60f-3b5a-4f5c-b0d1-e2f2e3f2e4f2",
   "type": "DATA_MAPPER",
-  "name": "Address Validation Inbound",
   "mappingDefinition": {
     "sourceSchema": {
       "name": "dqm_inbound_validate_source",
@@ -479,7 +478,10 @@
           "expressionString": "/std_addr_po_box_full",
           "targetAttributePath": "/operations/data/inboundResponse/postalAddress/poBox"
         }
-      ]
+      ],
+      "uriTransformations": {},
+      "headerTransformations": {},
+      "uriTemplate": "http://locahost/api/addressValidation"
     }
   }
 }

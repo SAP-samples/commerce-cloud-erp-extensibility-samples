@@ -1,30 +1,33 @@
 name: "SAP Data Quality Management (DQM)"
-version: 1.0.0
+version: 1.0.1
 sourceAccountId: "SAP"
 sourceTenantId: "SAP_CCS"
 description: "Integrates with Data Quality Management (DQM) microservices to validate and correct addresses."
 author: SAP Commerce Cloud
-pluginId: "8c116fde-2be1-49b2-8d0d-8221b4f609b6"
+pluginId: "3b3d1ae2-2fa2-4b7d-a29a-0f432236f928"
 license: Apache-2.0
+homepage: null
 repository: https://github.tools.sap/cx-commerce/cxmc-customization-samples/tree/main/service-provider-integrations/dqm-microservices-sample-plugin
+logo: null
+keywords: null
 components:
   - type: synchronous_extension
-    componentId: "ea363eb5-bb53-4378-8cd0-13efbd9f2edf"
-    path: "config/synchronous_extensions/before_save_address.json"
+    componentId: "f47ac10b-58cc-4372-a567-0e02b2c3d479"
+    path: "config/synchronous_extensions/beforeSaveAddress.json"
   - type: synchronous_extension
-    componentId: "a030c4df-dbe4-40d0-9677-da3d97d7fceb"
-    path: "config/synchronous_extensions/validate_address.json"
+    componentId: "d7b2a30f-b754-4d29-9e70-14f532e367b1"
+    path: "config/synchronous_extensions/validateAddress.json"
   - type: "data_mapper"
-    componentId: "205edafe-7ecd-4bae-89ed-8691515332f2"
-    path: "config/data_mappers/before_save_address_inbound.json"
+    componentId: "123e4567-e89b-12d3-a456-426614174000"
+    path: "config/data_mappers/beforeSaveAddress_inbound.json"
   - type: "data_mapper"
-    componentId: "75fc1817-fa8c-44e1-ba46-f5724b0aa1cf"
-    path: "config/data_mappers/before_save_address_outbound.json"
+    componentId: "550e8400-e29b-41d4-a716-446655440001"
+    path: "config/data_mappers/beforeSaveAddress_outbound.json"
   - type: "data_mapper"
-    componentId: "9577584b-9d25-4b68-b1da-feefcd4f13b0"
-    path: "config/data_mappers/validate_address_inbound.json"
+    componentId: "73a5d60f-3b5a-4f5c-b0d1-e2f2e3f2e4f2"
+    path: "config/data_mappers/validateAddress_inbound.json"
   - type: "data_mapper"
-    componentId: "a43a7a88-cce3-4b08-8837-d0efe644080a"
-    path: "config/data_mappers/validate_address_outbound.json"
+    componentId: "6e8bc430-9c3a-11d9-9669-0800200c9a66"
+    path: "config/data_mappers/validateAddress_outbound.json"
 categories:
   - "Address Validation"
