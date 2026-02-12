@@ -1,6 +1,6 @@
 {
   "id": "d7b2a30f-b754-4d29-9e70-14f532e367b1",
-  "name": "validateAddress",
+  "name": "Validate Address",
   "extensionPointId": "sap.ccm.address.validateAddress.validateAddress",
   "destinationName": "dqm",
   "type": "SYNCHRONOUS_EXTENSION",
