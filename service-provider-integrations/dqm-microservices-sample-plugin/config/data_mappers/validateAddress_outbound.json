@@ -1,10 +1,10 @@
 {
-  "id": "75fc1817-fa8c-44e1-ba46-f5724b0aa1cf",
+  "id":"6e8bc430-9c3a-11d9-9669-0800200c9a66",
   "type": "DATA_MAPPER",
-  "name": "Before Save Address Outbound",
+  "name": "Address Validation Outbound",
   "mappingDefinition": {
     "sourceSchema": {
-      "name": "InternalBOForAddress",
+      "name": "InternalBOForADdress",
       "mappingSchemaType": "APPLICATION_JSON",
       "attributes": [
         {
@@ -15,22 +15,22 @@
           "multiple": false,
           "attributes": [
             {
-              "name": "postalAddressInternal",
-              "path": "/data/postalAddressInternal",
+              "name": "postalAddress",
+              "path": "/data/postalAddress",
               "dataType": "OBJECT",
               "required": false,
               "multiple": false,
               "attributes": [
                 {
                   "name": "country",
-                  "path": "/data/postalAddressInternal/country",
+                  "path": "/data/postalAddress/country",
                   "dataType": "OBJECT",
                   "required": false,
                   "multiple": false,
                   "attributes": [
                     {
-                      "name": "code",
-                      "path": "/data/postalAddressInternal/country/code",
+                      "name": "name",
+                      "path": "/data/postalAddress/country/name",
                       "dataType": "STRING",
                       "required": false,
                       "multiple": false,
@@ -40,14 +40,14 @@
                 },
                 {
                   "name": "town",
-                  "path": "/data/postalAddressInternal/town",
+                  "path": "/data/postalAddress/town",
                   "dataType": "OBJECT",
                   "required": false,
                   "multiple": false,
                   "attributes": [
                     {
                       "name": "name",
-                      "path": "/data/postalAddressInternal/town/name",
+                      "path": "/data/postalAddress/town/name",
                       "dataType": "STRING",
                       "required": false,
                       "multiple": false,
@@ -57,14 +57,14 @@
                 },
                 {
                   "name": "primaryRegion",
-                  "path": "/data/postalAddressInternal/primaryRegion",
+                  "path": "/data/postalAddress/primaryRegion",
                   "dataType": "OBJECT",
                   "required": false,
                   "multiple": false,
                   "attributes": [
                     {
                       "name": "name",
-                      "path": "/data/postalAddressInternal/primaryRegion/name",
+                      "path": "/data/postalAddress/primaryRegion/name",
                       "dataType": "STRING",
                       "required": false,
                       "multiple": false,
@@ -74,7 +74,7 @@
                 },
                 {
                   "name": "postCode",
-                  "path": "/data/postalAddressInternal/postCode",
+                  "path": "/data/postalAddress/postCode",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -82,15 +82,7 @@
                 },
                 {
                   "name": "houseNumber",
-                  "path": "/data/postalAddressInternal/houseNumber",
-                  "dataType": "STRING",
-                  "required": false,
-                  "multiple": false,
-                  "attributes": []
-                },
-                {
-                  "name": "singleLineAddress",
-                  "path": "/data/singleLineAddress",
+                  "path": "/data/postalAddress/houseNumber",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -98,7 +90,7 @@
                 },
                 {
                   "name": "street",
-                  "path": "/data/postalAddressInternal/street",
+                  "path": "/data/postalAddress/street",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -109,6 +101,14 @@
             {
               "name": "addressSuggestionIds",
               "path": "/data/addressSuggestionIds",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": true,
+              "attributes": []
+            },
+            {
+              "name": "singleLineAddress",
+              "path": "/data/singleLineAddress",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -229,31 +229,31 @@
           "targetAttributePath": "/addressInput/mixed"
         },
         {
-          "expressionString": "/data/postalAddressInternal/street",
+          "expressionString": "/data/postalAddress/street",
           "targetAttributePath": "/addressInput/street"
         },
         {
-          "expressionString": "/data/postalAddressInternal/houseNumber",
+          "expressionString": "/data/postalAddress/houseNumber",
           "targetAttributePath": "/addressInput/house_num"
         },
         {
-          "expressionString": "/data/postalAddressInternal/town/name",
+          "expressionString": "/data/postalAddress/town/name",
           "targetAttributePath": "/addressInput/locality"
         },
         {
-          "expressionString": "/data/postalAddressInternal/primaryRegion/name",
+          "expressionString": "/data/postalAddress/primaryRegion/name",
           "targetAttributePath": "/addressInput/region"
         },
         {
-          "expressionString": "/data/postalAddressInternal/postCode",
+          "expressionString": "/data/postalAddress/postCode",
           "targetAttributePath": "/addressInput/postcode"
         },
         {
-          "expressionString": "/data/postalAddressInternal/country/code",
+          "expressionString": "/data/postalAddress/country/name",
           "targetAttributePath": "/addressInput/country"
         },
         {
-          "expressionString": "splittoStringlist('std_addr_country_name,std_addr_address_delivery,std_addr_region_full,std_addr_region2_full,std_addr_postcode1,std_addr_country_2char,addr_info_code,addr_info_code_msg,std_addr_region_code,std_addr_building_name,std_addr_prim_number,std_addr_floor_full,std_addr_prim_number,std_addr_prim_name_full,std_addr_additional_info,std_addr_locality_official,std_addr_region2,std_addr_po_box_full',',')",
+          "expressionString": "splitToStringList('std_addr_country_name,std_addr_address_delivery,std_addr_region_full,std_addr_region2_full,std_addr_postcode1,std_addr_country_2char,addr_info_code,addr_info_code_msg,std_addr_region_code,std_addr_building_name,std_addr_prim_number,std_addr_floor_full,std_addr_prim_number,std_addr_prim_name_full,std_addr_additional_info,std_addr_locality_official,std_addr_region2,std_addr_po_box_full',',')",
           "targetAttributePath": "/outputFields"
         },
         {
@@ -261,7 +261,7 @@
           "targetAttributePath": "/generateSuggestionList"
         },
         {
-          "expressionString": "/data/addressSuggestionIds",
+          "expressionString": "ifThenElse(greater(size(/data/addressSuggestionIds),'1'), splitToStringList(concat(listToString(/data/addressSuggestionIds,'|'),'|','*'), '|'), /data/addressSuggestionIds)",
           "targetAttributePath": "/suggestionReply"
         },
         {
@@ -269,6 +269,9 @@
           "targetAttributePath": "/generateTypeAheadSuggestionList"
         }
       ]
-    }
+    },
+    "uriTransformations": {},
+    "headerTransformations": {},
+    "uriTemplate": "http://locahost/api/addressValidation?apiKey=123"
   }
 }

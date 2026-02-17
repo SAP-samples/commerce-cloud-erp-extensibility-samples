@@ -1,5 +1,5 @@
 {
-  "id":"205edafe-7ecd-4bae-89ed-8691515332f2",
+  "id":"123e4567-e89b-12d3-a456-426614174000",
   "type": "DATA_MAPPER",
   "name":"Before Save Address Inbound",
   "mappingDefinition": {
@@ -200,7 +200,10 @@
           "expressionString": "equal('',/addr_info_code_msg)",
           "targetAttributePath": "/operations/data/inboundResponse/isAddressValid"
         }
-      ]
+      ],
+      "uriTransformations": {},
+      "headerTransformations": {},
+      "uriTemplate": "http://locahost/api/addressValidation"
     }
   }
 }
