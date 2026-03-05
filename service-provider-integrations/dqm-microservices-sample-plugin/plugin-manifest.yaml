@@ -1,5 +1,5 @@
 name: "SAP Data Quality Management (DQM)"
-version: 1.0.0
+version: 0.0.7
 sourceAccountId: "SAP"
 sourceTenantId: "SAP_CCS"
 description: "Integrates with Data Quality Management (DQM) microservices to validate and correct addresses."
