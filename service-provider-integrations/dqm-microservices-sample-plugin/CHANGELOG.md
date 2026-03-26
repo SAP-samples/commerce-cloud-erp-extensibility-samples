@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Renamed categories from plugin-manifest.json 
+- Removed categories from plugin-manifest.json 
 
 
 ## [0.0.7] - 2026-02-12
