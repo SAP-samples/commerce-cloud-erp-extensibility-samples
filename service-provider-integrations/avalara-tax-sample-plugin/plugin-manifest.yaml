@@ -1,5 +1,5 @@
 name: Avalara Tax Sample
-version: 1.0.0
+version: 1.0.1
 sourceAccountId: "SAP"
 sourceTenantId: "SAP_CCS"
 description: Avalara Tax Sample Plugin
