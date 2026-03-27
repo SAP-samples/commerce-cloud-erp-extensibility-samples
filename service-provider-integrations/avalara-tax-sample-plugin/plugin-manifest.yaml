@@ -20,6 +20,5 @@ components:
   - type: "data_mapper"
     componentId: "f7a75f04-ea93-47fb-b461-3a8d262e5e5e"
     path: "config/data_mappers/avaplugin_outbound.json"
-categories:
-  - "Tax Provider"
+
 
