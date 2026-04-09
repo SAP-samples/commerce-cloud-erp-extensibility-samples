@@ -8,94 +8,35 @@
       "mappingSchemaType": "APPLICATION_JSON",
       "attributes": [
         {
-          "name": "commerceContext",
-          "path": "/commerceContext",
-          "dataType": "OBJECT",
-          "required": false,
+          "name": "totalTax",
+          "path": "/totalTax",
+          "dataType": "NUMBER",
+          "required": true,
           "multiple": false,
-          "attributes": [
-            {
-              "name": "storeId",
-              "path": "/commerceContext/storeId",
-              "dataType": "STRING",
-              "required": false,
-              "multiple": false,
-              "attributes": []
-            }
-          ]
+          "attributes": []
         },
         {
-          "name": "extensibilityContext",
-          "path": "/extensibilityContext",
+          "name": "lines",
+          "path": "/lines",
           "dataType": "OBJECT",
-          "required": false,
-          "multiple": false,
+          "required": true,
+          "multiple": true,
           "attributes": [
             {
-              "name": "id",
-              "path": "/extensibilityContext/id",
+              "name": "lineNumber",
+              "path": "/lines/lineNumber",
               "dataType": "STRING",
-              "required": false,
+              "required": true,
               "multiple": false,
               "attributes": []
             },
             {
-              "name": "triggeredAt",
-              "path": "/extensibilityContext/triggeredAt",
-              "dataType": "STRING",
-              "required": false,
-              "multiple": false,
-              "attributes": []
-            },
-            {
-              "name": "extensionPointId",
-              "path": "/extensibilityContext/extensionPointId",
-              "dataType": "STRING",
-              "required": false,
-              "multiple": false,
-              "attributes": []
-            }
-          ]
-        },
-        {
-          "name": "data",
-          "path": "/data",
-          "dataType": "OBJECT",
-          "required": false,
-          "multiple": false,
-          "attributes": [
-            {
-              "name": "totalTax",
-              "path": "/data/totalTax",
+              "name": "tax",
+              "path": "/lines/tax",
               "dataType": "NUMBER",
               "required": true,
               "multiple": false,
               "attributes": []
-            },
-            {
-              "name": "lines",
-              "path": "/data/lines",
-              "dataType": "OBJECT",
-              "required": true,
-              "multiple": true,
-              "attributes": [
-                {
-                  "name": "lineNumber",
-                  "path": "/data/lines/lineNumber",
-                  "dataType": "STRING",
-                  "required": true,
-                  "multiple": false,
-                  "attributes": []
-                },
-                {
-                  "name": "tax",
-                  "path": "/data/lines/tax",
-                  "dataType": "NUMBER",
-                  "required": true,
-                  "multiple": false,
-                  "attributes": []
-                }
-              ]
             }
           ]
         }
@@ -182,19 +123,19 @@
           "targetAttributePath": "/operations/data"
         },
         {
-          "expressionString": "/data/totalTax",
+          "expressionString": "/totalTax",
           "targetAttributePath": "/operations/data/totalTax"
         },
         {
-          "expressionString": "/data/lines",
+          "expressionString": "/lines",
           "targetAttributePath": "/operations/data/items"
         },
         {
-          "expressionString": "/data/lines/lineNumber",
+          "expressionString": "/lines/lineNumber",
           "targetAttributePath": "/operations/data/items/id"
         },
         {
-          "expressionString": "/data/lines/tax",
+          "expressionString": "/lines/tax",
           "targetAttributePath": "/operations/data/items/taxTotal"
         }
       ]
