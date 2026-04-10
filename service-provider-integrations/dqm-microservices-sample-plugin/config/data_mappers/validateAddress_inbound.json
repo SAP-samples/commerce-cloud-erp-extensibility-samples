@@ -8,47 +8,15 @@
       "mappingSchemaType": "APPLICATION_JSON",
       "attributes": [
         {
-          "name": "addr_info_code",
-          "path": "/addr_info_code",
-          "dataType": "STRING",
-          "required": false,
-          "multiple": false,
-          "attributes": []
-        },
-        {
-          "name": "addr_info_code_msg",
-          "path": "/addr_info_code_msg",
-          "dataType": "STRING",
-          "required": false,
-          "multiple": false,
-          "attributes": []
-        },
-        {
-          "name": "addr_sugg_list",
-          "path": "/addr_sugg_list",
+          "name": "commerceContext",
+          "path": "/commerceContext",
           "dataType": "OBJECT",
           "required": false,
-          "multiple": true,
+          "multiple": false,
           "attributes": [
             {
-              "name": "sugg_addr_selection",
-              "path": "/addr_sugg_list/sugg_addr_selection",
-              "dataType": "STRING",
-              "required": false,
-              "multiple": false,
-              "attributes": []
-            },
-            {
-              "name": "sugg_addr_single_address",
-              "path": "/addr_sugg_list/sugg_addr_single_address",
-              "dataType": "STRING",
-              "required": false,
-              "multiple": false,
-              "attributes": []
-            },
-            {
-              "name": "sugg_addr_single_address",
-              "path": "/addr_sugg_list/sugg_addr_type",
+              "name": "storeId",
+              "path": "/commerceContext/storeId",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -57,124 +25,215 @@
           ]
         },
         {
-          "name": "std_addr_country_name",
-          "path": "/std_addr_country_name",
-          "dataType": "STRING",
+          "name": "extensibilityContext",
+          "path": "/extensibilityContext",
+          "dataType": "OBJECT",
           "required": false,
           "multiple": false,
-          "attributes": []
+          "attributes": [
+            {
+              "name": "id",
+              "path": "/extensibilityContext/id",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "triggeredAt",
+              "path": "/extensibilityContext/triggeredAt",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "extensionPointId",
+              "path": "/extensibilityContext/extensionPointId",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            }
+          ]
         },
         {
-          "name": "std_addr_address_delivery",
-          "path": "/std_addr_address_delivery",
-          "dataType": "STRING",
+          "name": "data",
+          "path": "/data",
+          "dataType": "OBJECT",
           "required": false,
           "multiple": false,
-          "attributes": []
-        },
-        {
-          "name": "std_addr_region_full",
-          "path": "/std_addr_region_full",
-          "dataType": "STRING",
-          "required": false,
-          "multiple": false,
-          "attributes": []
-        },
-        {
-          "name": "std_addr_region_code",
-          "path": "/std_addr_region_code",
-          "dataType": "STRING",
-          "required": false,
-          "multiple": false,
-          "attributes": []
-        },
-        {
-          "name": "std_addr_region2_full",
-          "path": "/std_addr_region2_full",
-          "dataType": "STRING",
-          "required": false,
-          "multiple": false,
-          "attributes": []
-        },
-        {
-          "name": "std_addr_postcode1",
-          "path": "/std_addr_postcode1",
-          "dataType": "STRING",
-          "required": false,
-          "multiple": false,
-          "attributes": []
-        },
-        {
-          "name": "std_addr_country_2char",
-          "path": "/std_addr_country_2char",
-          "dataType": "STRING",
-          "required": false,
-          "multiple": false,
-          "attributes": []
-        },
-        {
-          "name": "std_addr_building_name",
-          "path": "/std_addr_building_name",
-          "dataType": "STRING",
-          "required": false,
-          "multiple": false,
-          "attributes": []
-        },
-        {
-          "name": "std_addr_prim_number",
-          "path": "/std_addr_prim_number",
-          "dataType": "STRING",
-          "required": false,
-          "multiple": false,
-          "attributes": []
-        },
-        {
-          "name": "std_addr_floor_full",
-          "path": "/std_addr_floor_full",
-          "dataType": "STRING",
-          "required": false,
-          "multiple": false,
-          "attributes": []
-        },
-        {
-          "name": "std_addr_prim_name_full",
-          "path": "/std_addr_prim_name_full",
-          "dataType": "STRING",
-          "required": false,
-          "multiple": false,
-          "attributes": []
-        },
-        {
-          "name": "std_addr_additional_info",
-          "path": "/std_addr_additional_info",
-          "dataType": "STRING",
-          "required": false,
-          "multiple": false,
-          "attributes": []
-        },
-        {
-          "name": "std_addr_locality_official",
-          "path": "/std_addr_locality_official",
-          "dataType": "STRING",
-          "required": false,
-          "multiple": false,
-          "attributes": []
-        },
-        {
-          "name": "std_addr_region2",
-          "path": "/std_addr_region2",
-          "dataType": "STRING",
-          "required": false,
-          "multiple": false,
-          "attributes": []
-        },
-        {
-          "name": "std_addr_po_box_full",
-          "path": "/std_addr_po_box_full",
-          "dataType": "STRING",
-          "required": false,
-          "multiple": false,
-          "attributes": []
+          "attributes": [
+            {
+              "name": "addr_info_code",
+              "path": "/data/addr_info_code",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "addr_info_code_msg",
+              "path": "/data/addr_info_code_msg",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "addr_sugg_list",
+              "path": "/data/addr_sugg_list",
+              "dataType": "OBJECT",
+              "required": false,
+              "multiple": true,
+              "attributes": [
+                {
+                  "name": "sugg_addr_selection",
+                  "path": "/data/addr_sugg_list/sugg_addr_selection",
+                  "dataType": "STRING",
+                  "required": false,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "sugg_addr_single_address",
+                  "path": "/data/addr_sugg_list/sugg_addr_single_address",
+                  "dataType": "STRING",
+                  "required": false,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "sugg_addr_single_address",
+                  "path": "/data/addr_sugg_list/sugg_addr_type",
+                  "dataType": "STRING",
+                  "required": false,
+                  "multiple": false,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "std_addr_country_name",
+              "path": "/data/std_addr_country_name",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "std_addr_address_delivery",
+              "path": "/data/std_addr_address_delivery",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "std_addr_region_full",
+              "path": "/data/std_addr_region_full",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "std_addr_region_code",
+              "path": "/data/std_addr_region_code",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "std_addr_region2_full",
+              "path": "/data/std_addr_region2_full",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "std_addr_postcode1",
+              "path": "/data/std_addr_postcode1",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "std_addr_country_2char",
+              "path": "/data/std_addr_country_2char",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "std_addr_building_name",
+              "path": "/data/std_addr_building_name",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "std_addr_prim_number",
+              "path": "/data/std_addr_prim_number",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "std_addr_floor_full",
+              "path": "/data/std_addr_floor_full",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "std_addr_prim_name_full",
+              "path": "/data/std_addr_prim_name_full",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "std_addr_additional_info",
+              "path": "/data/std_addr_additional_info",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "std_addr_locality_official",
+              "path": "/data/std_addr_locality_official",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "std_addr_region2",
+              "path": "/data/std_addr_region2",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "std_addr_po_box_full",
+              "path": "/data/std_addr_po_box_full",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            }
+          ]
         }
       ]
     },
@@ -412,19 +471,19 @@
           "targetAttributePath": "/operations/operationId"
         },
         {
-          "expressionString": "/addr_sugg_list",
+          "expressionString": "/data/addr_sugg_list",
           "targetAttributePath": "/operations/data/inboundResponse/suggestions"
         },
         {
-          "expressionString": "/addr_sugg_list/sugg_addr_selection",
+          "expressionString": "/data/addr_sugg_list/sugg_addr_selection",
           "targetAttributePath": "/operations/data/inboundResponse/suggestions/id"
         },
         {
-          "expressionString": "/addr_sugg_list/sugg_addr_single_address",
+          "expressionString": "/data/addr_sugg_list/sugg_addr_single_address",
           "targetAttributePath": "/operations/data/inboundResponse/suggestions/singleLineAddress"
         },
         {
-          "expressionString": "/addr_sugg_list/sugg_addr_single_address",
+          "expressionString": "/data/addr_sugg_list/sugg_addr_single_address",
           "targetAttributePath": "/operations/data/inboundResponse/suggestions/address"
         },
         {
@@ -432,51 +491,51 @@
           "targetAttributePath": "/operations/data/inboundResponse/validationErrors"
         },
         {
-          "expressionString": "ifThenElse(equal('',/addr_info_code),'',ifThenElse(contains('1020|1030',/addr_info_code),'COUNTRY',ifThenElse(contains('2000|3090',/addr_info_code),'TOWN',ifThenElse(contains('2020|2040|2070|3080',/addr_info_code),'POSTALCODE',ifThenElse(contains('2030|2050|3100|3300|5020|5040|5050',/addr_info_code),'MULTIPLE',ifThenElse(contains('3000|3010|3020|3030|3050|3060|3070|3200|3220|3250',/addr_info_code),'ADDRESSLINE1',ifThenElse(contains('4000|4500|4510|4520',/addr_info_code),'ADDRESSLINE2','NONE')))))))",
+          "expressionString": "ifThenElse(equal('',/data/addr_info_code),'',ifThenElse(contains('1020|1030',/data/addr_info_code),'COUNTRY',ifThenElse(contains('2000|3090',/data/addr_info_code),'TOWN',ifThenElse(contains('2020|2040|2070|3080',/data/addr_info_code),'POSTALCODE',ifThenElse(contains('2030|2050|3100|3300|5020|5040|5050',/data/addr_info_code),'MULTIPLE',ifThenElse(contains('3000|3010|3020|3030|3050|3060|3070|3200|3220|3250',/data/addr_info_code),'ADDRESSLINE1',ifThenElse(contains('4000|4500|4510|4520',/data/addr_info_code),'ADDRESSLINE2','NONE')))))))",
           "targetAttributePath": "/operations/data/inboundResponse/validationErrors/field"
         },
         {
-          "expressionString": "/addr_info_code_msg",
+          "expressionString": "/data/addr_info_code_msg",
           "targetAttributePath": "/operations/data/inboundResponse/validationErrors/message"
         },
         {
-          "expressionString": "/std_addr_region_code",
+          "expressionString": "/data/std_addr_region_code",
           "targetAttributePath": "/operations/data/inboundResponse/postalAddress/primaryRegionCode"
         },
         {
-          "expressionString": "/std_addr_postcode1",
+          "expressionString": "/data/std_addr_postcode1",
           "targetAttributePath": "/operations/data/inboundResponse/postalAddress/postCode"
         },
         {
-          "expressionString": "/std_addr_country_2char",
+          "expressionString": "/data/std_addr_country_2char",
           "targetAttributePath": "/operations/data/inboundResponse/postalAddress/countryCode"
         },
         {
-          "expressionString": "/std_addr_building_name",
+          "expressionString": "/data/std_addr_building_name",
           "targetAttributePath": "/operations/data/inboundResponse/postalAddress/building"
         },
         {
-          "expressionString": "/std_addr_prim_number",
+          "expressionString": "/data/std_addr_prim_number",
           "targetAttributePath": "/operations/data/inboundResponse/postalAddress/houseNumber"
         },
         {
-          "expressionString": "/std_addr_floor_full",
+          "expressionString": "/data/std_addr_floor_full",
           "targetAttributePath": "/operations/data/inboundResponse/postalAddress/floor"
         },
         {
-          "expressionString": "/std_addr_prim_name_full",
+          "expressionString": "/data/std_addr_prim_name_full",
           "targetAttributePath": "/operations/data/inboundResponse/postalAddress/street"
         },
         {
-          "expressionString": "/std_addr_additional_info",
+          "expressionString": "/data/std_addr_additional_info",
           "targetAttributePath": "/operations/data/inboundResponse/postalAddress/additionalAddressInfo"
         },
         {
-          "expressionString": "ifThenElse(nodeExists(/std_addr_locality_official),/std_addr_locality_official,'N/A')",
+          "expressionString": "ifThenElse(nodeExists(/data/std_addr_locality_official),/data/std_addr_locality_official,'N/A')",
           "targetAttributePath": "/operations/data/inboundResponse/postalAddress/town/name"
         },
         {
-          "expressionString": "/std_addr_po_box_full",
+          "expressionString": "/data/std_addr_po_box_full",
           "targetAttributePath": "/operations/data/inboundResponse/postalAddress/poBox"
         }
       ],

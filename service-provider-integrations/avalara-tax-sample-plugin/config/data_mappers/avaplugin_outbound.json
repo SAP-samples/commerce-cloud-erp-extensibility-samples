@@ -66,7 +66,7 @@
           "attributes": [
             {
               "name": "cartId",
-              "path": "/data/cartId",
+              "path": "/cartId",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -74,7 +74,7 @@
             },
             {
               "name": "type",
-              "path": "/data/type",
+              "path": "/type",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -82,7 +82,7 @@
             },
             {
               "name": "customerId",
-              "path": "/data/customerId",
+              "path": "/customerId",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -90,7 +90,7 @@
             },
             {
               "name": "simulatedAt",
-              "path": "/data/simulatedAt",
+              "path": "/simulatedAt",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -98,7 +98,7 @@
             },
             {
               "name": "currencyCode",
-              "path": "/data/currencyCode",
+              "path": "/currencyCode",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -106,14 +106,14 @@
             },
             {
               "name": "items",
-              "path": "/data/items",
+              "path": "/items",
               "dataType": "OBJECT",
               "required": false,
               "multiple": true,
               "attributes": [
                 {
                   "name": "id",
-                  "path": "/data/items/id",
+                  "path": "/items/id",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -121,7 +121,7 @@
                 },
                 {
                   "name": "productId",
-                  "path": "/data/items/productId",
+                  "path": "/items/productId",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -129,7 +129,7 @@
                 },
                 {
                   "name": "basePrice",
-                  "path": "/data/items/basePrice",
+                  "path": "/items/basePrice",
                   "dataType": "NUMBER",
                   "required": false,
                   "multiple": false,
@@ -137,7 +137,7 @@
                 },
                 {
                   "name": "quantity",
-                  "path": "/data/items/quantity",
+                  "path": "/items/quantity",
                   "dataType": "NUMBER",
                   "required": false,
                   "multiple": false,
@@ -145,7 +145,7 @@
                 },
                 {
                   "name": "subTotal",
-                  "path": "/data/items/subTotal",
+                  "path": "/items/subTotal",
                   "dataType": "NUMBER",
                   "required": false,
                   "multiple": false,
@@ -155,14 +155,14 @@
             },
             {
               "name": "addresses",
-              "path": "/data/addresses",
+              "path": "/addresses",
               "dataType": "OBJECT",
               "required": false,
               "multiple": true,
               "attributes": [
                 {
                   "name": "type",
-                  "path": "/data/addresses/type",
+                  "path": "/addresses/type",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -170,7 +170,7 @@
                 },
                 {
                   "name": "addressLine1",
-                  "path": "/data/addresses/addressLine1",
+                  "path": "/addresses/addressLine1",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -178,7 +178,7 @@
                 },
                 {
                   "name": "addressLine2",
-                  "path": "/data/addresses/addressLine2",
+                  "path": "/addresses/addressLine2",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -186,7 +186,7 @@
                 },
                 {
                   "name": "regionCode",
-                  "path": "/data/addresses/regionCode",
+                  "path": "/addresses/regionCode",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -194,7 +194,7 @@
                 },
                 {
                   "name": "postalCode",
-                  "path": "/data/addresses/postalCode",
+                  "path": "/addresses/postalCode",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
