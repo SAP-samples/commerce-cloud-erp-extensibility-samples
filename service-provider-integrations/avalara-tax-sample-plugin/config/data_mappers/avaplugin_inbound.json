@@ -4,8 +4,6 @@
   "name": "avalaraInbound",
   "mappingDefinition": {
     "sourceSchema": {
-      "name": "avalara_inbound_source",
-      "mappingSchemaType": "APPLICATION_JSON",
       "attributes": [
         {
           "name": "commerceContext",
@@ -102,61 +100,118 @@
       ]
     },
     "targetSchema": {
-      "name": "com.sap.cx.commerce.extensibilityservices.sync.data.SyncExtensibilityData",
-      "mappingSchemaType": "BUSINESS_OBJECT",
       "attributes": [
         {
-          "name": "operations",
-          "path": "/operations",
+          "name": "commerceContext",
+          "path": "/commerceContext",
           "dataType": "OBJECT",
           "required": false,
-          "multiple": true,
+          "multiple": false,
           "attributes": [
             {
-              "name": "operationId",
-              "path": "/operations/operationId",
+              "name": "storeId",
+              "path": "/commerceContext/storeId",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            }
+          ]
+        },
+        {
+          "name": "extensibilityContext",
+          "path": "/extensibilityContext",
+          "dataType": "OBJECT",
+          "required": false,
+          "multiple": false,
+          "attributes": [
+            {
+              "name": "id",
+              "path": "/extensibilityContext/id",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
               "attributes": []
             },
             {
-              "name": "data",
-              "path": "/operations/data",
-              "dataType": "OBJECT",
+              "name": "triggeredAt",
+              "path": "/extensibilityContext/triggeredAt",
+              "dataType": "STRING",
               "required": false,
               "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "extensionPointId",
+              "path": "/extensibilityContext/extensionPointId",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            }
+          ]
+        },
+        {
+          "name": "data",
+          "path": "/data",
+          "dataType": "OBJECT",
+          "required": false,
+          "multiple": false,
+          "attributes": [
+            {
+              "name": "operations",
+              "path": "/data/operations",
+              "dataType": "OBJECT",
+              "required": false,
+              "multiple": true,
               "attributes": [
                 {
-                  "name": "totalTax",
-                  "path": "/operations/data/totalTax",
-                  "dataType": "NUMBER",
+                  "name": "operationId",
+                  "path": "/data/operations/operationId",
+                  "dataType": "STRING",
                   "required": false,
                   "multiple": false,
                   "attributes": []
                 },
                 {
-                  "name": "items",
-                  "path": "/operations/data/items",
+                  "name": "data",
+                  "path": "/data/operations/data",
                   "dataType": "OBJECT",
                   "required": false,
-                  "multiple": true,
+                  "multiple": false,
                   "attributes": [
                     {
-                      "name": "id",
-                      "path": "/operations/data/items/id",
-                      "dataType": "STRING",
+                      "name": "totalTax",
+                      "path": "/data/operations/data/totalTax",
+                      "dataType": "NUMBER",
                       "required": false,
                       "multiple": false,
                       "attributes": []
                     },
                     {
-                      "name": "taxTotal",
-                      "path": "/operations/data/items/taxTotal",
-                      "dataType": "NUMBER",
+                      "name": "items",
+                      "path": "/data/operations/data/items",
+                      "dataType": "OBJECT",
                       "required": false,
-                      "multiple": false,
-                      "attributes": []
+                      "multiple": true,
+                      "attributes": [
+                        {
+                          "name": "id",
+                          "path": "/data/operations/data/items/id",
+                          "dataType": "STRING",
+                          "required": false,
+                          "multiple": false,
+                          "attributes": []
+                        },
+                        {
+                          "name": "taxTotal",
+                          "path": "/data/operations/data/items/taxTotal",
+                          "dataType": "NUMBER",
+                          "required": false,
+                          "multiple": false,
+                          "attributes": []
+                        }
+                      ]
                     }
                   ]
                 }
@@ -171,31 +226,31 @@
       "transformations": [
         {
           "expressionString": "''",
-          "targetAttributePath": "/operations"
+          "targetAttributePath": "/data/operations"
         },
         {
           "expressionString": "'simulateTax'",
-          "targetAttributePath": "/operations/operationId"
+          "targetAttributePath": "/data/operations/operationId"
         },
         {
           "expressionString": "''",
-          "targetAttributePath": "/operations/data"
+          "targetAttributePath": "/data/operations/data"
         },
         {
           "expressionString": "/data/totalTax",
-          "targetAttributePath": "/operations/data/totalTax"
+          "targetAttributePath": "/data/operations/data/totalTax"
         },
         {
           "expressionString": "/data/lines",
-          "targetAttributePath": "/operations/data/items"
+          "targetAttributePath": "/data/operations/data/items"
         },
         {
           "expressionString": "/data/lines/lineNumber",
-          "targetAttributePath": "/operations/data/items/id"
+          "targetAttributePath": "/data/operations/data/items/id"
         },
         {
           "expressionString": "/data/lines/tax",
-          "targetAttributePath": "/operations/data/items/taxTotal"
+          "targetAttributePath": "/data/operations/data/items/taxTotal"
         }
       ]
     }

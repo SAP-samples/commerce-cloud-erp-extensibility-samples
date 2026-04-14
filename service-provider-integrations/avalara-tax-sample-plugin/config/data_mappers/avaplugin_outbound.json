@@ -4,8 +4,6 @@
   "name": "avalaraOutbound",
   "mappingDefinition": {
     "sourceSchema": {
-      "name": "de.hybris.platform.extensibilityservices.data.InternalBO",
-      "mappingSchemaType": "BUSINESS_OBJECT",
       "attributes": [
         {
           "name": "commerceContext",
@@ -207,8 +205,6 @@
       ]
     },
     "targetSchema": {
-      "name": "avalara_outbound_target_name",
-      "mappingSchemaType": "APPLICATION_JSON",
       "attributes": [
         {
           "name": "code",

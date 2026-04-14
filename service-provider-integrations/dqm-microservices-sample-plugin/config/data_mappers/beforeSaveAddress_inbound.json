@@ -4,8 +4,6 @@
   "name": "Before Save Address Inbound",
   "mappingDefinition": {
     "sourceSchema": {
-      "name": "dqm_inbound_validate_source",
-      "mappingSchemaType": "APPLICATION_JSON",
       "attributes": [
         {
           "name": "commerceContext",
@@ -118,103 +116,160 @@
       ]
     },
     "targetSchema": {
-      "name": "com.sap.cx.commerce.extensibilityservices.sync.data.SyncExtensibilityData",
-      "mappingSchemaType": "BUSINESS_OBJECT",
       "attributes": [
         {
-          "name": "operations",
-          "path": "/operations",
+          "name": "commerceContext",
+          "path": "/commerceContext",
           "dataType": "OBJECT",
           "required": false,
-          "multiple": true,
+          "multiple": false,
           "attributes": [
             {
-              "name": "operationId",
-              "path": "/operations/operationId",
+              "name": "storeId",
+              "path": "/commerceContext/storeId",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            }
+          ]
+        },
+        {
+          "name": "extensibilityContext",
+          "path": "/extensibilityContext",
+          "dataType": "OBJECT",
+          "required": false,
+          "multiple": false,
+          "attributes": [
+            {
+              "name": "id",
+              "path": "/extensibilityContext/id",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
               "attributes": []
             },
             {
-              "name": "data",
-              "path": "/operations/data",
-              "dataType": "OBJECT",
+              "name": "triggeredAt",
+              "path": "/extensibilityContext/triggeredAt",
+              "dataType": "STRING",
               "required": false,
               "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "extensionPointId",
+              "path": "/extensibilityContext/extensionPointId",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            }
+          ]
+        },
+        {
+          "name": "data",
+          "path": "/data",
+          "dataType": "OBJECT",
+          "required": false,
+          "multiple": false,
+          "attributes": [
+            {
+              "name": "operations",
+              "path": "/data/operations",
+              "dataType": "OBJECT",
+              "required": false,
+              "multiple": true,
               "attributes": [
                 {
-                  "name": "inboundResponse",
-                  "path": "/operations/data/inboundResponse",
+                  "name": "operationId",
+                  "path": "/data/operations/operationId",
+                  "dataType": "STRING",
+                  "required": false,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "data",
+                  "path": "/data/operations/data",
                   "dataType": "OBJECT",
                   "required": false,
                   "multiple": false,
                   "attributes": [
                     {
-                      "name": "suggestions",
-                      "path": "/operations/data/inboundResponse/suggestions",
+                      "name": "inboundResponse",
+                      "path": "/data/operations/data/inboundResponse",
                       "dataType": "OBJECT",
                       "required": false,
-                      "multiple": true,
-                      "attributes": [
-                        {
-                          "name": "id",
-                          "path": "/operations/data/inboundResponse/suggestions/id",
-                          "dataType": "STRING",
-                          "required": false,
-                          "multiple": false,
-                          "attributes": []
-                        },
-                        {
-                          "name": "singleLineAddress",
-                          "path": "/operations/data/inboundResponse/suggestions/singleLineAddress",
-                          "dataType": "STRING",
-                          "required": false,
-                          "multiple": false,
-                          "attributes": []
-                        },
-                        {
-                          "name": "address",
-                          "path": "/operations/data/inboundResponse/suggestions/address",
-                          "dataType": "STRING",
-                          "required": false,
-                          "multiple": false,
-                          "attributes": []
-                        }
-                      ]
-                    },
-                    {
-                      "name": "validationErrors",
-                      "path": "/operations/data/inboundResponse/validationErrors",
-                      "dataType": "OBJECT",
-                      "required": false,
-                      "multiple": true,
-                      "attributes": [
-                        {
-                          "name": "field",
-                          "path": "/operations/data/inboundResponse/validationErrors/field",
-                          "dataType": "STRING",
-                          "required": false,
-                          "multiple": false,
-                          "attributes": []
-                        },
-                        {
-                          "name": "message",
-                          "path": "/operations/data/inboundResponse/validationErrors/message",
-                          "dataType": "STRING",
-                          "required": false,
-                          "multiple": false,
-                          "attributes": []
-                        }
-                      ]
-                    },
-                    {
-                      "name": "isAddressValid",
-                      "path": "/operations/data/inboundResponse/isAddressValid",
-                      "dataType": "STRING",
-                      "required": true,
                       "multiple": false,
-                      "attributes": []
+                      "attributes": [
+                        {
+                          "name": "suggestions",
+                          "path": "/data/operations/data/inboundResponse/suggestions",
+                          "dataType": "OBJECT",
+                          "required": false,
+                          "multiple": true,
+                          "attributes": [
+                            {
+                              "name": "id",
+                              "path": "/data/operations/data/inboundResponse/suggestions/id",
+                              "dataType": "STRING",
+                              "required": false,
+                              "multiple": false,
+                              "attributes": []
+                            },
+                            {
+                              "name": "singleLineAddress",
+                              "path": "/data/operations/data/inboundResponse/suggestions/singleLineAddress",
+                              "dataType": "STRING",
+                              "required": false,
+                              "multiple": false,
+                              "attributes": []
+                            },
+                            {
+                              "name": "address",
+                              "path": "/data/operations/data/inboundResponse/suggestions/address",
+                              "dataType": "STRING",
+                              "required": false,
+                              "multiple": false,
+                              "attributes": []
+                            }
+                          ]
+                        },
+                        {
+                          "name": "validationErrors",
+                          "path": "/data/operations/data/inboundResponse/validationErrors",
+                          "dataType": "OBJECT",
+                          "required": false,
+                          "multiple": true,
+                          "attributes": [
+                            {
+                              "name": "field",
+                              "path": "/data/operations/data/inboundResponse/validationErrors/field",
+                              "dataType": "STRING",
+                              "required": false,
+                              "multiple": false,
+                              "attributes": []
+                            },
+                            {
+                              "name": "message",
+                              "path": "/data/operations/data/inboundResponse/validationErrors/message",
+                              "dataType": "STRING",
+                              "required": false,
+                              "multiple": false,
+                              "attributes": []
+                            }
+                          ]
+                        },
+                        {
+                          "name": "isAddressValid",
+                          "path": "/data/operations/data/inboundResponse/isAddressValid",
+                          "dataType": "STRING",
+                          "required": true,
+                          "multiple": false,
+                          "attributes": []
+                        }
+                      ]
                     }
                   ]
                 }
@@ -229,35 +284,35 @@
       "transformations": [
         {
           "expressionString": "''",
-          "targetAttributePath": "/operations"
+          "targetAttributePath": "/data/operations"
         },
         {
           "expressionString": "''",
-          "targetAttributePath": "/operations/data"
+          "targetAttributePath": "/data/operations/data"
         },
         {
           "expressionString": "''",
-          "targetAttributePath": "/operations/data/inboundResponse"
+          "targetAttributePath": "/data/operations/data/inboundResponse"
         },
         {
           "expressionString": "'addressValidation'",
-          "targetAttributePath": "/operations/operationId"
+          "targetAttributePath": "/data/operations/operationId"
         },
         {
           "expressionString": "''",
-          "targetAttributePath": "/operations/data/inboundResponse/validationErrors"
+          "targetAttributePath": "/data/operations/data/inboundResponse/validationErrors"
         },
         {
           "expressionString": "ifThenElse(equal('',/data/addr_info_code),'',ifThenElse(contains('1020|1030',/data/addr_info_code),'COUNTRY',ifThenElse(contains('2000|3090',/data/addr_info_code),'TOWN',ifThenElse(contains('2020|2040|2070|3080',/data/addr_info_code),'POSTALCODE',ifThenElse(contains('2030|2050|3100|3300|5020|5040|5050',/data/addr_info_code),'MULTIPLE',ifThenElse(contains('3000|3010|3020|3030|3050|3060|3070|3200|3220|3250',/data/addr_info_code),'ADDRESSLINE1',ifThenElse(contains('4000|4500|4510|4520',/data/addr_info_code),'ADDRESSLINE2','NONE')))))))",
-          "targetAttributePath": "/operations/data/inboundResponse/validationErrors/field"
+          "targetAttributePath": "/data/operations/data/inboundResponse/validationErrors/field"
         },
         {
           "expressionString": "/data/addr_info_code_msg",
-          "targetAttributePath": "/operations/data/inboundResponse/validationErrors/message"
+          "targetAttributePath": "/data/operations/data/inboundResponse/validationErrors/message"
         },
         {
           "expressionString": "equal('',/data/addr_info_code_msg)",
-          "targetAttributePath": "/operations/data/inboundResponse/isAddressValid"
+          "targetAttributePath": "/data/operations/data/inboundResponse/isAddressValid"
         }
       ],
       "uriTransformations": {},
