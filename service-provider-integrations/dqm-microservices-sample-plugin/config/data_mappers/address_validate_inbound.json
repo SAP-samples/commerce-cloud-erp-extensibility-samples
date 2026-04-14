@@ -320,184 +320,175 @@
                 "multiple": false,
                 "attributes": [
                   {
-                    "name": "inboundResponse",
-                    "path": "/data/operations/data/inboundResponse",
+                    "name": "suggestions",
+                    "path": "/data/operations/data/suggestions",
+                    "dataType": "OBJECT",
+                    "required": false,
+                    "multiple": true,
+                    "attributes": [
+                      {
+                        "name": "id",
+                        "path": "/data/operations/data/suggestions/id",
+                        "dataType": "STRING",
+                        "required": false,
+                        "multiple": false,
+                        "attributes": []
+                      },
+                      {
+                        "name": "singleLineAddress",
+                        "path": "/data/operations/data/suggestions/singleLineAddress",
+                        "dataType": "STRING",
+                        "required": false,
+                        "multiple": false,
+                        "attributes": []
+                      },
+                      {
+                        "name": "address",
+                        "path": "/data/operations/data/suggestions/address",
+                        "dataType": "STRING",
+                        "required": false,
+                        "multiple": false,
+                        "attributes": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "validationErrors",
+                    "path": "/data/operations/data/validationErrors",
+                    "dataType": "OBJECT",
+                    "required": false,
+                    "multiple": true,
+                    "attributes": [
+                      {
+                        "name": "field",
+                        "path": "/data/operations/data/validationErrors/field",
+                        "dataType": "STRING",
+                        "required": false,
+                        "multiple": false,
+                        "attributes": []
+                      },
+                      {
+                        "name": "message",
+                        "path": "/data/operations/data/validationErrors/message",
+                        "dataType": "STRING",
+                        "required": false,
+                        "multiple": false,
+                        "attributes": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "postalAddress",
+                    "path": "/data/operations/data/postalAddress",
                     "dataType": "OBJECT",
                     "required": false,
                     "multiple": false,
                     "attributes": [
                       {
-                        "name": "suggestions",
-                        "path": "/data/operations/data/inboundResponse/suggestions",
-                        "dataType": "OBJECT",
+                        "name": "street",
+                        "path": "/data/operations/data/postalAddress/street",
+                        "dataType": "STRING",
                         "required": false,
-                        "multiple": true,
-                        "attributes": [
-                          {
-                            "name": "id",
-                            "path": "/data/operations/data/inboundResponse/suggestions/id",
-                            "dataType": "STRING",
-                            "required": false,
-                            "multiple": false,
-                            "attributes": []
-                          },
-                          {
-                            "name": "singleLineAddress",
-                            "path": "/data/operations/data/inboundResponse/suggestions/singleLineAddress",
-                            "dataType": "STRING",
-                            "required": false,
-                            "multiple": false,
-                            "attributes": []
-                          },
-                          {
-                            "name": "address",
-                            "path": "/data/operations/data/inboundResponse/suggestions/address",
-                            "dataType": "STRING",
-                            "required": false,
-                            "multiple": false,
-                            "attributes": []
-                          }
-                        ]
+                        "multiple": false,
+                        "attributes": []
                       },
                       {
-                        "name": "validationErrors",
-                        "path": "/data/operations/data/inboundResponse/validationErrors",
-                        "dataType": "OBJECT",
+                        "name": "houseNumber",
+                        "path": "/data/operations/data/postalAddress/houseNumber",
+                        "dataType": "STRING",
                         "required": false,
-                        "multiple": true,
-                        "attributes": [
-                          {
-                            "name": "field",
-                            "path": "/data/operations/data/inboundResponse/validationErrors/field",
-                            "dataType": "STRING",
-                            "required": false,
-                            "multiple": false,
-                            "attributes": []
-                          },
-                          {
-                            "name": "message",
-                            "path": "/data/operations/data/inboundResponse/validationErrors/message",
-                            "dataType": "STRING",
-                            "required": false,
-                            "multiple": false,
-                            "attributes": []
-                          }
-                        ]
+                        "multiple": false,
+                        "attributes": []
                       },
                       {
-                        "name": "postalAddress",
-                        "path": "/data/operations/data/inboundResponse/postalAddress",
+                        "name": "building",
+                        "path": "/data/operations/data/postalAddress/building",
+                        "dataType": "STRING",
+                        "required": false,
+                        "multiple": false,
+                        "attributes": []
+                      },
+                      {
+                        "name": "floor",
+                        "path": "/data/operations/data/postalAddress/floor",
+                        "dataType": "STRING",
+                        "required": false,
+                        "multiple": false,
+                        "attributes": []
+                      },
+                      {
+                        "name": "town",
+                        "path": "/data/operations/data/postalAddress/town",
                         "dataType": "OBJECT",
                         "required": false,
                         "multiple": false,
                         "attributes": [
                           {
-                            "name": "street",
-                            "path": "/data/operations/data/inboundResponse/postalAddress/street",
-                            "dataType": "STRING",
-                            "required": false,
-                            "multiple": false,
-                            "attributes": []
-                          },
-                          {
-                            "name": "houseNumber",
-                            "path": "/data/operations/data/inboundResponse/postalAddress/houseNumber",
-                            "dataType": "STRING",
-                            "required": false,
-                            "multiple": false,
-                            "attributes": []
-                          },
-                          {
-                            "name": "building",
-                            "path": "/data/operations/data/inboundResponse/postalAddress/building",
-                            "dataType": "STRING",
-                            "required": false,
-                            "multiple": false,
-                            "attributes": []
-                          },
-                          {
-                            "name": "floor",
-                            "path": "/data/operations/data/inboundResponse/postalAddress/floor",
-                            "dataType": "STRING",
-                            "required": false,
-                            "multiple": false,
-                            "attributes": []
-                          },
-                          {
-                            "name": "town",
-                            "path": "/data/operations/data/inboundResponse/postalAddress/town",
-                            "dataType": "OBJECT",
-                            "required": false,
-                            "multiple": false,
-                            "attributes": [
-                              {
-                                "name": "name",
-                                "path": "/data/operations/data/inboundResponse/postalAddress/town/name",
-                                "dataType": "STRING",
-                                "required": false,
-                                "multiple": false,
-                                "attributes": []
-                              }
-                            ]
-                          },
-                          {
-                            "name": "district",
-                            "path": "/data/operations/data/inboundResponse/postalAddress/district",
-                            "dataType": "OBJECT",
-                            "required": false,
-                            "multiple": false,
-                            "attributes": [
-                              {
-                                "name": "name",
-                                "path": "/data/operations/data/inboundResponse/postalAddress/district/name",
-                                "dataType": "STRING",
-                                "required": false,
-                                "multiple": false,
-                                "attributes": []
-                              }
-                            ]
-                          },
-                          {
-                            "name": "primaryRegionCode",
-                            "path": "/data/operations/data/inboundResponse/postalAddress/primaryRegionCode",
-                            "dataType": "STRING",
-                            "required": false,
-                            "multiple": false,
-                            "attributes": []
-                          },
-                          {
-                            "name": "countryCode",
-                            "path": "/data/operations/data/inboundResponse/postalAddress/countryCode",
-                            "dataType": "STRING",
-                            "required": false,
-                            "multiple": false,
-                            "attributes": []
-                          },
-                          {
-                            "name": "postCode",
-                            "path": "/data/operations/data/inboundResponse/postalAddress/postCode",
-                            "dataType": "STRING",
-                            "required": false,
-                            "multiple": false,
-                            "attributes": []
-                          },
-                          {
-                            "name": "poBox",
-                            "path": "/data/operations/data/inboundResponse/postalAddress/poBox",
-                            "dataType": "STRING",
-                            "required": false,
-                            "multiple": false,
-                            "attributes": []
-                          },
-                          {
-                            "name": "additionalAddressInfo",
-                            "path": "/data/operations/data/inboundResponse/postalAddress/additionalAddressInfo",
+                            "name": "name",
+                            "path": "/data/operations/data/postalAddress/town/name",
                             "dataType": "STRING",
                             "required": false,
                             "multiple": false,
                             "attributes": []
                           }
                         ]
+                      },
+                      {
+                        "name": "district",
+                        "path": "/data/operations/data/postalAddress/district",
+                        "dataType": "OBJECT",
+                        "required": false,
+                        "multiple": false,
+                        "attributes": [
+                          {
+                            "name": "name",
+                            "path": "/data/operations/data/postalAddress/district/name",
+                            "dataType": "STRING",
+                            "required": false,
+                            "multiple": false,
+                            "attributes": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "primaryRegionCode",
+                        "path": "/data/operations/data/postalAddress/primaryRegionCode",
+                        "dataType": "STRING",
+                        "required": false,
+                        "multiple": false,
+                        "attributes": []
+                      },
+                      {
+                        "name": "countryCode",
+                        "path": "/data/operations/data/postalAddress/countryCode",
+                        "dataType": "STRING",
+                        "required": false,
+                        "multiple": false,
+                        "attributes": []
+                      },
+                      {
+                        "name": "postCode",
+                        "path": "/data/operations/data/postalAddress/postCode",
+                        "dataType": "STRING",
+                        "required": false,
+                        "multiple": false,
+                        "attributes": []
+                      },
+                      {
+                        "name": "poBox",
+                        "path": "/data/operations/data/postalAddress/poBox",
+                        "dataType": "STRING",
+                        "required": false,
+                        "multiple": false,
+                        "attributes": []
+                      },
+                      {
+                        "name": "additionalAddressInfo",
+                        "path": "/data/operations/data/postalAddress/additionalAddressInfo",
+                        "dataType": "STRING",
+                        "required": false,
+                        "multiple": false,
+                        "attributes": []
                       }
                     ]
                   }
