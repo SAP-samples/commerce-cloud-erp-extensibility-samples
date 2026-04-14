@@ -1,12 +1,62 @@
 {
-  "id":"6e8bc430-9c3a-11d9-9669-0800200c9a66",
+  "id": "550e8400-e29b-41d4-a716-446655440001",
   "type": "DATA_MAPPER",
-  "name": "Address Validation Outbound",
+  "name": "Address Suggestions Outbound",
   "mappingDefinition": {
     "sourceSchema": {
       "name": "InternalBOForADdress",
       "mappingSchemaType": "APPLICATION_JSON",
       "attributes": [
+        {
+          "name": "commerceContext",
+          "path": "/commerceContext",
+          "dataType": "OBJECT",
+          "required": false,
+          "multiple": false,
+          "attributes": [
+            {
+              "name": "storeId",
+              "path": "/commerceContext/storeId",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            }
+          ]
+        },
+        {
+          "name": "extensibilityContext",
+          "path": "/extensibilityContext",
+          "dataType": "OBJECT",
+          "required": false,
+          "multiple": false,
+          "attributes": [
+            {
+              "name": "id",
+              "path": "/extensibilityContext/id",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "triggeredAt",
+              "path": "/extensibilityContext/triggeredAt",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "extensionPointId",
+              "path": "/extensibilityContext/extensionPointId",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            }
+          ]
+        },
         {
           "name": "data",
           "path": "/data",
@@ -261,7 +311,7 @@
           "targetAttributePath": "/generateSuggestionList"
         },
         {
-          "expressionString": "ifThenElse(greater(size(/data/addressSuggestionIds),'1'), splitToStringList(concat(listToString(/data/addressSuggestionIds,'|'),'|','*'), '|'), /data/addressSuggestionIds)",
+          "expressionString": "ifThenElse(greaterThan(size(/data/addressSuggestionIds),'1'), splitToStringList(concat(listToString(/data/addressSuggestionIds,'|'),'|','*'), '|'), /data/addressSuggestionIds)",
           "targetAttributePath": "/suggestionReply"
         },
         {
@@ -271,7 +321,14 @@
       ]
     },
     "uriTransformations": {},
-    "headerTransformations": {},
+    "headerTransformations": {
+      "transformations": [
+        {
+          "expressionString": "'MCS'",
+          "targetAttributePath": "Application"
+        }
+      ]
+    },
     "uriTemplate": "http://locahost/api/addressValidation?apiKey=123"
   }
 }
