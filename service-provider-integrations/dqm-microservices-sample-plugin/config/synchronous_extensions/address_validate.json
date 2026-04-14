@@ -1,9 +1,10 @@
 {
-  "id": "d7b2a30f-b754-4d29-9e70-14f532e367b1",
+  "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
   "name": "Validate Address",
-  "extensionPointId": "sap.ccm.address.validateAddress.validateAddress",
+  "extensionPointId": "sap.ccm.address.validateAddress.validate",
   "destinationName": "dqm",
   "type": "SYNCHRONOUS_EXTENSION",
   "inboundMappingDefinitionId": "73a5d60f-3b5a-4f5c-b0d1-e2f2e3f2e4f2",
   "outboundMappingDefinitionId": "6e8bc430-9c3a-11d9-9669-0800200c9a66"
+ 
 }

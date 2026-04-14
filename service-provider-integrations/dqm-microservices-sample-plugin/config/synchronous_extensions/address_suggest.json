@@ -1,10 +1,9 @@
 {
-  "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
-  "name": "Before Save Address",
-  "extensionPointId": "sap.ccm.address.saveAddress.beforeSaveAddress",
+  "id": "d7b2a30f-b754-4d29-9e70-14f532e367b1",
+  "name": "Suggest Address",
+  "extensionPointId": "sap.ccm.address.validateAddress.suggest",
   "destinationName": "dqm",
   "type": "SYNCHRONOUS_EXTENSION",
   "inboundMappingDefinitionId": "123e4567-e89b-12d3-a456-426614174000",
   "outboundMappingDefinitionId": "550e8400-e29b-41d4-a716-446655440001"
- 
 }
