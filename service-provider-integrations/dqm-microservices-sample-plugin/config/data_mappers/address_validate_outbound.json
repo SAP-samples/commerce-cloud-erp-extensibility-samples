@@ -1,5 +1,5 @@
 {
-	"id": "6e8bc430-9c3a-11d9-9669-0800200c9a66",
+	"id": "550e8400-e29b-41d4-a716-446655440001",
 	"type": "DATA_MAPPER",
 	"name": "Address Validation Outbound",
 	"mappingDefinition": {
@@ -77,8 +77,8 @@
 									"multiple": false,
 									"attributes": [
 										{
-											"name": "name",
-											"path": "/data/postalAddress/country/name",
+											"name": "code",
+											"path": "/data/postalAddress/country/code",
 											"dataType": "STRING",
 											"required": false,
 											"multiple": false,
@@ -137,6 +137,14 @@
 									"attributes": []
 								},
 								{
+									"name": "singleLineAddress",
+									"path": "/data/singleLineAddress",
+									"dataType": "STRING",
+									"required": false,
+									"multiple": false,
+									"attributes": []
+								},
+								{
 									"name": "street",
 									"path": "/data/postalAddress/street",
 									"dataType": "STRING",
@@ -149,14 +157,6 @@
 						{
 							"name": "addressSuggestionIds",
 							"path": "/data/addressSuggestionIds",
-							"dataType": "STRING",
-							"required": false,
-							"multiple": true,
-							"attributes": []
-						},
-						{
-							"name": "singleLineAddress",
-							"path": "/data/singleLineAddress",
 							"dataType": "STRING",
 							"required": false,
 							"multiple": false,
@@ -295,11 +295,11 @@
 					"targetAttributePath": "/addressInput/postcode"
 				},
 				{
-					"expressionString": "/data/postalAddress/country/name",
+					"expressionString": "/data/postalAddress/country/code",
 					"targetAttributePath": "/addressInput/country"
 				},
 				{
-					"expressionString": "splitToStringList('std_addr_country_name,std_addr_address_delivery,std_addr_region_full,std_addr_region2_full,std_addr_postcode1,std_addr_country_2char,addr_info_code,addr_info_code_msg,std_addr_region_code,std_addr_building_name,std_addr_prim_number,std_addr_floor_full,std_addr_prim_number,std_addr_prim_name_full,std_addr_additional_info,std_addr_locality_official,std_addr_region2,std_addr_po_box_full',',')",
+					"expressionString": "splittoStringlist('std_addr_country_name,std_addr_address_delivery,std_addr_region_full,std_addr_region2_full,std_addr_postcode1,std_addr_country_2char,addr_info_code,addr_info_code_msg,std_addr_region_code,std_addr_building_name,std_addr_prim_number,std_addr_floor_full,std_addr_prim_number,std_addr_prim_name_full,std_addr_additional_info,std_addr_locality_official,std_addr_region2,std_addr_po_box_full',',')",
 					"targetAttributePath": "/outputFields"
 				},
 				{
@@ -307,7 +307,7 @@
 					"targetAttributePath": "/generateSuggestionList"
 				},
 				{
-					"expressionString": "ifThenElse(greaterThan(size(/data/addressSuggestionIds),'1'), splitToStringList(concat(listToString(/data/addressSuggestionIds,'|'),'|','*'), '|'), /data/addressSuggestionIds)",
+					"expressionString": "/data/addressSuggestionIds",
 					"targetAttributePath": "/suggestionReply"
 				},
 				{
@@ -317,7 +317,14 @@
 			]
 		},
 		"uriTransformations": {},
-		"headerTransformations": {},
+		"headerTransformations": {
+			"transformations": [
+				{
+					"expressionString": "'MCS'",
+					"targetAttributePath": "Application"
+				}
+			]
+		},
 		"uriTemplate": "http://locahost/api/addressValidation?apiKey=123"
 	}
 }
