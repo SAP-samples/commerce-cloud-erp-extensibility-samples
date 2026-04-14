@@ -4,8 +4,6 @@
   "name": "Address Validation Inbound",
   "mappingDefinition": {
     "sourceSchema": {
-      "name": "dqm_inbound_validate_source",
-      "mappingSchemaType": "APPLICATION_JSON",
       "attributes": [
         {
           "name": "commerceContext",
@@ -238,8 +236,6 @@
       ]
     },
     "targetSchema": {
-      "name": "com.sap.cx.commerce.extensibilityservices.sync.data.SyncExtensibilityData",
-      "mappingSchemaType": "BUSINESS_OBJECT",
       "attributes": [
         {
           "name": "commerceContext",

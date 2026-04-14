@@ -4,8 +4,6 @@
   "name": "Address Suggestions Outbound",
   "mappingDefinition": {
     "sourceSchema": {
-      "name": "InternalBOForADdress",
-      "mappingSchemaType": "APPLICATION_JSON",
       "attributes": [
         {
           "name": "commerceContext",
@@ -169,8 +167,6 @@
       ]
     },
     "targetSchema": {
-      "name": "Address_Target_json",
-      "mappingSchemaType": "APPLICATION_JSON",
       "attributes": [
         {
           "name": "addressInput",
