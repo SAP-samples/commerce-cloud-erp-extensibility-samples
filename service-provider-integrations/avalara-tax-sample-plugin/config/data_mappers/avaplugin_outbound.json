@@ -1,12 +1,60 @@
 {
-    "id":"f7a75f04-ea93-47fb-b461-3a8d262e5e5e",
-    "type": "DATA_MAPPER",
-    "name": "avalaraOutbound",
-    "mappingDefinition": {
-      "sourceSchema": {
-      "name": "de.hybris.platform.extensibilityservices.data.InternalBO",
-      "mappingSchemaType": "BUSINESS_OBJECT",
+  "id": "f7a75f04-ea93-47fb-b461-3a8d262e5e5e",
+  "type": "DATA_MAPPER",
+  "name": "avalaraOutbound",
+  "mappingDefinition": {
+    "sourceSchema": {
       "attributes": [
+        {
+          "name": "commerceContext",
+          "path": "/commerceContext",
+          "dataType": "OBJECT",
+          "required": false,
+          "multiple": false,
+          "attributes": [
+            {
+              "name": "storeId",
+              "path": "/commerceContext/storeId",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            }
+          ]
+        },
+        {
+          "name": "extensibilityContext",
+          "path": "/extensibilityContext",
+          "dataType": "OBJECT",
+          "required": false,
+          "multiple": false,
+          "attributes": [
+            {
+              "name": "id",
+              "path": "/extensibilityContext/id",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "triggeredAt",
+              "path": "/extensibilityContext/triggeredAt",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "extensionPointId",
+              "path": "/extensibilityContext/extensionPointId",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            }
+          ]
+        },
         {
           "name": "data",
           "path": "/data",
@@ -157,8 +205,6 @@
       ]
     },
     "targetSchema": {
-      "name": "avalara_outbound_target_name",
-      "mappingSchemaType": "APPLICATION_JSON",
       "attributes": [
         {
           "name": "code",
@@ -297,5 +343,5 @@
       "type": "FUNCTION",
       "functionId": "55ddf908-5190-4d10-8837-92c28eeeadb4"
     }
-    }
   }
+}
