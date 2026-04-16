@@ -580,10 +580,7 @@
           "expressionString": "/data/std_addr_po_box_full",
           "targetAttributePath": "/data/operations/data/postalAddress/poBox"
         }
-      ],
-      "uriTransformations": {},
-      "headerTransformations": {},
-      "uriTemplate": "http://locahost/api/addressValidation"
+      ]
     }
   }
 }

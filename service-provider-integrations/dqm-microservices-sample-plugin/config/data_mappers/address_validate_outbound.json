@@ -315,16 +315,6 @@
           "targetAttributePath": "/generateTypeAheadSuggestionList"
         }
       ]
-    },
-    "uriTransformations": {},
-    "headerTransformations": {
-      "transformations": [
-        {
-          "expressionString": "'MCS'",
-          "targetAttributePath": "Application"
-        }
-      ]
-    },
-    "uriTemplate": "http://locahost/api/addressValidation?apiKey=123"
+    }
   }
 }
