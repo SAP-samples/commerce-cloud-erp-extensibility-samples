@@ -1,28 +1,25 @@
-name: "SAP Data Quality Management (DQM)"
-version: 0.0.9
+name: SAP Data Quality Management (DQM)
+version: 0.0.10
 sourceAccountId: "SAP"
 sourceTenantId: "SAP_CCS"
-description: "Integrates with Data Quality Management (DQM) microservices to validate and correct addresses."
+description: Integrates with Data Quality Management (DQM) microservices to validate and correct addresses.
 author: SAP Commerce Cloud
-pluginId: "3b3d1ae2-2fa2-4b7d-a29a-0f432236f928"
+pluginId: 3b3d1ae2-2fa2-4b7d-a29a-0f432236f928
 license: Apache-2.0
-homepage: null
 repository: https://github.tools.sap/cx-commerce/cxmc-customization-samples/tree/main/service-provider-integrations/dqm-microservices-sample-plugin
-logo: null
-keywords: null
 components:
   - type: synchronous_extension
-    componentId: "f47ac10b-58cc-4372-a567-0e02b2c3d479"
+    componentId: f47ac10b-58cc-4372-a567-0e02b2c3d479
     path: "config/synchronous_extensions/address_validate.json"
-  - type: synchronous_extension
-    componentId: "d7b2a30f-b754-4d29-9e70-14f532e367b1"
-    path: "config/synchronous_extensions/address_suggest.json"
   - type: "data_mapper"
     componentId: "123e4567-e89b-12d3-a456-426614174000"
     path: "config/data_mappers/address_validate_inbound.json"
   - type: "data_mapper"
     componentId: "550e8400-e29b-41d4-a716-446655440001"
     path: "config/data_mappers/address_validate_outbound.json"
+  - type: synchronous_extension
+    componentId: d7b2a30f-b754-4d29-9e70-14f532e367b1
+    path: "config/synchronous_extensions/address_suggest.json"
   - type: "data_mapper"
     componentId: "73a5d60f-3b5a-4f5c-b0d1-e2f2e3f2e4f2"
     path: "config/data_mappers/address_suggest_inbound.json"
