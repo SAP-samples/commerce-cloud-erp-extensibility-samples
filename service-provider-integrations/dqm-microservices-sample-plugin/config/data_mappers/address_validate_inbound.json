@@ -301,10 +301,7 @@
           "expressionString": "equal('',/data/addr_info_code_msg)",
           "targetAttributePath": "/data/operations/data/addressValid"
         }
-      ],
-      "uriTransformations": {},
-      "headerTransformations": {},
-      "uriTemplate": "http://locahost/api/addressValidation"
+      ]
     }
   }
 }
