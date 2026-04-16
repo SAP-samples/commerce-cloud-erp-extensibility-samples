@@ -9,7 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- To Do
+- Renamed the BOs used by plugins
+- Removed unused BOs
+- Changed titles and descriptions
+- Renamed plugins
+- Renamed extension points
+- Changed mappings due to modified BOs
+- Added wrappers (commerceContext, extensibilityContext, data)
 
 
 ## [0.0.8] - 2026-03-25
