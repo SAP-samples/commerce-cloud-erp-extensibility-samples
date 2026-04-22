@@ -1,0 +1,10 @@
+{
+  "id": "604e9e20-c8fe-4b4e-a270-74c6dd1a9bad",
+  "name": "Avalara Simulate Tax",
+  "extensionPointId": "sap.ccm.tax.simulateTax.simulateTax",
+  "destinationName": "tax-avalara",
+  "type": "SYNCHRONOUS_EXTENSION",
+  "inboundMappingDefinitionId": "4eb58b0a-4531-44a8-9dda-9cd5d4b59ad0",
+  "outboundMappingDefinitionId": "f7a75f04-ea93-47fb-b461-3a8d262e5e5e"
+}
+
