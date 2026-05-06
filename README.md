@@ -1,5 +1,7 @@
 # SAP Commerce Cloud ERP Extensibility Samples
 
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/commerce-cloud-erp-extensibility-samples)](https://api.reuse.software/info/github.com/SAP-samples/commerce-cloud-erp-extensibility-samples)
+
 ## Description
 
 This repository provides sample extensions for SAP Commerce Cloud, cloud ERP edition.
