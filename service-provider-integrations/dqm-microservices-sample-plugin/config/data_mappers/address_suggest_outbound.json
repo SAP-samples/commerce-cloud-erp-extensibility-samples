@@ -147,12 +147,21 @@
               ]
             },
             {
-              "name": "addressSuggestionIds",
-              "path": "/data/addressSuggestionIds",
-              "dataType": "STRING",
+              "name": "suggest",
+              "path": "/data/suggestion",
+              "dataType": "OBJECT",
               "required": false,
-              "multiple": true,
-              "attributes": []
+              "multiple": false,
+              "attributes": [
+                {
+                  "name": "id",
+                  "path": "/data/suggestion/id",
+                  "dataType": "STRING",
+                  "required": false,
+                  "multiple": false,
+                  "attributes": []
+                }
+              ]
             },
             {
               "name": "singleLineAddress",
@@ -307,7 +316,7 @@
           "targetAttributePath": "/generateSuggestionList"
         },
         {
-          "expressionString": "ifThenElse(greaterThan(size(/data/addressSuggestionIds),'1'), splitToStringList(concat(listToString(/data/addressSuggestionIds,'|'),'|','*'), '|'), /data/addressSuggestionIds)",
+          "expressionString": "ifThenElse(isNull(/data/suggestion/id), '', splitToStringList(concat(/data/suggestion/id, ',', '*'), ','))",
           "targetAttributePath": "/suggestionReply"
         },
         {
