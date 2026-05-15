@@ -5,4 +5,4 @@ This folder contains sample plugins that demonstrate integration with external s
 ## Included Samples
 
 - `avalara-tax-sample-plugin/`: Sample plugin for Avalara tax integration.
-- `dqm-microservices-sample-plugin/`: Sample plugin for Data Quality Microservices integration.
+- `dqm-address-cleansing-sample-plugin/`: Sample plugin for Data Quality Microservices integration.

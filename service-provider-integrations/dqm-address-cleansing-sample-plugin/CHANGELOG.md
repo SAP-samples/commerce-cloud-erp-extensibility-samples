@@ -5,10 +5,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2026-05-15
+
+### Changed
+
+- Rename plugin to include its purpose
+
 ## [0.0.12] - 2026-05-6
+
+### Changed
+
 - Use the same error conversion for both inbound mappers
 
 ## [0.0.11] - 2026-04-24
+
+### Changed
+
 - Adapt to new address suggestions contract
 
 ## [0.0.10] - 2026-04-16
