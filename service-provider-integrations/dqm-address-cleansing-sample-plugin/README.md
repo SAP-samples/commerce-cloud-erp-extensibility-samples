@@ -15,7 +15,7 @@ For detailed guidance on integrating Project Commerce Cloud SaaS Edition with ad
 
 ## Download and Installation
 
-1. Download the latest release of this plugin from the [releases page](https://github.tools.sap/I319024/commerce-cloud-saas-samples/releases?q=DQM&expanded=true).
+1. Download the latest release of this plugin from the [releases page](https://github.com/SAP-samples/commerce-cloud-erp-extensibility-samples/releases?q=DQM&expanded=true).
 2. Follow the installation instructions provided on [this help page](https://help.sap.com/docs/MCS/209eeeb9d1254c9fb34f43d7cc927aea/2ae5fff8c8d04a6597a79167b1eac5d3.html?locale=en-US).
 
 ## Content Structure

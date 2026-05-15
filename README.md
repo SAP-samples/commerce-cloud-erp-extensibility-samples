@@ -18,7 +18,7 @@ Use the table below to find the sample that best fits your needs.
 | Business Use Case | Description | Architectural Pattern | Location |
 | :--- | :--- | :--- | :--- |
 | **Real-time Tax Simulation** | Integrate with Avalara to simulate sales tax at checkout. | Service Provider Integration | [`./service-provider-integrations/avalara-tax-sample-plugin`](./service-provider-integrations/avalara-tax-sample-plugin) |
-| **Address Validation** | Validate and cleanse customer addresses using DQM microservices. | Service Provider Integration | [`./service-provider-integrations/dqm-microservices-sample-plugin`](./service-provider-integrations/dqm-microservices-sample-plugin) |
+| **Address Validation** | Validate and cleanse customer addresses using DQM microservices. | Service Provider Integration | [`./service-provider-integrations/dqm-address-cleansing-sample-plugin`](./service-provider-integrations/dqm-address-cleansing-sample-plugin) |
 
 ## Content Structure
 
