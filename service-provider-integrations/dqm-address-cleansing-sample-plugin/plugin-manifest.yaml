@@ -1,9 +1,9 @@
-name: SAP Data Quality Management (DQM)
+name: DQM Microservices Sample Plugin
 version: 1.0.0
 sourceAccountId: "SAP"
 sourceTenantId: "SAP_CCS"
-description: Integrates with Data Quality Management (DQM) microservices to validate and correct addresses.
-author: SAP Commerce Cloud
+description: Integrates with SAP Data Quality Management, Microservices for Location Data (DQM Microservices) to validate and correct addresses.
+author: SAP Commerce Cloud, cloud ERP edition
 pluginId: 3b3d1ae2-2fa2-4b7d-a29a-0f432236f928
 license: Apache-2.0
 repository: https://github.com/SAP-samples/commerce-cloud-erp-extensibility-samples/tree/main/service-provider-integrations/dqm-address-cleansing-sample-plugin
