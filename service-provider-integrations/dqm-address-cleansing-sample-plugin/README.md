@@ -15,7 +15,10 @@ For detailed guidance on integrating Project Commerce Cloud SaaS Edition with ad
 
 ## Download and Installation
 
-1. Download the latest release of this plugin from the [releases page](https://github.com/SAP-samples/commerce-cloud-erp-extensibility-samples/releases?q=DQM&expanded=true).
+1. Download the latest release of this plugin from the [releases page](https://github.com/SAP-samples/commerce-cloud-erp-extensibility-samples/releases?q=DQM&expanded=true). Look for the assets section of the respective release and download the `dqm-address-cleansing-sample-plugin-<version>.zip` file. Alternatively, you can create the plugin zip manually by running the following command from the `service-provider-integrations/dqm-address-cleansing-sample-plugin` directory:
+   ```
+   zip -r dqm-address-cleansing-sample-plugin-<version>.zip plugin-manifest.yaml config
+   ```
 2. Follow the installation instructions provided on [this help page](https://help.sap.com/docs/CC_CEE/ad2d84908ea94e9a83c3a8e7c3e41646/2ae5fff8c8d04a6597a79167b1eac5d3.html).
 
 ## Content Structure
