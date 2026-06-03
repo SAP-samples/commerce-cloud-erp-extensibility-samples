@@ -1,0 +1,15 @@
+# Generic / root-level files
+* @SAP-samples/commerce-cloud-erp-extensibility-samples-admin
+/README.md @SAP-samples/commerce-cloud-erp-extensibility-samples-admin
+/CODEOWNERS @SAP-samples/commerce-cloud-erp-extensibility-samples-admin
+/REUSE.toml @SAP-samples/commerce-cloud-erp-extensibility-samples-admin
+/LICENSES/ @SAP-samples/commerce-cloud-erp-extensibility-samples-admin
+
+# service-provider-integrations common README.md
+/service-provider-integrations/README.md @ddicorpo-sap @niyatichilana @osahtout @eddyouedraogo @kuhris-sap @guilhermerenna @stepan-aleksandrov @RickYoung35 @EricZeng02 @SAP-samples/commerce-cloud-erp-extensibility-samples-team
+
+# DQM Address Cleansing Sample
+/service-provider-integrations/dqm-address-cleansing-sample-plugin/ @ddicorpo-sap @niyatichilana @osahtout @eddyouedraogo @kuhris-sap @guilhermerenna @stepan-aleksandrov @SAP-samples/commerce-cloud-erp-extensibility-samples-team
+
+# Avalara Tax Sample
+/service-provider-integrations/avalara-tax-sample-plugin/ @RickYoung35 @EricZeng02 @SAP-samples/commerce-cloud-erp-extensibility-samples-team

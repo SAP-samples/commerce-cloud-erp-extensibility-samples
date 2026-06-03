@@ -1,0 +1,10 @@
+{
+  "id": "a328bcad-eeb2-4e7c-8440-e309c960f8c0",
+  "name": "Validate Address",
+  "extensionPointId": "sap.ccm.address.validateAddress.validate",
+  "destinationName": "dqm",
+  "type": "SYNCHRONOUS_EXTENSION",
+  "inboundMappingDefinitionId": "123e4567-e89b-12d3-a456-426614174000",
+  "outboundMappingDefinitionId": "550e8400-e29b-41d4-a716-446655440001",
+  "storeIds": ["electronics"]
+}

@@ -1,0 +1,307 @@
+{
+  "id": "123e4567-e89b-12d3-a456-426614174000",
+  "type": "DATA_MAPPER",
+  "name": "Address Validation Inbound",
+  "mappingDefinition": {
+    "sourceSchema": {
+      "attributes": [
+        {
+          "name": "commerceContext",
+          "path": "/commerceContext",
+          "dataType": "OBJECT",
+          "required": false,
+          "multiple": false,
+          "attributes": [
+            {
+              "name": "storeId",
+              "path": "/commerceContext/storeId",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            }
+          ]
+        },
+        {
+          "name": "extensibilityContext",
+          "path": "/extensibilityContext",
+          "dataType": "OBJECT",
+          "required": false,
+          "multiple": false,
+          "attributes": [
+            {
+              "name": "id",
+              "path": "/extensibilityContext/id",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "triggeredAt",
+              "path": "/extensibilityContext/triggeredAt",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "extensionPointId",
+              "path": "/extensibilityContext/extensionPointId",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            }
+          ]
+        },
+        {
+          "name": "data",
+          "path": "/data",
+          "dataType": "OBJECT",
+          "required": false,
+          "multiple": false,
+          "attributes": [
+            {
+              "name": "addr_info_code",
+              "path": "/data/addr_info_code",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "addr_info_code_msg",
+              "path": "/data/addr_info_code_msg",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "addr_sugg_list",
+              "path": "/data/addr_sugg_list",
+              "dataType": "OBJECT",
+              "required": false,
+              "multiple": true,
+              "attributes": [
+                {
+                  "name": "sugg_addr_selection",
+                  "path": "/data/addr_sugg_list/sugg_addr_selection",
+                  "dataType": "STRING",
+                  "required": false,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "sugg_addr_single_address",
+                  "path": "/data/addr_sugg_list/sugg_addr_single_address",
+                  "dataType": "STRING",
+                  "required": false,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "sugg_addr_single_address",
+                  "path": "/data/addr_sugg_list/sugg_addr_type",
+                  "dataType": "STRING",
+                  "required": false,
+                  "multiple": false,
+                  "attributes": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "targetSchema": {
+      "attributes": [
+        {
+          "name": "commerceContext",
+          "path": "/commerceContext",
+          "dataType": "OBJECT",
+          "required": false,
+          "multiple": false,
+          "attributes": [
+            {
+              "name": "storeId",
+              "path": "/commerceContext/storeId",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            }
+          ]
+        },
+        {
+          "name": "extensibilityContext",
+          "path": "/extensibilityContext",
+          "dataType": "OBJECT",
+          "required": false,
+          "multiple": false,
+          "attributes": [
+            {
+              "name": "id",
+              "path": "/extensibilityContext/id",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "triggeredAt",
+              "path": "/extensibilityContext/triggeredAt",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "extensionPointId",
+              "path": "/extensibilityContext/extensionPointId",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            }
+          ]
+        },
+        {
+          "name": "data",
+          "path": "/data",
+          "dataType": "OBJECT",
+          "required": false,
+          "multiple": false,
+          "attributes": [
+            {
+              "name": "operations",
+              "path": "/data/operations",
+              "dataType": "OBJECT",
+              "required": false,
+              "multiple": true,
+              "attributes": [
+                {
+                  "name": "operationId",
+                  "path": "/data/operations/operationId",
+                  "dataType": "STRING",
+                  "required": false,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "data",
+                  "path": "/data/operations/data",
+                  "dataType": "OBJECT",
+                  "required": false,
+                  "multiple": false,
+                  "attributes": [
+                    {
+                      "name": "suggestions",
+                      "path": "/data/operations/data/suggestions",
+                      "dataType": "OBJECT",
+                      "required": false,
+                      "multiple": true,
+                      "attributes": [
+                        {
+                          "name": "id",
+                          "path": "/data/operations/data/suggestions/id",
+                          "dataType": "STRING",
+                          "required": false,
+                          "multiple": false,
+                          "attributes": []
+                        },
+                        {
+                          "name": "singleLineAddress",
+                          "path": "/data/operations/data/suggestions/singleLineAddress",
+                          "dataType": "STRING",
+                          "required": false,
+                          "multiple": false,
+                          "attributes": []
+                        },
+                        {
+                          "name": "address",
+                          "path": "/data/operations/data/suggestions/address",
+                          "dataType": "STRING",
+                          "required": false,
+                          "multiple": false,
+                          "attributes": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "validationErrors",
+                      "path": "/data/operations/data/validationErrors",
+                      "dataType": "OBJECT",
+                      "required": false,
+                      "multiple": true,
+                      "attributes": [
+                        {
+                          "name": "field",
+                          "path": "/data/operations/data/validationErrors/field",
+                          "dataType": "STRING",
+                          "required": false,
+                          "multiple": false,
+                          "attributes": []
+                        },
+                        {
+                          "name": "message",
+                          "path": "/data/operations/data/validationErrors/message",
+                          "dataType": "STRING",
+                          "required": false,
+                          "multiple": false,
+                          "attributes": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "addressValid",
+                      "path": "/data/operations/data/addressValid",
+                      "dataType": "STRING",
+                      "required": true,
+                      "multiple": false,
+                      "attributes": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "schemaTransformations": {
+      "type": "EXPRESSION",
+      "transformations": [
+        {
+          "expressionString": "''",
+          "targetAttributePath": "/data/operations"
+        },
+        {
+          "expressionString": "''",
+          "targetAttributePath": "/data/operations/data"
+        },
+        {
+          "expressionString": "'validate'",
+          "targetAttributePath": "/data/operations/operationId"
+        },
+        {
+          "expressionString": "''",
+          "targetAttributePath": "/data/operations/data/validationErrors"
+        },
+        {
+          "expressionString": "ifThenElse(equal('',/data/addr_info_code),'', ifThenElse(contains('1020|1030|3100',/data/addr_info_code),'COUNTRYCODE',ifThenElse(contains('2000|2050|5040',/data/addr_info_code),'PRIMARYREGIONCODE',ifThenElse(contains('2000|2030|2050|3090|3100|5040',/data/addr_info_code),'TOWN',ifThenElse(contains('2020|2030|2040|2050|2070|3080|3100|3300|5040',/data/addr_info_code),'POSTCODE',ifThenElse(contains('3030|3100|3250|4000',/data/addr_info_code),'HOUSENUMBER',ifThenElse(contains('3100|3200|3220|3250',/data/addr_info_code),'BUILDING',ifThenElse(contains('3000|3010|3020|3050|3060|3070|5050',/data/addr_info_code),'STREET',''))))))))",
+          "targetAttributePath": "/data/operations/data/validationErrors/field"
+        },
+        {
+          "expressionString": "/data/addr_info_code_msg",
+          "targetAttributePath": "/data/operations/data/validationErrors/message"
+        },
+        {
+          "expressionString": "equal('',/data/addr_info_code_msg)",
+          "targetAttributePath": "/data/operations/data/addressValid"
+        }
+      ]
+    }
+  }
+}
