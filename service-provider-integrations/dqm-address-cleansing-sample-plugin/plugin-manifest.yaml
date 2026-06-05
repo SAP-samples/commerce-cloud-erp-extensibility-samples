@@ -26,3 +26,10 @@ components:
   - type: data_mapper
     componentId: 6e8bc430-9c3a-11d9-9669-0800200c9a66
     path: config/data_mappers/address_suggest_outbound.json
+globalDefinitions:
+  - variableName: "storeId"
+    label: "Store Id"
+    type: "string"
+    defaultValue: ""
+    description: null
+    hint: ""

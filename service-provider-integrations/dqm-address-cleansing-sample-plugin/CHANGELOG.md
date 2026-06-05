@@ -11,6 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Adapt to store assignment for sync-extensions
 
+**Note**: Only compatible with SAP Commerce Cloud, cloud ERP edition 2606 and beyond
+
 ## [1.0.0] - 2026-05-15
 
 ### Added
