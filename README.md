@@ -1,6 +1,6 @@
 # SAP Commerce Cloud ERP Extensibility Samples
 
-[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/commerce-cloud-erp-extensibility-samples)](https://api.reuse.software/info/github.com/SAP-samples/commerce-cloud-erp-extensibility-samples)
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/commerce-cloud-erp-extensibility-samples)](https://api.reuse.software/info/github.com/SAP-samples/commerce-cloud-erp-extensibility-samples)dsadsada
 
 ## Description
 
