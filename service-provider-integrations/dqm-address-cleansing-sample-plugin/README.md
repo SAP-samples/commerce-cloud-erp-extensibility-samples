@@ -1,7 +1,7 @@
 # The DQM Microservices Sample Plugin
 
 ## Description
-
+dsadas
 SAP Commerce Cloud, cloud ERP edition exposes extension points for validating addresses with an external provider and for retrieving address suggestions (with support for selecting one suggestion for a given address). These extension points let you integrate with major address-validation service providers or with a custom address validation service of your choice.
 
 The DQM Microservices Sample Plugin demonstrates how to integrate SAP Data Quality Management, Microservices for Location Data (DQM Microservices) address validation into SAP Commerce Cloud, cloud ERP edition. The plugin creates the "Validate Address by an External Provider" and "Retrieve Address Suggestions from an External Provider" extension configurations and provides the required data mappings for these extensions.
