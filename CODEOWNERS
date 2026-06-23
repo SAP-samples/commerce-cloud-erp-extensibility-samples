@@ -1,15 +1,15 @@
 # Generic / root-level files
-* @SAP-samples/commerce-cloud-erp-extensibility-samples-admin
-/README.md @SAP-samples/commerce-cloud-erp-extensibility-samples-admin
-/CODEOWNERS @SAP-samples/commerce-cloud-erp-extensibility-samples-admin
-/REUSE.toml @SAP-samples/commerce-cloud-erp-extensibility-samples-admin
-/LICENSES/ @SAP-samples/commerce-cloud-erp-extensibility-samples-admin
+* @SAP-samples/commerce-cloud-erp-ext-samples-frontliners-admin
+/README.md @SAP-samples/commerce-cloud-erp-ext-samples-frontliners-admin
+/CODEOWNERS @SAP-samples/commerce-cloud-erp-ext-samples-frontliners-admin
+/REUSE.toml @SAP-samples/commerce-cloud-erp-ext-samples-frontliners-admin
+/LICENSES/ @SAP-samples/commerce-cloud-erp-ext-samples-frontliners-admin
 
 # service-provider-integrations common README.md
-/service-provider-integrations/README.md @ddicorpo-sap @niyatichilana @osahtout @eddyouedraogo @kuhris-sap @guilhermerenna @stepan-aleksandrov @RickYoung35 @EricZeng02 @SAP-samples/commerce-cloud-erp-extensibility-samples-team
+/service-provider-integrations/README.md @SAP-samples/commerce-cloud-erp-ext-samples-team-phoenix-chengdu @SAP-samples/commerce-cloud-erp-ext-samples-team-lor @SAP-samples/commerce-cloud-erp-ext-samples-frontliners-admin
 
 # DQM Address Cleansing Sample
-/service-provider-integrations/dqm-address-cleansing-sample-plugin/ @ddicorpo-sap @niyatichilana @osahtout @eddyouedraogo @kuhris-sap @guilhermerenna @stepan-aleksandrov @SAP-samples/commerce-cloud-erp-extensibility-samples-team
+/service-provider-integrations/dqm-address-cleansing-sample-plugin/ @SAP-samples/commerce-cloud-erp-ext-samples-team-lor @SAP-samples/commerce-cloud-erp-ext-samples-frontliners-admin
 
 # Avalara Tax Sample
-/service-provider-integrations/avalara-tax-sample-plugin/ @RickYoung35 @EricZeng02 @SAP-samples/commerce-cloud-erp-extensibility-samples-team
+/service-provider-integrations/avalara-tax-sample-plugin/ @SAP-samples/commerce-cloud-erp-ext-samples-team-phoenix-chengdu @SAP-samples/commerce-cloud-erp-ext-samples-frontliners-admin
