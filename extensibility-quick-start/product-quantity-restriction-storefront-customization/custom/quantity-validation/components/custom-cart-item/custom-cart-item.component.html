@@ -1,0 +1,138 @@
+<!--
+  Copyright (c) 2026 SAP SE or an SAP affiliate company. All rights reserved.
+-->
+<!-- Item Start Outlet -->
+<ng-template [cxOutlet]="CartOutlets.ITEM">
+  @if (item(); as item) {
+    <div [class]="compact() ? 'cx-compact row' : 'row'">
+      <!-- Item Image -->
+      <div class="col-2 cx-image-container">
+        <a
+          [routerLink]="
+            {
+              cxRoute: 'product',
+              params: productUrlParams(),
+            } | cxUrl
+          "
+          tabindex="0"
+        >
+          <cx-media [container]="image()" format="cartIcon" />
+        </a>
+      </div>
+      <!-- Item Information -->
+      <div class="cx-info col-10">
+        <div class="cx-info-container row">
+          <!-- Item Description -->
+          <div [class]="compact() ? '' : 'col-md-3 col-lg-3 col-xl-5'">
+            @if (item.name) {
+              <div class="cx-name">
+                <a
+                  class="cx-link"
+                  [routerLink]="
+                    {
+                      cxRoute: 'product',
+                      params: productUrlParams(),
+                    } | cxUrl
+                  "
+                  ><h3>{{ item.name }}</h3></a
+                >
+              </div>
+            }
+            <div class="cx-code">
+              {{ 'cartItems.id' | cxTranslate }} {{ item.productId }}
+            </div>
+          </div>
+          <!-- Item Price -->
+          @if (item.basePrice) {
+            <div
+              class="cx-price"
+              [class]="compact() ? '' : ' col-md-3 col-lg-3 col-xl-2'"
+            >
+              <div
+                class="cx-label"
+                [class]="
+                  compact() ? '' : ' d-block d-md-none d-lg-none d-xl-none'
+                "
+              >
+                {{ 'cartItems.itemPrice' | cxTranslate }}
+              </div>
+              <div class="cx-value">
+                {{ item.formattedBasePrice }}
+              </div>
+            </div>
+          }
+
+          <!-- Item Quantity -->
+          <div class="cx-quantity" [class]="compact() ? '' : ' col-3'">
+            <div
+              class="cx-label"
+              [class]="
+                compact() ? '' : ' d-block d-md-none d-lg-none d-xl-none'
+              "
+              placement="left"
+              title="{{ 'cartItems.quantityTitle' | cxTranslate }}"
+            >
+              {{ 'cartItems.quantityFull' | cxTranslate }}
+            </div>
+            <div class="cx-value" [class.readonly-value]="readonly()">
+              <!-- Customization: restrict quantity by product id -->
+              <cx-item-counter
+                [control]="quantityControl()"
+                [readonly]="readonly()"
+                [allowZero]="true"
+                appQuantityRestriction
+                [productCode]="item.productId"
+                [viewingCart]="true"
+                (quantityRestrictionReached)="
+                  reachedQuantityRestriction.set($event)
+                "
+              />
+            </div>
+          </div>
+
+          <!-- Customization: quantity validation message -->
+          @let quantityRestriction = reachedQuantityRestriction();
+          @if (quantityRestriction !== undefined) {
+            <app-quantity-validation-message
+              [maxQuantity]="quantityRestriction"
+            />
+          }
+
+          <!-- Total -->
+          @if (item.price.total) {
+            <div
+              class="cx-total"
+              [class]="compact() ? '' : ' col-md-3 col-xl-2'"
+            >
+              <div
+                class="cx-label"
+                [class]="
+                  compact() ? '' : ' d-block d-md-none d-lg-none d-xl-none'
+                "
+              >
+                {{ 'cartItems.total' | cxTranslate }}
+              </div>
+              <div class="cx-value">{{ item.price.formattedTotal }}</div>
+            </div>
+          }
+        </div>
+
+        @if (!readonly()) {
+          <div class="cx-actions col-12">
+            <div class="col-md-3 cx-remove-btn">
+              <button
+                (click)="removeItem()"
+                [cxAtMessage]="'cartItems.itemRemoved' | cxTranslate"
+                [disabled]="quantityControl().disabled"
+                attr.aria-label="{{ 'addToCart.removeFromCart' | cxTranslate }}"
+                class="btn btn-tertiary"
+              >
+                {{ 'common.remove' | cxTranslate }}
+              </button>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  }
+</ng-template>

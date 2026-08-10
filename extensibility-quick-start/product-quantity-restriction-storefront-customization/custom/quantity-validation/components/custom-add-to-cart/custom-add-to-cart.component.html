@@ -1,0 +1,62 @@
+<!--
+  Copyright (c) 2026 SAP SE or an SAP affiliate company. All rights reserved.
+-->
+@if (_productCode()) {
+  <form [formGroup]="addToCartForm" (submit)="addToCart()">
+    @if (_showQuantity()) {
+      <div class="quantity">
+        <label>{{ 'addToCart.quantityFull' | cxTranslate }}</label>
+        <div class="cx-counter-stock">
+          @if (isPurchasable()) {
+            <!-- Customization: restrict quantity by product id -->
+            <cx-item-counter
+              [control]="addToCartForm.controls.quantity"
+              [ariaDescribedById]="'add-to-card-stock-info'"
+              appQuantityRestriction
+              [productCode]="_productCode()"
+              (quantityRestrictionReached)="
+                reachedQuantityRestriction.set($event)
+              "
+            />
+          }
+
+          <span class="info" id="add-to-card-stock-info">
+            {{
+              hasStock()
+                ? ('addToCart.inStock' | cxTranslate)
+                : ('addToCart.outOfStock' | cxTranslate)
+            }}
+          </span>
+        </div>
+        <!-- Customization: quantity validation message -->
+        @let quantityRestriction = reachedQuantityRestriction();
+        @if (quantityRestriction !== undefined) {
+          <app-quantity-validation-message
+            [maxQuantity]="quantityRestriction"
+          />
+        }
+      </div>
+    }
+    @if (isPurchasable()) {
+      <button
+        #addToCartDialogTriggerEl
+        [attr.class]="displayAddToCart()"
+        type="submit"
+        [disabled]="
+          disabled() || quantity() <= 0 || quantity() > maxQuantity()!
+        "
+        [attr.aria-describedby]="_productCode() + '_header'"
+      >
+        @if (addToCartString()) {
+          <span class="repeat-icon">
+            <cx-icon [type]="iconTypes.REPEAT" />
+          </span>
+        }
+
+        <span [attr.class]="addToCartString() ? 'buyItAgainLink' : ''">
+          {{ displayText() }}
+        </span>
+      </button>
+    }
+  </form>
+}

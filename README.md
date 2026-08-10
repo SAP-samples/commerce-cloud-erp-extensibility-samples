@@ -17,11 +17,13 @@ Use the table below to find the sample that best fits your needs.
 
 | Business Use Case | Description | Architectural Pattern | Location |
 | :--- | :--- | :--- | :--- |
+| **Product Quantity Restriction** | Restrict the quantity of certain products in a shopping cart using custom serverless validation logic and storefront customization. | Extensibility Quick Start | [`./extensibility-quick-start`](./extensibility-quick-start) |
 | **Real-time Tax Simulation** | Integrate with Avalara to simulate sales tax at checkout. | Service Provider Integration | [`./service-provider-integrations/avalara-tax-sample-plugin`](./service-provider-integrations/avalara-tax-sample-plugin) |
 | **Address Validation** | Validate and cleanse customer addresses using DQM microservices. | Service Provider Integration | [`./service-provider-integrations/dqm-address-cleansing-sample-plugin`](./service-provider-integrations/dqm-address-cleansing-sample-plugin) |
 
 ## Content Structure
 
+- **extensibility-quick-start/**: A hands-on tutorial for creating your first extension end-to-end, including a commerce serverless function, synchronous extensions, storefront customization, observability, and plugin packaging.
 - **service-provider-integrations/**: Contains samples that integrate with existing third-party service providers. These customizations are primarily focused on configuration and data mapping.
 
 ## Download and Installation

@@ -1,0 +1,21 @@
+<!--
+  Copyright (c) 2026 SAP SE or an SAP affiliate company. All rights reserved.
+-->
+@if (cart(); as cart) {
+  @if (!isCartEmpty()) {
+    <div class="cart-details-wrapper">
+      <!-- Customization: use CustomCartItemListComponent instead of CartItemListComponent -->
+      <app-custom-cart-item-list
+        [items]="entries()"
+        [cartIsLoading]="isCartLoading()"
+      />
+    </div>
+  } @else {
+    @if (paragraphComponentData(); as paragraphComponentData) {
+      <p
+        [innerHTML]="paragraphComponentData.content"
+        class="cx-empty-cart-info"
+      ></p>
+    }
+  }
+}

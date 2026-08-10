@@ -1,0 +1,12 @@
+/*
+ * Copyright (c) 2026 SAP SE or an SAP affiliate company. All rights reserved.
+ */
+
+tr.cx-item-list-row-error {
+  border-top: none;
+}
+
+tr.cx-item-list-row-error td {
+  padding-top: 0rem;
+  padding-bottom: 1rem;
+}

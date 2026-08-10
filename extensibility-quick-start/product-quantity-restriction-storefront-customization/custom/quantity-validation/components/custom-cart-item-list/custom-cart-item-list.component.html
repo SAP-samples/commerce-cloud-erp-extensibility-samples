@@ -1,0 +1,60 @@
+<!--
+  Copyright (c) 2026 SAP SE or an SAP affiliate company. All rights reserved.
+-->
+<table role="table">
+  <caption class="cx-visually-hidden">
+    {{
+      'cartItems.caption' | cxTranslate
+    }}
+  </caption>
+  @if (_hasHeader()) {
+    <thead>
+      <tr role="row" class="cx-item-list-header">
+        <th role="columnheader" scope="col" class="cx-item-list-desc">
+          {{ 'cartItems.item' | cxTranslate }}
+        </th>
+
+        <th role="columnheader" scope="col" class="cx-item-list-qty">
+          {{ 'cartItems.quantityFull' | cxTranslate }}
+        </th>
+
+        <th role="columnheader" scope="col" class="cx-item-list-total">
+          {{ 'cartItems.total' | cxTranslate }}
+        </th>
+
+        @if (!_readonly() || _options().displayAddToCart) {
+          <th role="columnheader" scope="col" class="cx-item-list-actions">
+            {{ 'cartItems.actions' | cxTranslate }}
+          </th>
+        }
+      </tr>
+    </thead>
+  }
+  <tbody class="cx-item-list-items">
+    @for (item of _items(); track item.id; let i = $index) {
+      <!-- Customization: use CustomCartItemListRowComponent instead of CartItemListRowComponent -->
+      <tr
+        app-custom-cart-item-list-row
+        role="row"
+        class="cx-item-list-row"
+        [item]="item"
+        [quantityControl]="getQuantityControl(item)"
+        [readonly]="_readonly()"
+        [options]="_options()"
+        [attr.aria-rowindex]="i + 1"
+        [class.is-changed]="getQuantityControl(item).disabled"
+      ></tr>
+      <!-- Customization: quantity validation message -->
+      @let quantityRestriction = reachedQuantityRestrictions()[item.productId];
+      @if (quantityRestriction !== undefined) {
+        <tr role="row" class="cx-item-list-row-error">
+          <td colspan="4" role="cell">
+            <app-quantity-validation-message
+              [maxQuantity]="quantityRestriction"
+            />
+          </td>
+        </tr>
+      }
+    }
+  </tbody>
+</table>

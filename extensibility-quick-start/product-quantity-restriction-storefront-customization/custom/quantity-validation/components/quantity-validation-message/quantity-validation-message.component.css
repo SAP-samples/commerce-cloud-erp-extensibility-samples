@@ -1,0 +1,46 @@
+/*
+ * Copyright (c) 2026 SAP SE or an SAP affiliate company. All rights reserved.
+ */
+
+.quantity-validation-error {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.4375rem 1rem 0.4375rem 0.5rem;
+  background-color: #d4e9f7;
+  border-left: 0.1875rem solid #0a6ed1;
+  border-radius: 0.25rem;
+  color: #32363a;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  margin-top: 0.5rem;
+  max-width: 100%;
+  animation: fadeIn 0.2s ease-in;
+
+  .error-icon {
+    flex-shrink: 0;
+    color: #0a6ed1;
+    margin-top: 0.125rem;
+
+    svg {
+      display: block;
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+
+  .error-message {
+    flex: 1;
+    text-align: left;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
