@@ -26,11 +26,6 @@ Wire the Before Cart Creation and Before Cart Operations extension points to the
 
       ```json
       {
-        "extensibilityContext": {
-          "extensionPointId": "sap.ccm.cart.cartCreation.beforeCartCreation",
-          "triggeredAt": "2025-02-17T15:00:00.000Z",
-          "id": "67cd0f86-50af-461a-9c0e-12e04d52ebe0"
-        },
         "commerceContext": {
           "storeId": "{storeId}"
         },
@@ -80,11 +75,6 @@ Wire the Before Cart Creation and Before Cart Operations extension points to the
 
       ```json
       {
-        "extensibilityContext": {
-          "extensionPointId": "sap.ccm.cart.cartOperations.beforePerformCartOperations",
-          "triggeredAt": "2025-02-17T15:02:30.000Z",
-          "id": "7d4b1e0a-92c6-4f83-b1a7-5c8e0f2d3a91"
-        },
         "commerceContext": {
           "storeId": "{storeId}"
         },

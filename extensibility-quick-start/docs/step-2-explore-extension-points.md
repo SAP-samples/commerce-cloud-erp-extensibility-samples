@@ -42,11 +42,6 @@ In the following procedure, you will find these extension points and review thei
       Example request:
       ```json
       {
-        "extensibilityContext": {
-          "extensionPointId": "sap.ccm.cart.cartCreation.beforeCartCreation",
-          "triggeredAt": "2025-02-17T15:00:00.000Z",
-          "id": "a1f0c8d2-3b7e-4c19-9d5a-2e64f0b8c7d1"
-        },
         "commerceContext": {
           "storeId": "sample-b2b-store"
         },
@@ -89,7 +84,7 @@ In the following procedure, you will find these extension points and review thei
 
       The `details` array provides structured data that the storefront can parse to display a user-friendly message to the shopper.
 
-   > **Tip:** To learn more about how extension points handle requests and responses, see [Request and Response Handling](https://help.sap.com/docs/CC_CEE/ad2d84908ea94e9a83c3a8e7c3e41646/cd35ecbbcfca40d6beeb95c925a1bd74.html).
+   > **Tip:** To learn more about how extension points handle requests and responses, see [Request and Response Handling](https://help.sap.com/docs/CC_CEE/ad2d84908ea94e9a83c3a8e7c3e41646/cd35ecbbcifca40d6beeb95c925a1bd74.html).
 
 3. Explore the **Before Cart Operations** extension point:
 
@@ -104,11 +99,6 @@ In the following procedure, you will find these extension points and review thei
       Example request with `updateCartEntry`:
       ```json
       {
-        "extensibilityContext": {
-          "extensionPointId": "sap.ccm.cart.cartOperations.beforePerformCartOperations",
-          "triggeredAt": "2025-02-17T15:02:30.000Z",
-          "id": "b2e9d7a4-6c81-4f23-8a05-1d73e9c4b6f2"
-        },
         "commerceContext": {
           "storeId": "sample-b2b-store"
         },
