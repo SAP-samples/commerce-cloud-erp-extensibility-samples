@@ -1,0 +1,17 @@
+# Node.js (extensibility-quick-start serverless function)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test coverage (Jest)
+coverage/
+
+# macOS
+.DS_Store
+
+# Editor / IDE
+.idea/
+.vscode/
+
+# Note: plugin *.zip deliverables are intentionally committed and must NOT be ignored.
