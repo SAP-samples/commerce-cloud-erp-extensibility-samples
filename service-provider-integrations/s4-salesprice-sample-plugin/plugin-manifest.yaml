@@ -1,0 +1,26 @@
+---
+name: S4 Sales Price sample Plugin
+version: 1.0.0
+sourceAccountId: "SAP"
+sourceTenantId: "SAP_CCS"
+description: Integrates with SAP S/4HANA to retrieve real-time sales price information for SAP Commerce Cloud, cloud ERP edition.
+author: SAP Commerce Cloud, cloud ERP edition
+pluginId: 9216d291-34bc-438a-8e7a-4e365f359b77
+license: Apache-2.0
+repository: https://github.com/SAP-samples/commerce-cloud-erp-extensibility-samples/tree/main/service-provider-integrations/s4-salesprice-sample-plugin
+components:
+  - type: synchronous_extension
+    componentId: f2f507d6-7397-4ea3-bae8-26ed4c0b0e45
+    path: "config/synchronous_extensions/s4_retrieve_sales_price.json"
+  - type: "function"
+    componentId: "b91466a0-5131-4829-83e1-e52ba3042f2f"
+    path: "config/functions/s4SalesPriceOutbound.json"
+  - type: "function"
+    componentId: "cc28dc08-5095-49d5-9442-2d1ecde27abe"
+    path: "config/functions/s4SalesPriceInbound.json"
+  - type: "data_mapper"
+    componentId: "2bdcb641-d256-4a7b-be87-264d03114087"
+    path: "config/data_mappers/outbound.json"
+  - type: "data_mapper"
+    componentId: "1029b8b8-3ed0-4616-80ab-940884d5e2f8"
+    path: "config/data_mappers/inbound.json"
