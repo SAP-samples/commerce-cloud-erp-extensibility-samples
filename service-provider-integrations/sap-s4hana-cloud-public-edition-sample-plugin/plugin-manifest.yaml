@@ -1,8 +1,8 @@
-name: SAP S/4HANA Cloud Public Edition Plugin
+name: SAP S4HANA Cloud Public Edition Plugin
 version: 1.0.0
 sourceAccountId: "SAP"
 sourceTenantId: "SAP_CCS"
-description: SAP S/4HANA Cloud Public Edition Plugin
+description: SAP S4HANA Cloud Public Edition Plugin
 author: SAP Commerce Cloud, cloud ERP edition
 pluginId: a8adcc4c-7656-4874-b5f8-da89ed50144d
 license: Apache-2.0
