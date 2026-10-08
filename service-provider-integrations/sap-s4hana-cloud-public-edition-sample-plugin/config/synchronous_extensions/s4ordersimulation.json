@@ -1,0 +1,9 @@
+{
+  "id": "5613dc2b-c748-4979-9623-63d9a9b86371",
+  "name": "S4OrderSimulation",
+  "extensionPointId": "sap.ccm.calculation.performCalculation.performCalculation",
+  "destinationName": "s4ordersimulation",
+  "type": "SYNCHRONOUS_EXTENSION",
+  "inboundMappingDefinitionId": "1be45619-aeb1-47b5-b0e6-a7acd747871a",
+  "outboundMappingDefinitionId": "8a13b4ff-7c81-4614-82fd-26dd65937c15"
+}

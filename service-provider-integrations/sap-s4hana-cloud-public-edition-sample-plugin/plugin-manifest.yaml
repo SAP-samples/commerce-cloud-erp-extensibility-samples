@@ -1,0 +1,25 @@
+name: SAP S4HANA Cloud Public Edition Plugin
+version: 1.0.0
+sourceAccountId: "SAP"
+sourceTenantId: "SAP_CCS"
+description: SAP S4HANA Cloud Public Edition Plugin
+author: SAP Commerce Cloud, cloud ERP edition
+pluginId: a8adcc4c-7656-4874-b5f8-da89ed50144d
+license: Apache-2.0
+repository: https://github.com/SAP-samples/commerce-cloud-erp-extensibility-samples/tree/main/service-provider-integrations/sap-s4hana-cloud-public-edition-sample-plugin
+components:
+  - type: synchronous_extension
+    componentId: 5613dc2b-c748-4979-9623-63d9a9b86371
+    path: "config/synchronous_extensions/s4ordersimulation.json"
+  - type: "function"
+    componentId: "d7ce55ea-836b-45c3-bb69-3eeb8291fdcf"
+    path: "config/functions/s4ordersimulationOutboundFunction.json"
+  - type: "function"
+    componentId: "169853d9-4540-48d8-9759-3d85a8c13bf0"
+    path: "config/functions/s4ordersimulationInboundFunction.json"
+  - type: "data_mapper"
+    componentId: "8a13b4ff-7c81-4614-82fd-26dd65937c15"
+    path: "config/data_mappers/s4ordersimulation_outbound.json"
+  - type: "data_mapper"
+    componentId: "1be45619-aeb1-47b5-b0e6-a7acd747871a"
+    path: "config/data_mappers/s4ordersimulation_inbound.json"

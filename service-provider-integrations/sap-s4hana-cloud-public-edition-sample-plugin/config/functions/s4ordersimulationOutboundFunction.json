@@ -1,0 +1,12 @@
+{
+  "id": "d7ce55ea-836b-45c3-bb69-3eeb8291fdcf",
+  "type": "FUNCTION",
+  "name": "s4ordersimulationOutboundFunction",
+  "binaryResources": [
+    {
+      "id": "s4ordersimulationoutbound",
+      "type": "ZIP",
+      "size": 1415
+    }
+  ]
+}

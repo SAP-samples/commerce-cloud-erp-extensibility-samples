@@ -20,6 +20,7 @@ Use the table below to find the sample that best fits your needs.
 | **Product Quantity Restriction** | Restrict the quantity of certain products in a shopping cart using custom serverless validation logic and storefront customization. | Extensibility Quick Start | [`./extensibility-quick-start`](./extensibility-quick-start) |
 | **Real-time Tax Simulation** | Integrate with Avalara to simulate sales tax at checkout. | Service Provider Integration | [`./service-provider-integrations/avalara-tax-sample-plugin`](./service-provider-integrations/avalara-tax-sample-plugin) |
 | **Address Validation** | Validate and cleanse customer addresses using DQM microservices. | Service Provider Integration | [`./service-provider-integrations/dqm-address-cleansing-sample-plugin`](./service-provider-integrations/dqm-address-cleansing-sample-plugin) |
+| **SAP S/4HANA Cloud Public Edition** | Integrate with SAP S/4HANA to simulate sales order pricing, discounts, taxes, and freight charges in the cart and during checkout using the Sales Order Simulation API. | Service Provider Integration | [`./service-provider-integrations/sap-s4hana-cloud-public-edition-sample-plugin`](./service-provider-integrations/sap-s4hana-cloud-public-edition-sample-plugin) |
 
 ## Content Structure
 
