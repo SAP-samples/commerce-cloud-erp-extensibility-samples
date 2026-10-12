@@ -4,7 +4,7 @@
 
 import { inject, Injectable } from '@angular/core';
 import { HandleErrorOptions } from '@vivaldi/trpc/client';
-import { UpstreamBadRequestErrorHandler } from '../../upstream-bad-request-error-handler';
+import { UpstreamBadRequestErrorHandler } from '@spartacus-bff/core';
 import { QuantityRestrictionService } from '../services/quantity-restriction.service';
 
 type UpstreamErrorData = {
