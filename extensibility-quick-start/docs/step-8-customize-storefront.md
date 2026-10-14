@@ -51,21 +51,18 @@ On the storefront side:
 
 2. In your storefront project, open `apps/storefrontapp/src/app/app.module.ts` and make the following changes:
 
-   a. Replace the default error handler registration with the quantity-aware handler.
+   a. Register the quantity-aware handler so it overrides the default upstream error handler.
 
-      Replace:
+      The storefront's default error handlers are registered automatically by `provideTrpcErrorHandlers()`, including the `UpstreamBadRequestErrorHandler` that handles upstream `400` errors. To customize this behavior, register `QuantityRestrictionErrorHandler` via the `HTTP_ERROR_HANDLER` token. Because it is registered after `provideTrpcErrorHandlers()`, it takes precedence over the default handler by last-registration order.
+
+      Add the import:
       ```typescript
-      provideErrorHandlers(),
-      {
-        provide: HTTP_ERROR_HANDLER,
-        useClass: UpstreamBadRequestErrorHandler,
-        multi: true,
-      },
+      import { HTTP_ERROR_HANDLER } from '@vivaldi/angular/client';
       ```
 
-      With:
+      Then, in the `providers` array, add the handler registration immediately after `provideTrpcErrorHandlers()`:
       ```typescript
-      provideErrorHandlers(),
+      provideTrpcErrorHandlers(),
       {
         provide: HTTP_ERROR_HANDLER,
         useClass: QuantityRestrictionErrorHandler,
