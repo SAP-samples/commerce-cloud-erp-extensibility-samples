@@ -197,39 +197,6 @@
                   "multiple": false,
                   "attributes": [
                     {
-                      "name": "suggestions",
-                      "path": "/data/operations/data/suggestions",
-                      "dataType": "OBJECT",
-                      "required": false,
-                      "multiple": true,
-                      "attributes": [
-                        {
-                          "name": "id",
-                          "path": "/data/operations/data/suggestions/id",
-                          "dataType": "STRING",
-                          "required": false,
-                          "multiple": false,
-                          "attributes": []
-                        },
-                        {
-                          "name": "singleLineAddress",
-                          "path": "/data/operations/data/suggestions/singleLineAddress",
-                          "dataType": "STRING",
-                          "required": false,
-                          "multiple": false,
-                          "attributes": []
-                        },
-                        {
-                          "name": "address",
-                          "path": "/data/operations/data/suggestions/address",
-                          "dataType": "STRING",
-                          "required": false,
-                          "multiple": false,
-                          "attributes": []
-                        }
-                      ]
-                    },
-                    {
                       "name": "validationErrors",
                       "path": "/data/operations/data/validationErrors",
                       "dataType": "OBJECT",
