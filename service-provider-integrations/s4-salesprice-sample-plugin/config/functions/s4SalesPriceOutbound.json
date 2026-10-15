@@ -1,0 +1,14 @@
+{
+  "name": "s4SalesPriceOutbound",
+  "id": "b91466a0-5131-4829-83e1-e52ba3042f2f",
+  "type": "FUNCTION",
+  "binaryResources": [
+    {
+      "id": "spoutbound",
+      "type": "ZIP",
+      "size": 645
+    }
+  ],
+  "numberOfFiles": 1,
+  "size": 1028
+}

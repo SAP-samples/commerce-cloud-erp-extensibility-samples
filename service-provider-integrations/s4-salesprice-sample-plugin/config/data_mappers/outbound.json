@@ -1,0 +1,364 @@
+{
+  "id": "2bdcb641-d256-4a7b-be87-264d03114087",
+  "type": "DATA_MAPPER",
+  "name": "s4SalesPriceOutbound",
+  "mappingDefinition": {
+    "sourceSchema": {
+      "attributes": [
+        {
+          "name": "commerceContext",
+          "path": "/commerceContext",
+          "dataType": "OBJECT",
+          "required": false,
+          "multiple": false,
+          "attributes": [
+            {
+              "name": "storeId",
+              "path": "/commerceContext/storeId",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            }
+          ]
+        },
+        {
+          "name": "extensibilityContext",
+          "path": "/extensibilityContext",
+          "dataType": "OBJECT",
+          "required": false,
+          "multiple": false,
+          "attributes": [
+            {
+              "name": "id",
+              "path": "/extensibilityContext/id",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "triggeredAt",
+              "path": "/extensibilityContext/triggeredAt",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "extensionPointId",
+              "path": "/extensibilityContext/extensionPointId",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            }
+          ]
+        },
+        {
+          "name": "data",
+          "path": "/data",
+          "dataType": "OBJECT",
+          "required": true,
+          "multiple": false,
+          "attributes": [
+            {
+              "name": "salesArea",
+              "path": "/data/salesArea",
+              "dataType": "OBJECT",
+              "required": true,
+              "multiple": false,
+              "attributes": [
+                {
+                  "name": "salesOrganization",
+                  "path": "/data/salesArea/salesOrganization",
+                  "dataType": "STRING",
+                  "required": true,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "distributionChannel",
+                  "path": "/data/salesArea/distributionChannel",
+                  "dataType": "STRING",
+                  "required": true,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "division",
+                  "path": "/data/salesArea/division",
+                  "dataType": "STRING",
+                  "required": true,
+                  "multiple": false,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "currency",
+              "path": "/data/currency",
+              "dataType": "OBJECT",
+              "required": true,
+              "multiple": false,
+              "attributes": [
+                {
+                  "name": "code",
+                  "path": "/data/currency/code",
+                  "dataType": "STRING",
+                  "required": true,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "sapCode",
+                  "path": "/data/currency/sapCode",
+                  "dataType": "STRING",
+                  "required": false,
+                  "multiple": false,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "products",
+              "path": "/data/products",
+              "dataType": "OBJECT",
+              "required": true,
+              "multiple": true,
+              "attributes": [
+                {
+                  "name": "id",
+                  "path": "/data/products/id",
+                  "dataType": "STRING",
+                  "required": true,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "salesMeasureUnit",
+                  "path": "/data/products/salesMeasureUnit",
+                  "dataType": "OBJECT",
+                  "required": true,
+                  "multiple": false,
+                  "attributes": [
+                    {
+                      "name": "code",
+                      "path": "/data/products/salesMeasureUnit/code",
+                      "dataType": "STRING",
+                      "required": true,
+                      "multiple": false,
+                      "attributes": []
+                    },
+                    {
+                      "name": "isoCode",
+                      "path": "/data/products/salesMeasureUnit/isoCode",
+                      "dataType": "STRING",
+                      "required": false,
+                      "multiple": false,
+                      "attributes": []
+                    }
+                  ]
+                },
+                {
+                  "name": "quantity",
+                  "path": "/data/products/quantity",
+                  "dataType": "NUMBER",
+                  "required": true,
+                  "multiple": false,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "soldToParty",
+              "path": "/data/soldToParty",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "pricingAt",
+              "path": "/data/pricingAt",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "includeScalePrices",
+              "path": "/data/includeScalePrices",
+              "dataType": "BOOLEAN",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            }
+          ]
+        }
+      ]
+    },
+    "targetSchema": {
+      "attributes": [
+        {
+          "name": "SalesOrganization",
+          "path": "/SalesOrganization",
+          "dataType": "STRING",
+          "required": true,
+          "multiple": false,
+          "attributes": []
+        },
+        {
+          "name": "DistributionChannel",
+          "path": "/DistributionChannel",
+          "dataType": "STRING",
+          "required": true,
+          "multiple": false,
+          "attributes": []
+        },
+        {
+          "name": "Division",
+          "path": "/Division",
+          "dataType": "STRING",
+          "required": true,
+          "multiple": false,
+          "attributes": []
+        },
+        {
+          "name": "TransactionCurrency",
+          "path": "/TransactionCurrency",
+          "dataType": "STRING",
+          "required": false,
+          "multiple": false,
+          "attributes": []
+        },
+        {
+          "name": "LanguageISOCode",
+          "path": "/LanguageISOCode",
+          "dataType": "STRING",
+          "required": false,
+          "multiple": false,
+          "attributes": []
+        },
+        {
+          "name": "SalesDocumentType",
+          "path": "/SalesDocumentType",
+          "dataType": "STRING",
+          "required": false,
+          "multiple": false,
+          "attributes": []
+        },
+        {
+          "name": "SalesDocumentItemCategory",
+          "path": "/SalesDocumentItemCategory",
+          "dataType": "STRING",
+          "required": false,
+          "multiple": false,
+          "attributes": []
+        },
+        {
+          "name": "BillingDocumentType",
+          "path": "/BillingDocumentType",
+          "dataType": "STRING",
+          "required": false,
+          "multiple": false,
+          "attributes": []
+        },
+        {
+          "name": "SalesPriceRetrieveUseCase",
+          "path": "/SalesPriceRetrieveUseCase",
+          "dataType": "STRING",
+          "required": false,
+          "multiple": false,
+          "attributes": []
+        },
+        {
+          "name": "PriceElementsAreRequested",
+          "path": "/PriceElementsAreRequested",
+          "dataType": "BOOLEAN",
+          "required": false,
+          "multiple": false,
+          "attributes": []
+        },
+        {
+          "name": "PricingDate",
+          "path": "/PricingDate",
+          "dataType": "STRING",
+          "required": false,
+          "multiple": false,
+          "attributes": []
+        },
+        {
+          "name": "_Product",
+          "path": "/_Product",
+          "dataType": "OBJECT",
+          "required": false,
+          "multiple": true,
+          "attributes": [
+            {
+              "name": "Product",
+              "path": "/_Product/Product",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "ProductUsedByCustomer",
+              "path": "/_Product/ProductUsedByCustomer",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "RequestedQuantity",
+              "path": "/_Product/RequestedQuantity",
+              "dataType": "NUMBER",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "RequestedQuantityISOUnit",
+              "path": "/_Product/RequestedQuantityISOUnit",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "RequestedQuantitySAPUnit",
+              "path": "/_Product/RequestedQuantitySAPUnit",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            }
+          ]
+        },
+        {
+          "name": "_SoldToParty",
+          "path": "/_SoldToParty",
+          "dataType": "OBJECT",
+          "required": false,
+          "multiple": true,
+          "attributes": [
+            {
+              "name": "SoldToParty",
+              "path": "/_SoldToParty/SoldToParty",
+              "dataType": "STRING",
+              "required": true,
+              "multiple": false,
+              "attributes": []
+            }
+          ]
+        }
+      ]
+    },
+    "schemaTransformations": {
+      "type": "FUNCTION",
+      "functionId": "b91466a0-5131-4829-83e1-e52ba3042f2f"
+    }
+  }
+}
