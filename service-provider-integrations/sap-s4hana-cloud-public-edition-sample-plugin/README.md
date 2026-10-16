@@ -4,9 +4,9 @@
 
 SAP Commerce Cloud, cloud ERP edition exposes an extension point for price calculation with an external provider. This extension point lets you integrate with external calculation service providers or with a custom calculation service of your choice.
 
-The SAP S/4HANA Cloud Public Edition Sample Plugin demonstrates how to integrate SAP S/4HANA with the calculation extension in SAP Commerce Cloud, cloud ERP edition. The plugin creates the "Simulate Sales Order by an External Provider" extension configuration and provides the required data mappings for this extension. It uses the SAP S/4HANA Sales Order Simulation API (`POST /SalesOrder`) to simulate sales order pricing, discounts, taxes, and freight charges in the cart and during checkout.
+The SAP S/4HANA Cloud Public Edition Sample Plugin demonstrates how to integrate SAP S/4HANA Cloud Public Edition with the calculation extension in SAP Commerce Cloud, cloud ERP edition. The plugin creates the "Simulate Sales Order by an External Provider" extension configuration and provides the required data mappings for this extension. It uses the SAP S/4HANA Cloud Public Edition Sales Order Simulation API (`POST /SalesOrder`) to simulate sales order pricing, discounts, taxes, and freight charges in the cart and during checkout.
 
-For detailed guidance on integrating SAP Commerce Cloud, cloud ERP edition with calculation service providers, refer to [this page](https://help.sap.com/docs/CC_CEE). To learn more about the SAP S/4HANA Cloud Public Edition Sample Plugin, visit [this documentation](https://help.sap.com/docs/CC_CEE).
+For detailed guidance on integrating SAP Commerce Cloud, cloud ERP edition with calculation service providers, refer to [this page](https://help.sap.com/docs/CC_CEE/ad2d84908ea94e9a83c3a8e7c3e41646/e982613a3a4147cc8e3bedc4df10a249.html). To learn more about the SAP S/4HANA Cloud Public Edition Sample Plugin, visit [this documentation](https://help.sap.com/docs/CC_CEE/ad2d84908ea94e9a83c3a8e7c3e41646/c1090a4d762c4f79a34fb9400cdd3891.html).
 
 ## Requirements
 
@@ -28,7 +28,7 @@ For detailed guidance on integrating SAP Commerce Cloud, cloud ERP edition with 
    ```bash
    zip -r sap-s4hana-cloud-public-edition-sample-plugin-<version>.zip plugin-manifest.yaml config
    ```
-2. Follow the installation instructions provided on [this help page](https://help.sap.com/docs/CC_CEE).
+2. Follow the installation instructions provided on [this help page](https://help.sap.com/docs/CC_CEE/ad2d84908ea94e9a83c3a8e7c3e41646/c1090a4d762c4f79a34fb9400cdd3891.html).
 
 ## Content Structure
 
