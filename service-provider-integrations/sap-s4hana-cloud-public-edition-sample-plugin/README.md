@@ -2,9 +2,9 @@
 
 ## Description
 
-SAP Commerce Cloud, cloud ERP edition exposes an extension point for price calculation with an external provider. This extension point lets you integrate with external calculation service providers or with a custom calculation service of your choice.
+SAP Commerce Cloud, cloud ERP edition exposes an extension point for Cart and Checkout Calculation with an external provider. This extension point lets you add custom business logic to the Cart and Checkout APIs to perform the entire calculation with an external service provider to, for example, apply custom prices, taxes, discounts, and delivery costs.
 
-The SAP S/4HANA Cloud Public Edition Sample Plugin demonstrates how to integrate SAP S/4HANA Cloud Public Edition with the calculation extension in SAP Commerce Cloud, cloud ERP edition. The plugin creates the "Simulate Sales Order by an External Provider" extension configuration and provides the required data mappings for this extension. It uses the Sales Order Simulation API to simulate sales order pricing, discounts, taxes, and freight charges in the cart and during checkout.
+The SAP S/4HANA Cloud Public Edition Sample Plugin demonstrates how to integrate SAP S/4HANA Cloud Public Edition with the performCalculation extension point in SAP Commerce Cloud, cloud ERP edition. The plugin creates the "Perform Calculation by External Provider" extension configuration and provides the required data mappings for this extension. It uses the Sales Order Simulation API to simulate sales order pricing, discounts, taxes, and freight charges in the cart and during checkout.
 
 For detailed guidance on integrating SAP Commerce Cloud, cloud ERP edition with calculation service providers, refer to [this page](https://help.sap.com/docs/CC_CEE/ad2d84908ea94e9a83c3a8e7c3e41646/e982613a3a4147cc8e3bedc4df10a249.html). To learn more about the SAP S/4HANA Cloud Public Edition Sample Plugin, visit [this documentation](https://help.sap.com/docs/CC_CEE/ad2d84908ea94e9a83c3a8e7c3e41646/c1090a4d762c4f79a34fb9400cdd3891.html).
 
