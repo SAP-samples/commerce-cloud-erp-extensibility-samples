@@ -13,3 +13,6 @@
 
 # Avalara Tax Sample
 /service-provider-integrations/avalara-tax-sample-plugin/ @SAP-samples/commerce-cloud-erp-ext-samples-team-phoenix-chengdu @SAP-samples/commerce-cloud-erp-ext-samples-frontliners-admin
+
+# SAP S/4HANA Cloud Public Edition Sample
+/service-provider-integrations/sap-s4hana-cloud-public-edition-sample-plugin/ @SAP-samples/commerce-cloud-erp-ext-samples-team-supernova @SAP-samples/commerce-cloud-erp-ext-samples-frontliners-admin
