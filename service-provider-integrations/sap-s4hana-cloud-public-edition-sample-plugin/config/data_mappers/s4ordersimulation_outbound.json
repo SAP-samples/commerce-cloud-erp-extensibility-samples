@@ -1,0 +1,776 @@
+{
+  "id": "8a13b4ff-7c81-4614-82fd-26dd65937c15",
+  "type": "DATA_MAPPER",
+  "name": "s4ordersimulationOutboundMapper",
+  "mappingDefinition": {
+    "sourceSchema": {
+      "attributes": [
+        {
+          "name": "data",
+          "path": "/data",
+          "dataType": "OBJECT",
+          "required": true,
+          "multiple": false,
+          "attributes": [
+            {
+              "name": "currency",
+              "path": "/data/currency",
+              "dataType": "OBJECT",
+              "required": true,
+              "multiple": false,
+              "attributes": [
+                {
+                  "name": "code",
+                  "path": "/data/currency/code",
+                  "dataType": "STRING",
+                  "required": true,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "sapCode",
+                  "path": "/data/currency/sapCode",
+                  "dataType": "STRING",
+                  "required": false,
+                  "multiple": false,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "net",
+              "path": "/data/net",
+              "dataType": "BOOLEAN",
+              "required": true,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "locale",
+              "path": "/data/locale",
+              "dataType": "STRING",
+              "required": true,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "pricingAt",
+              "path": "/data/pricingAt",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "customer",
+              "path": "/data/customer",
+              "dataType": "OBJECT",
+              "required": false,
+              "multiple": false,
+              "attributes": [
+                {
+                  "name": "id",
+                  "path": "/data/customer/id",
+                  "dataType": "STRING",
+                  "required": true,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "organizationId",
+                  "path": "/data/customer/organizationId",
+                  "dataType": "STRING",
+                  "required": false,
+                  "multiple": false,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "salesArea",
+              "path": "/data/salesArea",
+              "dataType": "OBJECT",
+              "required": true,
+              "multiple": false,
+              "attributes": [
+                {
+                  "name": "salesOrganization",
+                  "path": "/data/salesArea/salesOrganization",
+                  "dataType": "STRING",
+                  "required": true,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "distributionChannel",
+                  "path": "/data/salesArea/distributionChannel",
+                  "dataType": "STRING",
+                  "required": true,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "division",
+                  "path": "/data/salesArea/division",
+                  "dataType": "STRING",
+                  "required": true,
+                  "multiple": false,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "salesPartners",
+              "path": "/data/salesPartners",
+              "dataType": "OBJECT",
+              "required": false,
+              "multiple": true,
+              "attributes": [
+                {
+                  "name": "functionCode",
+                  "path": "/data/salesPartners/functionCode",
+                  "dataType": "STRING",
+                  "required": true,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "customerNumber",
+                  "path": "/data/salesPartners/customerNumber",
+                  "dataType": "STRING",
+                  "required": true,
+                  "multiple": false,
+                  "attributes": []
+                }
+              ]
+            },
+            {
+              "name": "entries",
+              "path": "/data/entries",
+              "dataType": "OBJECT",
+              "required": true,
+              "multiple": true,
+              "attributes": [
+                {
+                  "name": "id",
+                  "path": "/data/entries/id",
+                  "dataType": "STRING",
+                  "required": true,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "productId",
+                  "path": "/data/entries/productId",
+                  "dataType": "STRING",
+                  "required": true,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "quantity",
+                  "path": "/data/entries/quantity",
+                  "dataType": "NUMBER",
+                  "required": true,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "salesMeasureUnit",
+                  "path": "/data/entries/salesMeasureUnit",
+                  "dataType": "OBJECT",
+                  "required": true,
+                  "multiple": false,
+                  "attributes": [
+                    {
+                      "name": "code",
+                      "path": "/data/entries/salesMeasureUnit/code",
+                      "dataType": "STRING",
+                      "required": true,
+                      "multiple": false,
+                      "attributes": []
+                    },
+                    {
+                      "name": "isoCode",
+                      "path": "/data/entries/salesMeasureUnit/isoCode",
+                      "dataType": "STRING",
+                      "required": false,
+                      "multiple": false,
+                      "attributes": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "shipments",
+              "path": "/data/shipments",
+              "dataType": "OBJECT",
+              "required": false,
+              "multiple": true,
+              "attributes": [
+                {
+                  "name": "id",
+                  "path": "/data/shipments/id",
+                  "dataType": "STRING",
+                  "required": true,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "fulfillmentSiteId",
+                  "path": "/data/shipments/fulfillmentSiteId",
+                  "dataType": "STRING",
+                  "required": false,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "shippingConditionCode",
+                  "path": "/data/shipments/shippingConditionCode",
+                  "dataType": "STRING",
+                  "required": false,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "shipmentEntries",
+                  "path": "/data/shipments/shipmentEntries",
+                  "dataType": "OBJECT",
+                  "required": true,
+                  "multiple": true,
+                  "attributes": [
+                    {
+                      "name": "id",
+                      "path": "/data/shipments/shipmentEntries/id",
+                      "dataType": "STRING",
+                      "required": true,
+                      "multiple": false,
+                      "attributes": []
+                    },
+                    {
+                      "name": "quantity",
+                      "path": "/data/shipments/shipmentEntries/quantity",
+                      "dataType": "NUMBER",
+                      "required": true,
+                      "multiple": false,
+                      "attributes": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "addresses",
+              "path": "/data/addresses",
+              "dataType": "OBJECT",
+              "required": false,
+              "multiple": true,
+              "attributes": [
+                {
+                  "name": "type",
+                  "path": "/data/addresses/type",
+                  "dataType": "STRING",
+                  "required": true,
+                  "multiple": false,
+                  "attributes": []
+                },
+                {
+                  "name": "organizationName",
+                  "path": "/data/addresses/organizationName",
+                  "dataType": "OBJECT",
+                  "required": false,
+                  "multiple": false,
+                  "attributes": [
+                    {
+                      "name": "orgNameLine1",
+                      "path": "/data/addresses/organizationName/orgNameLine1",
+                      "dataType": "STRING",
+                      "required": true,
+                      "multiple": false,
+                      "attributes": []
+                    },
+                    {
+                      "name": "orgNameLine2",
+                      "path": "/data/addresses/organizationName/orgNameLine2",
+                      "dataType": "STRING",
+                      "required": false,
+                      "multiple": false,
+                      "attributes": []
+                    },
+                    {
+                      "name": "orgNameLine3",
+                      "path": "/data/addresses/organizationName/orgNameLine3",
+                      "dataType": "STRING",
+                      "required": false,
+                      "multiple": false,
+                      "attributes": []
+                    }
+                  ]
+                },
+                {
+                  "name": "postalAddress",
+                  "path": "/data/addresses/postalAddress",
+                  "dataType": "OBJECT",
+                  "required": true,
+                  "multiple": false,
+                  "attributes": [
+                    {
+                      "name": "country",
+                      "path": "/data/addresses/postalAddress/country",
+                      "dataType": "OBJECT",
+                      "required": true,
+                      "multiple": false,
+                      "attributes": [
+                        {
+                          "name": "code",
+                          "path": "/data/addresses/postalAddress/country/code",
+                          "dataType": "STRING",
+                          "required": true,
+                          "multiple": false,
+                          "attributes": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "primaryRegion",
+                      "path": "/data/addresses/postalAddress/primaryRegion",
+                      "dataType": "OBJECT",
+                      "required": false,
+                      "multiple": false,
+                      "attributes": [
+                        {
+                          "name": "shortCode",
+                          "path": "/data/addresses/postalAddress/primaryRegion/shortCode",
+                          "dataType": "STRING",
+                          "required": false,
+                          "multiple": false,
+                          "attributes": []
+                        },
+                        {
+                          "name": "code",
+                          "path": "/data/addresses/postalAddress/primaryRegion/code",
+                          "dataType": "STRING",
+                          "required": true,
+                          "multiple": false,
+                          "attributes": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "postCode",
+                      "path": "/data/addresses/postalAddress/postCode",
+                      "dataType": "STRING",
+                      "required": false,
+                      "multiple": false,
+                      "attributes": []
+                    },
+                    {
+                      "name": "street",
+                      "path": "/data/addresses/postalAddress/street",
+                      "dataType": "STRING",
+                      "required": false,
+                      "multiple": false,
+                      "attributes": []
+                    },
+                    {
+                      "name": "houseNumber",
+                      "path": "/data/addresses/postalAddress/houseNumber",
+                      "dataType": "STRING",
+                      "required": false,
+                      "multiple": false,
+                      "attributes": []
+                    },
+                    {
+                      "name": "district",
+                      "path": "/data/addresses/postalAddress/district",
+                      "dataType": "OBJECT",
+                      "required": false,
+                      "multiple": false,
+                      "attributes": [
+                        {
+                          "name": "name",
+                          "path": "/data/addresses/postalAddress/district/name",
+                          "dataType": "STRING",
+                          "required": true,
+                          "multiple": false,
+                          "attributes": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "town",
+                      "path": "/data/addresses/postalAddress/town",
+                      "dataType": "OBJECT",
+                      "required": false,
+                      "multiple": false,
+                      "attributes": [
+                        {
+                          "name": "name",
+                          "path": "/data/addresses/postalAddress/town/name",
+                          "dataType": "STRING",
+                          "required": true,
+                          "multiple": false,
+                          "attributes": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "building",
+                      "path": "/data/addresses/postalAddress/building",
+                      "dataType": "STRING",
+                      "required": false,
+                      "multiple": false,
+                      "attributes": []
+                    },
+                    {
+                      "name": "floor",
+                      "path": "/data/addresses/postalAddress/floor",
+                      "dataType": "STRING",
+                      "required": false,
+                      "multiple": false,
+                      "attributes": []
+                    },
+                    {
+                      "name": "door",
+                      "path": "/data/addresses/postalAddress/door",
+                      "dataType": "STRING",
+                      "required": false,
+                      "multiple": false,
+                      "attributes": []
+                    },
+                    {
+                      "name": "poBox",
+                      "path": "/data/addresses/postalAddress/poBox",
+                      "dataType": "STRING",
+                      "required": false,
+                      "multiple": false,
+                      "attributes": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "commerceContext",
+          "path": "/commerceContext",
+          "dataType": "OBJECT",
+          "required": true,
+          "multiple": false,
+          "attributes": [
+            {
+              "name": "storeId",
+              "path": "/commerceContext/storeId",
+              "dataType": "STRING",
+              "required": true,
+              "multiple": false,
+              "attributes": []
+            }
+          ]
+        },
+        {
+          "name": "extensibilityContext",
+          "path": "/extensibilityContext",
+          "dataType": "OBJECT",
+          "required": true,
+          "multiple": false,
+          "attributes": [
+            {
+              "name": "id",
+              "path": "/extensibilityContext/id",
+              "dataType": "STRING",
+              "required": true,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "triggeredAt",
+              "path": "/extensibilityContext/triggeredAt",
+              "dataType": "STRING",
+              "required": true,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "extensionPointId",
+              "path": "/extensibilityContext/extensionPointId",
+              "dataType": "STRING",
+              "required": true,
+              "multiple": false,
+              "attributes": []
+            }
+          ]
+        }
+      ]
+    },
+    "targetSchema": {
+      "attributes": [
+        {
+          "name": "SalesOrderType",
+          "path": "/SalesOrderType",
+          "dataType": "STRING",
+          "required": true,
+          "multiple": false,
+          "maxLength": 4,
+          "attributes": []
+        },
+        {
+          "name": "SalesOrganization",
+          "path": "/SalesOrganization",
+          "dataType": "STRING",
+          "required": true,
+          "multiple": false,
+          "maxLength": 4,
+          "attributes": []
+        },
+        {
+          "name": "DistributionChannel",
+          "path": "/DistributionChannel",
+          "dataType": "STRING",
+          "required": true,
+          "multiple": false,
+          "maxLength": 2,
+          "attributes": []
+        },
+        {
+          "name": "OrganizationDivision",
+          "path": "/OrganizationDivision",
+          "dataType": "STRING",
+          "required": true,
+          "multiple": false,
+          "maxLength": 2,
+          "attributes": []
+        },
+        {
+          "name": "SoldToParty",
+          "path": "/SoldToParty",
+          "dataType": "STRING",
+          "required": true,
+          "multiple": false,
+          "maxLength": 10,
+          "attributes": []
+        },
+        {
+          "name": "TransactionCurrency",
+          "path": "/TransactionCurrency",
+          "dataType": "STRING",
+          "required": true,
+          "multiple": false,
+          "maxLength": 3,
+          "attributes": []
+        },
+        {
+          "name": "ShippingCondition",
+          "path": "/ShippingCondition",
+          "dataType": "STRING",
+          "required": false,
+          "multiple": false,
+          "maxLength": 2,
+          "attributes": []
+        },
+        {
+          "name": "_Item",
+          "path": "/_Item",
+          "dataType": "OBJECT",
+          "required": true,
+          "multiple": true,
+          "attributes": [
+            {
+              "name": "SalesOrderItemText",
+              "path": "/_Item/SalesOrderItemText",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "maxLength": 40,
+              "attributes": []
+            },
+            {
+              "name": "Product",
+              "path": "/_Item/Product",
+              "dataType": "STRING",
+              "required": true,
+              "multiple": false,
+              "maxLength": 40,
+              "attributes": []
+            },
+            {
+              "name": "RequestedQuantity",
+              "path": "/_Item/RequestedQuantity",
+              "dataType": "NUMBER",
+              "required": true,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "RequestedQuantityISOUnit",
+              "path": "/_Item/RequestedQuantityISOUnit",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "maxLength": 3,
+              "attributes": []
+            },
+            {
+              "name": "Plant",
+              "path": "/_Item/Plant",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "attributes": []
+            },
+            {
+              "name": "_ItemPricingElement",
+              "path": "/_Item/_ItemPricingElement",
+              "dataType": "OBJECT",
+              "required": true,
+              "multiple": true,
+              "attributes": [
+                {
+                  "name": "ConditionType",
+                  "path": "/_Item/_ItemPricingElement/ConditionType",
+                  "dataType": "STRING",
+                  "required": false,
+                  "multiple": false,
+                  "maxLength": 4,
+                  "attributes": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "_PricingElement",
+          "path": "/_PricingElement",
+          "dataType": "OBJECT",
+          "required": true,
+          "multiple": true,
+          "attributes": [
+            {
+              "name": "ConditionType",
+              "path": "/_PricingElement/ConditionType",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "maxLength": 4,
+              "attributes": []
+            }
+          ]
+        },
+        {
+          "name": "_Partner",
+          "path": "/_Partner",
+          "dataType": "OBJECT",
+          "required": false,
+          "multiple": true,
+          "attributes": [
+            {
+              "name": "PartnerFunction",
+              "path": "/_Partner/PartnerFunction",
+              "dataType": "STRING",
+              "required": true,
+              "multiple": false,
+              "maxLength": 2,
+              "attributes": []
+            },
+            {
+              "name": "Customer",
+              "path": "/_Partner/Customer",
+              "dataType": "STRING",
+              "required": true,
+              "multiple": false,
+              "maxLength": 10,
+              "attributes": []
+            },
+            {
+              "name": "BusinessPartnerName1",
+              "path": "/_Partner/BusinessPartnerName1",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "maxLength": 40,
+              "attributes": []
+            },
+            {
+              "name": "StreetName",
+              "path": "/_Partner/StreetName",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "maxLength": 60,
+              "attributes": []
+            },
+            {
+              "name": "HouseNumber",
+              "path": "/_Partner/HouseNumber",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "maxLength": 10,
+              "attributes": []
+            },
+            {
+              "name": "PostalCode",
+              "path": "/_Partner/PostalCode",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "maxLength": 10,
+              "attributes": []
+            },
+            {
+              "name": "CityName",
+              "path": "/_Partner/CityName",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "maxLength": 40,
+              "attributes": []
+            },
+            {
+              "name": "DistrictName",
+              "path": "/_Partner/DistrictName",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "maxLength": 40,
+              "attributes": []
+            },
+            {
+              "name": "Region",
+              "path": "/_Partner/Region",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "maxLength": 3,
+              "attributes": []
+            },
+            {
+              "name": "Country",
+              "path": "/_Partner/Country",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "maxLength": 3,
+              "attributes": []
+            },
+            {
+              "name": "CorrespondenceLanguage",
+              "path": "/_Partner/CorrespondenceLanguage",
+              "dataType": "STRING",
+              "required": false,
+              "multiple": false,
+              "maxLength": 2,
+              "attributes": []
+            }
+          ]
+        }
+      ]
+    },
+    "schemaTransformations": {
+      "type": "FUNCTION",
+      "functionId": "d7ce55ea-836b-45c3-bb69-3eeb8291fdcf"
+    }
+  }
+}

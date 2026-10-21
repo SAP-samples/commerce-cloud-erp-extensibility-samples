@@ -1,0 +1,12 @@
+{
+  "id": "169853d9-4540-48d8-9759-3d85a8c13bf0",
+  "type": "FUNCTION",
+  "name": "s4ordersimulationInboundFunction",
+  "binaryResources": [
+    {
+      "id": "s4ordersimulationinbound",
+      "type": "ZIP",
+      "size": 1715
+    }
+  ]
+}
