@@ -7,14 +7,14 @@
       "attributes": [
         {
           "name": "commerceContext",
-          "path": "/commerceContext",
+          "path": "commerceContext",
           "dataType": "OBJECT",
           "required": false,
           "multiple": false,
           "attributes": [
             {
               "name": "storeId",
-              "path": "/commerceContext/storeId",
+              "path": "commerceContext.storeId",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -24,14 +24,14 @@
         },
         {
           "name": "extensibilityContext",
-          "path": "/extensibilityContext",
+          "path": "extensibilityContext",
           "dataType": "OBJECT",
           "required": false,
           "multiple": false,
           "attributes": [
             {
               "name": "id",
-              "path": "/extensibilityContext/id",
+              "path": "extensibilityContext.id",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -39,7 +39,7 @@
             },
             {
               "name": "triggeredAt",
-              "path": "/extensibilityContext/triggeredAt",
+              "path": "extensibilityContext.triggeredAt",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -47,7 +47,7 @@
             },
             {
               "name": "extensionPointId",
-              "path": "/extensibilityContext/extensionPointId",
+              "path": "extensibilityContext.extensionPointId",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -57,14 +57,14 @@
         },
         {
           "name": "data",
-          "path": "/data",
+          "path": "data",
           "dataType": "OBJECT",
           "required": false,
           "multiple": false,
           "attributes": [
             {
               "name": "addr_info_code",
-              "path": "/data/addr_info_code",
+              "path": "data.addr_info_code",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -72,7 +72,7 @@
             },
             {
               "name": "addr_info_code_msg",
-              "path": "/data/addr_info_code_msg",
+              "path": "data.addr_info_code_msg",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -80,14 +80,14 @@
             },
             {
               "name": "addr_sugg_list",
-              "path": "/data/addr_sugg_list",
+              "path": "data.addr_sugg_list",
               "dataType": "OBJECT",
               "required": false,
               "multiple": true,
               "attributes": [
                 {
                   "name": "sugg_addr_selection",
-                  "path": "/data/addr_sugg_list/sugg_addr_selection",
+                  "path": "data.addr_sugg_list.sugg_addr_selection",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -95,7 +95,7 @@
                 },
                 {
                   "name": "sugg_addr_single_address",
-                  "path": "/data/addr_sugg_list/sugg_addr_single_address",
+                  "path": "data.addr_sugg_list.sugg_addr_single_address",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -105,7 +105,7 @@
             },
             {
               "name": "std_addr_country_name",
-              "path": "/data/std_addr_country_name",
+              "path": "data.std_addr_country_name",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -113,7 +113,7 @@
             },
             {
               "name": "std_addr_address_delivery",
-              "path": "/data/std_addr_address_delivery",
+              "path": "data.std_addr_address_delivery",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -121,7 +121,7 @@
             },
             {
               "name": "std_addr_region_full",
-              "path": "/data/std_addr_region_full",
+              "path": "data.std_addr_region_full",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -129,7 +129,7 @@
             },
             {
               "name": "std_addr_region_code",
-              "path": "/data/std_addr_region_code",
+              "path": "data.std_addr_region_code",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -137,7 +137,7 @@
             },
             {
               "name": "std_addr_region2_full",
-              "path": "/data/std_addr_region2_full",
+              "path": "data.std_addr_region2_full",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -145,7 +145,7 @@
             },
             {
               "name": "std_addr_postcode1",
-              "path": "/data/std_addr_postcode1",
+              "path": "data.std_addr_postcode1",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -153,7 +153,7 @@
             },
             {
               "name": "std_addr_country_2char",
-              "path": "/data/std_addr_country_2char",
+              "path": "data.std_addr_country_2char",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -161,7 +161,7 @@
             },
             {
               "name": "std_addr_building_name",
-              "path": "/data/std_addr_building_name",
+              "path": "data.std_addr_building_name",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -169,7 +169,7 @@
             },
             {
               "name": "std_addr_prim_number",
-              "path": "/data/std_addr_prim_number",
+              "path": "data.std_addr_prim_number",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -177,7 +177,7 @@
             },
             {
               "name": "std_addr_floor_full",
-              "path": "/data/std_addr_floor_full",
+              "path": "data.std_addr_floor_full",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -185,7 +185,7 @@
             },
             {
               "name": "std_addr_prim_name_full",
-              "path": "/data/std_addr_prim_name_full",
+              "path": "data.std_addr_prim_name_full",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -193,7 +193,7 @@
             },
             {
               "name": "std_addr_additional_info",
-              "path": "/data/std_addr_additional_info",
+              "path": "data.std_addr_additional_info",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -201,7 +201,7 @@
             },
             {
               "name": "std_addr_locality_official",
-              "path": "/data/std_addr_locality_official",
+              "path": "data.std_addr_locality_official",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -209,7 +209,7 @@
             },
             {
               "name": "std_addr_region2",
-              "path": "/data/std_addr_region2",
+              "path": "data.std_addr_region2",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -217,7 +217,7 @@
             },
             {
               "name": "std_addr_po_box_full",
-              "path": "/data/std_addr_po_box_full",
+              "path": "data.std_addr_po_box_full",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -230,254 +230,426 @@
     "targetSchema": {
       "attributes": [
         {
-          "name": "commerceContext",
-          "path": "/commerceContext",
-          "dataType": "OBJECT",
-          "required": false,
+          "name": "data",
+          "path": "data",
+          "dataType": "SCHEMA_COMPOSITION",
+          "attributes": [
+            {
+              "name": "ExtensionResponseInput",
+              "path": "data.ExtensionResponseInput",
+              "dataType": "SUB_SCHEMA",
+              "attributes": [
+                {
+                  "name": "operations",
+                  "path": "data.ExtensionResponseInput.operations",
+                  "dataType": "SCHEMA_COMPOSITION",
+                  "attributes": [
+                    {
+                      "name": "SuggestAddressOperationInput",
+                      "path": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput",
+                      "dataType": "SUB_SCHEMA",
+                      "attributes": [
+                        {
+                          "name": "operationId",
+                          "path": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.operationId",
+                          "dataType": "STRING",
+                          "required": false,
+                          "multiple": false
+                        },
+                        {
+                          "name": "data",
+                          "path": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data",
+                          "dataType": "OBJECT",
+                          "attributes": [
+                            {
+                              "name": "postalAddress",
+                              "path": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.postalAddress",
+                              "dataType": "OBJECT",
+                              "attributes": [
+                                {
+                                  "name": "primaryRegionCode",
+                                  "path": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.postalAddress.primaryRegionCode",
+                                  "dataType": "STRING",
+                                  "required": false,
+                                  "multiple": false
+                                },
+                                {
+                                  "name": "street",
+                                  "path": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.postalAddress.street",
+                                  "dataType": "STRING",
+                                  "required": false,
+                                  "multiple": false
+                                },
+                                {
+                                  "name": "houseNumber",
+                                  "path": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.postalAddress.houseNumber",
+                                  "dataType": "STRING",
+                                  "required": false,
+                                  "multiple": false
+                                },
+                                {
+                                  "name": "building",
+                                  "path": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.postalAddress.building",
+                                  "dataType": "STRING",
+                                  "required": false,
+                                  "multiple": false
+                                },
+                                {
+                                  "name": "floor",
+                                  "path": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.postalAddress.floor",
+                                  "dataType": "STRING",
+                                  "required": false,
+                                  "multiple": false
+                                },
+                                {
+                                  "name": "door",
+                                  "path": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.postalAddress.door",
+                                  "dataType": "STRING",
+                                  "required": false,
+                                  "multiple": false
+                                },
+                                {
+                                  "name": "town",
+                                  "path": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.postalAddress.town",
+                                  "dataType": "OBJECT",
+                                  "attributes": [
+                                    {
+                                      "name": "name",
+                                      "path": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.postalAddress.town.name",
+                                      "dataType": "STRING",
+                                      "required": false,
+                                      "multiple": false
+                                    }
+                                  ],
+                                  "required": false,
+                                  "multiple": false
+                                },
+                                {
+                                  "name": "district",
+                                  "path": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.postalAddress.district",
+                                  "dataType": "OBJECT",
+                                  "attributes": [
+                                    {
+                                      "name": "name",
+                                      "path": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.postalAddress.district.name",
+                                      "dataType": "STRING",
+                                      "required": false,
+                                      "multiple": false
+                                    }
+                                  ],
+                                  "required": false,
+                                  "multiple": false
+                                },
+                                {
+                                  "name": "postCode",
+                                  "path": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.postalAddress.postCode",
+                                  "dataType": "STRING",
+                                  "required": false,
+                                  "multiple": false
+                                },
+                                {
+                                  "name": "poBox",
+                                  "path": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.postalAddress.poBox",
+                                  "dataType": "STRING",
+                                  "required": false,
+                                  "multiple": false
+                                },
+                                {
+                                  "name": "additionalAddressInfo",
+                                  "path": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.postalAddress.additionalAddressInfo",
+                                  "dataType": "STRING",
+                                  "required": false,
+                                  "multiple": false
+                                },
+                                {
+                                  "name": "countryCode",
+                                  "path": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.postalAddress.countryCode",
+                                  "dataType": "STRING",
+                                  "required": false,
+                                  "multiple": false
+                                }
+                              ],
+                              "required": false,
+                              "multiple": false
+                            },
+                            {
+                              "name": "suggestions",
+                              "path": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.suggestions",
+                              "dataType": "OBJECT",
+                              "attributes": [
+                                {
+                                  "name": "id",
+                                  "path": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.suggestions.id",
+                                  "dataType": "STRING",
+                                  "required": false,
+                                  "multiple": false
+                                },
+                                {
+                                  "name": "singleLineAddress",
+                                  "path": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.suggestions.singleLineAddress",
+                                  "dataType": "STRING",
+                                  "required": false,
+                                  "multiple": false
+                                }
+                              ],
+                              "required": false,
+                              "multiple": true
+                            },
+                            {
+                              "name": "validationErrors",
+                              "path": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.validationErrors",
+                              "dataType": "OBJECT",
+                              "attributes": [
+                                {
+                                  "name": "field",
+                                  "path": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.validationErrors.field",
+                                  "dataType": "STRING",
+                                  "required": false,
+                                  "multiple": false
+                                },
+                                {
+                                  "name": "message",
+                                  "path": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.validationErrors.message",
+                                  "dataType": "STRING",
+                                  "required": false,
+                                  "multiple": false
+                                }
+                              ],
+                              "required": false,
+                              "multiple": true
+                            }
+                          ],
+                          "required": false,
+                          "multiple": false
+                        }
+                      ],
+                      "required": false,
+                      "multiple": false
+                    },
+                    {
+                      "name": "AddMessagesOperationInput",
+                      "path": "data.ExtensionResponseInput.operations.AddMessagesOperationInput",
+                      "dataType": "SUB_SCHEMA",
+                      "attributes": [
+                        {
+                          "name": "operationId",
+                          "path": "data.ExtensionResponseInput.operations.AddMessagesOperationInput.operationId",
+                          "dataType": "STRING",
+                          "required": false,
+                          "multiple": false
+                        },
+                        {
+                          "name": "data",
+                          "path": "data.ExtensionResponseInput.operations.AddMessagesOperationInput.data",
+                          "dataType": "OBJECT",
+                          "attributes": [
+                            {
+                              "name": "messages",
+                              "path": "data.ExtensionResponseInput.operations.AddMessagesOperationInput.data.messages",
+                              "dataType": "OBJECT",
+                              "attributes": [
+                                {
+                                  "name": "kind",
+                                  "path": "data.ExtensionResponseInput.operations.AddMessagesOperationInput.data.messages.kind",
+                                  "dataType": "STRING",
+                                  "required": false,
+                                  "multiple": false
+                                },
+                                {
+                                  "name": "code",
+                                  "path": "data.ExtensionResponseInput.operations.AddMessagesOperationInput.data.messages.code",
+                                  "dataType": "STRING",
+                                  "required": false,
+                                  "multiple": false
+                                },
+                                {
+                                  "name": "message",
+                                  "path": "data.ExtensionResponseInput.operations.AddMessagesOperationInput.data.messages.message",
+                                  "dataType": "STRING",
+                                  "required": false,
+                                  "multiple": false
+                                },
+                                {
+                                  "name": "target",
+                                  "path": "data.ExtensionResponseInput.operations.AddMessagesOperationInput.data.messages.target",
+                                  "dataType": "STRING",
+                                  "required": false,
+                                  "multiple": false
+                                }
+                              ],
+                              "required": false,
+                              "multiple": true
+                            }
+                          ],
+                          "required": false,
+                          "multiple": false
+                        }
+                      ],
+                      "required": false,
+                      "multiple": false
+                    }
+                  ],
+                  "required": false,
+                  "multiple": true,
+                  "subSchemaType": "ONE_OF"
+                }
+              ],
+              "required": false,
+              "multiple": false
+            },
+            {
+              "name": "BusinessValidationErrorInput",
+              "path": "data.BusinessValidationErrorInput",
+              "dataType": "SUB_SCHEMA",
+              "attributes": [
+                {
+                  "name": "error",
+                  "path": "data.BusinessValidationErrorInput.error",
+                  "dataType": "OBJECT",
+                  "attributes": [
+                    {
+                      "name": "code",
+                      "path": "data.BusinessValidationErrorInput.error.code",
+                      "dataType": "STRING",
+                      "required": false,
+                      "multiple": false
+                    },
+                    {
+                      "name": "message",
+                      "path": "data.BusinessValidationErrorInput.error.message",
+                      "dataType": "STRING",
+                      "required": false,
+                      "multiple": false
+                    },
+                    {
+                      "name": "target",
+                      "path": "data.BusinessValidationErrorInput.error.target",
+                      "dataType": "STRING",
+                      "required": false,
+                      "multiple": false
+                    },
+                    {
+                      "name": "details",
+                      "path": "data.BusinessValidationErrorInput.error.details",
+                      "dataType": "OBJECT",
+                      "attributes": [
+                        {
+                          "name": "code",
+                          "path": "data.BusinessValidationErrorInput.error.details.code",
+                          "dataType": "STRING",
+                          "required": false,
+                          "multiple": false
+                        },
+                        {
+                          "name": "target",
+                          "path": "data.BusinessValidationErrorInput.error.details.target",
+                          "dataType": "STRING",
+                          "required": false,
+                          "multiple": false
+                        }
+                      ],
+                      "required": false,
+                      "multiple": true
+                    }
+                  ],
+                  "required": false,
+                  "multiple": false
+                }
+              ],
+              "required": false,
+              "multiple": false
+            }
+          ],
+          "required": true,
           "multiple": false,
+          "subSchemaType": "ONE_OF"
+        },
+        {
+          "name": "commerceContext",
+          "path": "commerceContext",
+          "dataType": "OBJECT",
           "attributes": [
             {
               "name": "storeId",
-              "path": "/commerceContext/storeId",
+              "path": "commerceContext.storeId",
               "dataType": "STRING",
               "required": false,
-              "multiple": false,
-              "attributes": []
+              "multiple": false
             }
-          ]
+          ],
+          "required": false,
+          "multiple": false
         },
         {
           "name": "extensibilityContext",
-          "path": "/extensibilityContext",
+          "path": "extensibilityContext",
           "dataType": "OBJECT",
-          "required": false,
-          "multiple": false,
           "attributes": [
             {
               "name": "id",
-              "path": "/extensibilityContext/id",
+              "path": "extensibilityContext.id",
               "dataType": "STRING",
               "required": false,
-              "multiple": false,
-              "attributes": []
+              "multiple": false
             },
             {
               "name": "triggeredAt",
-              "path": "/extensibilityContext/triggeredAt",
+              "path": "extensibilityContext.triggeredAt",
               "dataType": "STRING",
               "required": false,
-              "multiple": false,
-              "attributes": []
+              "multiple": false
             },
             {
               "name": "extensionPointId",
-              "path": "/extensibilityContext/extensionPointId",
+              "path": "extensibilityContext.extensionPointId",
               "dataType": "STRING",
               "required": false,
-              "multiple": false,
-              "attributes": []
+              "multiple": false
             }
-          ]
+          ],
+          "required": true,
+          "multiple": false
         },
         {
-          "name": "data",
-          "path": "/data",
+          "name": "apiContext",
+          "path": "apiContext",
           "dataType": "OBJECT",
-          "required": false,
-          "multiple": false,
           "attributes": [
             {
-              "name": "operations",
-              "path": "/data/operations",
+              "name": "rawResponse",
+              "path": "apiContext.rawResponse",
               "dataType": "OBJECT",
-              "required": false,
-              "multiple": true,
               "attributes": [
                 {
-                  "name": "operationId",
-                  "path": "/data/operations/operationId",
-                  "dataType": "STRING",
-                  "required": false,
-                  "multiple": false,
-                  "attributes": []
-                },
-                {
-                  "name": "data",
-                  "path": "/data/operations/data",
+                  "name": "headers",
+                  "path": "apiContext.rawResponse.headers",
                   "dataType": "OBJECT",
-                  "required": false,
-                  "multiple": false,
                   "attributes": [
                     {
-                      "name": "suggestions",
-                      "path": "/data/operations/data/suggestions",
-                      "dataType": "OBJECT",
+                      "name": "key",
+                      "path": "apiContext.rawResponse.headers.key",
+                      "dataType": "STRING",
                       "required": false,
-                      "multiple": true,
-                      "attributes": [
-                        {
-                          "name": "id",
-                          "path": "/data/operations/data/suggestions/id",
-                          "dataType": "STRING",
-                          "required": false,
-                          "multiple": false,
-                          "attributes": []
-                        },
-                        {
-                          "name": "singleLineAddress",
-                          "path": "/data/operations/data/suggestions/singleLineAddress",
-                          "dataType": "STRING",
-                          "required": false,
-                          "multiple": false,
-                          "attributes": []
-                        }
-                      ]
+                      "multiple": false
                     },
                     {
-                      "name": "validationErrors",
-                      "path": "/data/operations/data/validationErrors",
-                      "dataType": "OBJECT",
+                      "name": "value",
+                      "path": "apiContext.rawResponse.headers.value",
+                      "dataType": "STRING",
                       "required": false,
-                      "multiple": true,
-                      "attributes": [
-                        {
-                          "name": "field",
-                          "path": "/data/operations/data/validationErrors/field",
-                          "dataType": "STRING",
-                          "required": false,
-                          "multiple": false,
-                          "attributes": []
-                        },
-                        {
-                          "name": "message",
-                          "path": "/data/operations/data/validationErrors/message",
-                          "dataType": "STRING",
-                          "required": false,
-                          "multiple": false,
-                          "attributes": []
-                        }
-                      ]
-                    },
-                    {
-                      "name": "postalAddress",
-                      "path": "/data/operations/data/postalAddress",
-                      "dataType": "OBJECT",
-                      "required": false,
-                      "multiple": false,
-                      "attributes": [
-                        {
-                          "name": "street",
-                          "path": "/data/operations/data/postalAddress/street",
-                          "dataType": "STRING",
-                          "required": false,
-                          "multiple": false,
-                          "attributes": []
-                        },
-                        {
-                          "name": "houseNumber",
-                          "path": "/data/operations/data/postalAddress/houseNumber",
-                          "dataType": "STRING",
-                          "required": false,
-                          "multiple": false,
-                          "attributes": []
-                        },
-                        {
-                          "name": "building",
-                          "path": "/data/operations/data/postalAddress/building",
-                          "dataType": "STRING",
-                          "required": false,
-                          "multiple": false,
-                          "attributes": []
-                        },
-                        {
-                          "name": "floor",
-                          "path": "/data/operations/data/postalAddress/floor",
-                          "dataType": "STRING",
-                          "required": false,
-                          "multiple": false,
-                          "attributes": []
-                        },
-                        {
-                          "name": "town",
-                          "path": "/data/operations/data/postalAddress/town",
-                          "dataType": "OBJECT",
-                          "required": false,
-                          "multiple": false,
-                          "attributes": [
-                            {
-                              "name": "name",
-                              "path": "/data/operations/data/postalAddress/town/name",
-                              "dataType": "STRING",
-                              "required": false,
-                              "multiple": false,
-                              "attributes": []
-                            }
-                          ]
-                        },
-                        {
-                          "name": "district",
-                          "path": "/data/operations/data/postalAddress/district",
-                          "dataType": "OBJECT",
-                          "required": false,
-                          "multiple": false,
-                          "attributes": [
-                            {
-                              "name": "name",
-                              "path": "/data/operations/data/postalAddress/district/name",
-                              "dataType": "STRING",
-                              "required": false,
-                              "multiple": false,
-                              "attributes": []
-                            }
-                          ]
-                        },
-                        {
-                          "name": "primaryRegionCode",
-                          "path": "/data/operations/data/postalAddress/primaryRegionCode",
-                          "dataType": "STRING",
-                          "required": false,
-                          "multiple": false,
-                          "attributes": []
-                        },
-                        {
-                          "name": "countryCode",
-                          "path": "/data/operations/data/postalAddress/countryCode",
-                          "dataType": "STRING",
-                          "required": false,
-                          "multiple": false,
-                          "attributes": []
-                        },
-                        {
-                          "name": "postCode",
-                          "path": "/data/operations/data/postalAddress/postCode",
-                          "dataType": "STRING",
-                          "required": false,
-                          "multiple": false,
-                          "attributes": []
-                        },
-                        {
-                          "name": "poBox",
-                          "path": "/data/operations/data/postalAddress/poBox",
-                          "dataType": "STRING",
-                          "required": false,
-                          "multiple": false,
-                          "attributes": []
-                        },
-                        {
-                          "name": "additionalAddressInfo",
-                          "path": "/data/operations/data/postalAddress/additionalAddressInfo",
-                          "dataType": "STRING",
-                          "required": false,
-                          "multiple": false,
-                          "attributes": []
-                        }
-                      ]
+                      "multiple": false
                     }
-                  ]
+                  ],
+                  "required": false,
+                  "multiple": true
                 }
-              ]
+              ],
+              "required": false,
+              "multiple": false
             }
-          ]
+          ],
+          "required": false,
+          "multiple": false
         }
       ]
     },
@@ -485,80 +657,64 @@
       "type": "EXPRESSION",
       "transformations": [
         {
-          "expressionString": "''",
-          "targetAttributePath": "/data/operations"
-        },
-        {
-          "expressionString": "''",
-          "targetAttributePath": "/data/operations/data"
-        },
-        {
           "expressionString": "'suggest'",
-          "targetAttributePath": "/data/operations/operationId"
+          "targetAttributePath": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.operationId"
         },
         {
-          "expressionString": "/data/addr_sugg_list",
-          "targetAttributePath": "/data/operations/data/suggestions"
+          "expressionString": "data.addr_sugg_list.sugg_addr_selection",
+          "targetAttributePath": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.suggestions.id"
         },
         {
-          "expressionString": "/data/addr_sugg_list/sugg_addr_selection",
-          "targetAttributePath": "/data/operations/data/suggestions/id"
+          "expressionString": "data.addr_sugg_list.sugg_addr_single_address",
+          "targetAttributePath": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.suggestions.singleLineAddress"
         },
         {
-          "expressionString": "/data/addr_sugg_list/sugg_addr_single_address",
-          "targetAttributePath": "/data/operations/data/suggestions/singleLineAddress"
+          "expressionString": "bool:ifThenElse(bool:equal('',data.addr_info_code),'', bool:ifThenElse(str:contains('1020|1030|3100',data.addr_info_code),'COUNTRYCODE',bool:ifThenElse(str:contains('2000|2050|5040',data.addr_info_code),'PRIMARYREGIONCODE',bool:ifThenElse(str:contains('2000|2030|2050|3090|3100|5040',data.addr_info_code),'TOWN',bool:ifThenElse(str:contains('2020|2030|2040|2050|2070|3080|3100|3300|5040',data.addr_info_code),'POSTCODE',bool:ifThenElse(str:contains('3030|3100|3250|4000',data.addr_info_code),'HOUSENUMBER',bool:ifThenElse(str:contains('3100|3200|3220|3250',data.addr_info_code),'BUILDING',bool:ifThenElse(str:contains('3000|3010|3020|3050|3060|3070|5050',data.addr_info_code),'STREET',''))))))))",
+          "targetAttributePath": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.validationErrors.field"
         },
         {
-          "expressionString": "''",
-          "targetAttributePath": "/data/operations/data/validationErrors"
+          "expressionString": "data.addr_info_code_msg",
+          "targetAttributePath": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.validationErrors.message"
         },
         {
-          "expressionString": "ifThenElse(equal('',/data/addr_info_code),'', ifThenElse(contains('1020|1030|3100',/data/addr_info_code),'COUNTRYCODE',ifThenElse(contains('2000|2050|5040',/data/addr_info_code),'PRIMARYREGIONCODE',ifThenElse(contains('2000|2030|2050|3090|3100|5040',/data/addr_info_code),'TOWN',ifThenElse(contains('2020|2030|2040|2050|2070|3080|3100|3300|5040',/data/addr_info_code),'POSTCODE',ifThenElse(contains('3030|3100|3250|4000',/data/addr_info_code),'HOUSENUMBER',ifThenElse(contains('3100|3200|3220|3250',/data/addr_info_code),'BUILDING',ifThenElse(contains('3000|3010|3020|3050|3060|3070|5050',/data/addr_info_code),'STREET',''))))))))",
-          "targetAttributePath": "/data/operations/data/validationErrors/field"
+          "expressionString": "data.std_addr_region_code",
+          "targetAttributePath": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.postalAddress.primaryRegionCode"
         },
         {
-          "expressionString": "/data/addr_info_code_msg",
-          "targetAttributePath": "/data/operations/data/validationErrors/message"
+          "expressionString": "data.std_addr_postcode1",
+          "targetAttributePath": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.postalAddress.postCode"
         },
         {
-          "expressionString": "/data/std_addr_region_code",
-          "targetAttributePath": "/data/operations/data/postalAddress/primaryRegionCode"
+          "expressionString": "data.std_addr_country_2char",
+          "targetAttributePath": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.postalAddress.countryCode"
         },
         {
-          "expressionString": "/data/std_addr_postcode1",
-          "targetAttributePath": "/data/operations/data/postalAddress/postCode"
+          "expressionString": "data.std_addr_building_name",
+          "targetAttributePath": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.postalAddress.building"
         },
         {
-          "expressionString": "/data/std_addr_country_2char",
-          "targetAttributePath": "/data/operations/data/postalAddress/countryCode"
+          "expressionString": "data.std_addr_prim_number",
+          "targetAttributePath": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.postalAddress.houseNumber"
         },
         {
-          "expressionString": "/data/std_addr_building_name",
-          "targetAttributePath": "/data/operations/data/postalAddress/building"
+          "expressionString": "data.std_addr_floor_full",
+          "targetAttributePath": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.postalAddress.floor"
         },
         {
-          "expressionString": "/data/std_addr_prim_number",
-          "targetAttributePath": "/data/operations/data/postalAddress/houseNumber"
+          "expressionString": "data.std_addr_prim_name_full",
+          "targetAttributePath": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.postalAddress.street"
         },
         {
-          "expressionString": "/data/std_addr_floor_full",
-          "targetAttributePath": "/data/operations/data/postalAddress/floor"
+          "expressionString": "data.std_addr_additional_info",
+          "targetAttributePath": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.postalAddress.additionalAddressInfo"
         },
         {
-          "expressionString": "/data/std_addr_prim_name_full",
-          "targetAttributePath": "/data/operations/data/postalAddress/street"
+          "expressionString": "bool:ifThenElse(bool:nodeExists(data.std_addr_locality_official),data.std_addr_locality_official,'')",
+          "targetAttributePath": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.postalAddress.town.name"
         },
         {
-          "expressionString": "/data/std_addr_additional_info",
-          "targetAttributePath": "/data/operations/data/postalAddress/additionalAddressInfo"
-        },
-        {
-          "expressionString": "ifThenElse(nodeExists(/data/std_addr_locality_official),/data/std_addr_locality_official,'')",
-          "targetAttributePath": "/data/operations/data/postalAddress/town/name"
-        },
-        {
-          "expressionString": "/data/std_addr_po_box_full",
-          "targetAttributePath": "/data/operations/data/postalAddress/poBox"
+          "expressionString": "data.std_addr_po_box_full",
+          "targetAttributePath": "data.ExtensionResponseInput.operations.SuggestAddressOperationInput.data.postalAddress.poBox"
         }
       ]
     }
