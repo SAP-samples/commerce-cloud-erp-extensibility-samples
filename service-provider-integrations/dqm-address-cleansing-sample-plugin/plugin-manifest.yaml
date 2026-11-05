@@ -1,5 +1,5 @@
 name: DQM Microservices Sample Plugin
-version: 1.0.0
+version: 2.0.0
 sourceAccountId: SAP
 sourceTenantId: SAP_CCS
 description: Integrates with SAP Data Quality Management, Microservices for Location Data (DQM Microservices) to validate and correct addresses.
