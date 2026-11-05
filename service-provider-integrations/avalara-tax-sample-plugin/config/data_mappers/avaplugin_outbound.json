@@ -7,14 +7,14 @@
       "attributes": [
         {
           "name": "commerceContext",
-          "path": "/commerceContext",
+          "path": "commerceContext",
           "dataType": "OBJECT",
           "required": false,
           "multiple": false,
           "attributes": [
             {
               "name": "storeId",
-              "path": "/commerceContext/storeId",
+              "path": "commerceContext.storeId",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -24,14 +24,14 @@
         },
         {
           "name": "extensibilityContext",
-          "path": "/extensibilityContext",
+          "path": "extensibilityContext",
           "dataType": "OBJECT",
           "required": false,
           "multiple": false,
           "attributes": [
             {
               "name": "id",
-              "path": "/extensibilityContext/id",
+              "path": "extensibilityContext.id",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -39,7 +39,7 @@
             },
             {
               "name": "triggeredAt",
-              "path": "/extensibilityContext/triggeredAt",
+              "path": "extensibilityContext.triggeredAt",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -47,7 +47,7 @@
             },
             {
               "name": "extensionPointId",
-              "path": "/extensibilityContext/extensionPointId",
+              "path": "extensibilityContext.extensionPointId",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -57,14 +57,14 @@
         },
         {
           "name": "data",
-          "path": "/data",
+          "path": "data",
           "dataType": "OBJECT",
           "required": false,
           "multiple": false,
           "attributes": [
             {
               "name": "cartId",
-              "path": "/cartId",
+              "path": "data.cartId",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -72,7 +72,7 @@
             },
             {
               "name": "type",
-              "path": "/type",
+              "path": "data.type",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -80,7 +80,7 @@
             },
             {
               "name": "customerId",
-              "path": "/customerId",
+              "path": "data.customerId",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -88,7 +88,7 @@
             },
             {
               "name": "simulatedAt",
-              "path": "/simulatedAt",
+              "path": "data.simulatedAt",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -96,7 +96,7 @@
             },
             {
               "name": "currencyCode",
-              "path": "/currencyCode",
+              "path": "data.currencyCode",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -104,14 +104,14 @@
             },
             {
               "name": "items",
-              "path": "/items",
+              "path": "data.items",
               "dataType": "OBJECT",
               "required": false,
               "multiple": true,
               "attributes": [
                 {
                   "name": "id",
-                  "path": "/items/id",
+                  "path": "data.items.id",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -119,7 +119,7 @@
                 },
                 {
                   "name": "productId",
-                  "path": "/items/productId",
+                  "path": "data.items.productId",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -127,7 +127,7 @@
                 },
                 {
                   "name": "basePrice",
-                  "path": "/items/basePrice",
+                  "path": "data.items.basePrice",
                   "dataType": "NUMBER",
                   "required": false,
                   "multiple": false,
@@ -135,7 +135,7 @@
                 },
                 {
                   "name": "quantity",
-                  "path": "/items/quantity",
+                  "path": "data.items.quantity",
                   "dataType": "NUMBER",
                   "required": false,
                   "multiple": false,
@@ -143,7 +143,7 @@
                 },
                 {
                   "name": "subTotal",
-                  "path": "/items/subTotal",
+                  "path": "data.items.subTotal",
                   "dataType": "NUMBER",
                   "required": false,
                   "multiple": false,
@@ -153,14 +153,14 @@
             },
             {
               "name": "addresses",
-              "path": "/addresses",
+              "path": "data.addresses",
               "dataType": "OBJECT",
               "required": false,
               "multiple": true,
               "attributes": [
                 {
                   "name": "type",
-                  "path": "/addresses/type",
+                  "path": "data.addresses.type",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -168,7 +168,7 @@
                 },
                 {
                   "name": "addressLine1",
-                  "path": "/addresses/addressLine1",
+                  "path": "data.addresses.addressLine1",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -176,7 +176,7 @@
                 },
                 {
                   "name": "addressLine2",
-                  "path": "/addresses/addressLine2",
+                  "path": "data.addresses.addressLine2",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -184,7 +184,7 @@
                 },
                 {
                   "name": "regionCode",
-                  "path": "/addresses/regionCode",
+                  "path": "data.addresses.regionCode",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -192,7 +192,7 @@
                 },
                 {
                   "name": "postalCode",
-                  "path": "/addresses/postalCode",
+                  "path": "data.addresses.postalCode",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -208,7 +208,7 @@
       "attributes": [
         {
           "name": "code",
-          "path": "/code",
+          "path": "code",
           "dataType": "STRING",
           "required": false,
           "multiple": false,
@@ -216,7 +216,7 @@
         },
         {
           "name": "date",
-          "path": "/date",
+          "path": "date",
           "dataType": "STRING",
           "required": false,
           "multiple": false,
@@ -224,7 +224,7 @@
         },
         {
           "name": "customerCode",
-          "path": "/customerCode",
+          "path": "customerCode",
           "dataType": "STRING",
           "required": false,
           "multiple": false,
@@ -232,7 +232,7 @@
         },
         {
           "name": "currencyCode",
-          "path": "/currencyCode",
+          "path": "currencyCode",
           "dataType": "STRING",
           "required": false,
           "multiple": false,
@@ -240,7 +240,7 @@
         },
         {
           "name": "commit",
-          "path": "/commit",
+          "path": "commit",
           "dataType": "BOOLEAN",
           "required": false,
           "multiple": false,
@@ -248,14 +248,14 @@
         },
         {
           "name": "lines",
-          "path": "/lines",
+          "path": "lines",
           "dataType": "OBJECT",
           "required": false,
           "multiple": true,
           "attributes": [
             {
               "name": "number",
-              "path": "/lines/number",
+              "path": "lines.number",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -263,7 +263,7 @@
             },
             {
               "name": "quantity",
-              "path": "/lines/quantity",
+              "path": "lines.quantity",
               "dataType": "NUMBER",
               "required": false,
               "multiple": false,
@@ -271,7 +271,7 @@
             },
             {
               "name": "amount",
-              "path": "/lines/amount",
+              "path": "lines.amount",
               "dataType": "NUMBER",
               "required": false,
               "multiple": false,
@@ -279,7 +279,7 @@
             },
             {
               "name": "itemCode",
-              "path": "/lines/itemCode",
+              "path": "lines.itemCode",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -289,21 +289,21 @@
         },
         {
           "name": "addresses",
-          "path": "/addresses",
+          "path": "addresses",
           "dataType": "OBJECT",
           "required": false,
           "multiple": false,
           "attributes": [
             {
               "name": "shipTo",
-              "path": "/addresses/shipTo",
+              "path": "addresses.shipTo",
               "dataType": "OBJECT",
               "required": false,
               "multiple": false,
               "attributes": [
                 {
                   "name": "line1",
-                  "path": "/addresses/shipTo/line1",
+                  "path": "addresses.shipTo.line1",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -311,7 +311,7 @@
                 },
                 {
                   "name": "line2",
-                  "path": "/addresses/shipTo/line2",
+                  "path": "addresses.shipTo.line2",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -319,7 +319,7 @@
                 },
                 {
                   "name": "region",
-                  "path": "/addresses/shipTo/region",
+                  "path": "addresses.shipTo.region",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -327,7 +327,7 @@
                 },
                 {
                   "name": "postalCode",
-                  "path": "/addresses/shipTo/postalCode",
+                  "path": "addresses.shipTo.postalCode",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -340,8 +340,65 @@
       ]
     },
     "schemaTransformations": {
-      "type": "FUNCTION",
-      "functionId": "55ddf908-5190-4d10-8837-92c28eeeadb4"
+      "type": "EXPRESSION",
+      "transformations": [
+        {
+          "expressionString": "data.cartId",
+          "targetAttributePath": "code"
+        },
+        {
+          "expressionString": "data.customerId",
+          "targetAttributePath": "customerCode"
+        },
+        {
+          "expressionString": "data.currencyCode",
+          "targetAttributePath": "currencyCode"
+        },
+        {
+          "expressionString": "false",
+          "targetAttributePath": "commit"
+        },
+        {
+          "expressionString": "data.type == 'SALES_ORDER' || data.type == 'SALES_INVOICE' || data.type == 'RETURN_INVOICE' ? dt:formatDate(dt:today(), 'yyyy/MM/dd') : '1971-01-01'",
+          "targetAttributePath": "date"
+        },
+        {
+          "expressionString": "data.items.id",
+          "targetAttributePath": "lines.number"
+        },
+        {
+          "expressionString": "data.items.quantity",
+          "targetAttributePath": "lines.quantity"
+        },
+        {
+          "expressionString": "data.items.subTotal",
+          "targetAttributePath": "lines.amount"
+        },
+        {
+          "expressionString": "data.items.productId",
+          "targetAttributePath": "lines.itemCode"
+        },
+        {
+          "expressionString": "var r=null; for(var a:data.addresses){if(a.type=='SHIP_TO'){r=a;break;}} r",
+          "targetAttributePath": "addresses.shipTo"
+        },
+        {
+          "expressionString": "var r=null; for(var a:data.addresses){if(a.type=='SHIP_TO'){r=a.addressLine1;break;}} r",
+          "targetAttributePath": "addresses.shipTo.line1"
+        },
+        {
+          "expressionString": "var r=null; for(var a:data.addresses){if(a.type=='SHIP_TO'){r=a.addressLine2;break;}} r",
+          "targetAttributePath": "addresses.shipTo.line2"
+        },
+        {
+          "expressionString": "var r=null; for(var a:data.addresses){if(a.type=='SHIP_TO'){r=a.regionCode;break;}} r",
+          "targetAttributePath": "addresses.shipTo.region"
+        },
+        {
+          "expressionString": "var r=null; for(var a:data.addresses){if(a.type=='SHIP_TO'){r=a.postalCode;break;}} r",
+          "targetAttributePath": "addresses.shipTo.postalCode"
+        }
+      ]
     }
   }
 }
