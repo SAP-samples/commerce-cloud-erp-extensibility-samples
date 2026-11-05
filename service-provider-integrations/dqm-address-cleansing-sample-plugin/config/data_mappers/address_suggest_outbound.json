@@ -77,8 +77,8 @@
                   "multiple": false,
                   "attributes": [
                     {
-                      "name": "name",
-                      "path": "data.postalAddress.country.name",
+                      "name": "code",
+                      "path": "data.postalAddress.country.code",
                       "dataType": "STRING",
                       "required": false,
                       "multiple": false,
@@ -311,7 +311,7 @@
           "targetAttributePath": "addressInput.postcode"
         },
         {
-          "expressionString": "bool:ifThenElse(str:isNull(data.postalAddress.countryCode), data.postalAddress.country.name, data.postalAddress.countryCode)",
+          "expressionString": "bool:ifThenElse(str:isNull(data.postalAddress.countryCode), data.postalAddress.country.code, data.postalAddress.countryCode)",
           "targetAttributePath": "addressInput.country"
         },
         {
