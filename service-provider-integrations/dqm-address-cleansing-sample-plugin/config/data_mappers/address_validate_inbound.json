@@ -418,16 +418,32 @@
       "type": "EXPRESSION",
       "transformations": [
         {
+          "expressionString": "''",
+          "targetAttributePath": "data.ExtensionResponseInput.operations"
+        },
+        {
+          "expressionString": "''",
+          "targetAttributePath": "data.ExtensionResponseInput.operations.ValidateAddressOperationInput.data"
+        },
+        {
           "expressionString": "'validate'",
           "targetAttributePath": "data.ExtensionResponseInput.operations.ValidateAddressOperationInput.operationId"
         },
         {
-          "expressionString": "(('' == data.addr_info_code) ? '' : ('1020|1030'.contains(data.addr_info_code) ? 'COUNTRY' : ('2000|3090'.contains(data.addr_info_code) ? 'TOWN' : ('2020|2040|2070|3080'.contains(data.addr_info_code) ? 'POSTALCODE' : ('2030|2050|3100|3300|5020|5040|5050'.contains(data.addr_info_code) ? 'MULTIPLE' : ('3000|3010|3020|3030|3050|3060|3070|3200|3220|3250'.contains(data.addr_info_code) ? 'ADDRESSLINE1' : ('4000|4500|4510|4520'.contains(data.addr_info_code) ? 'ADDRESSLINE2' : 'NONE')))))))",
+          "expressionString": "''",
+          "targetAttributePath": "data.ExtensionResponseInput.operations.ValidateAddressOperationInput.data.validationErrors"
+        },
+        {
+          "expressionString": "bool:ifThenElse(bool:equal('',data.addr_info_code),'', bool:ifThenElse(str:contains('1020|1030|3100',data.addr_info_code),'COUNTRYCODE',bool:ifThenElse(str:contains('2000|2050|5040',data.addr_info_code),'PRIMARYREGIONCODE',bool:ifThenElse(str:contains('2000|2030|2050|3090|3100|5040',data.addr_info_code),'TOWN',bool:ifThenElse(str:contains('2020|2030|2040|2050|2070|3080|3100|3300|5040',data.addr_info_code),'POSTCODE',bool:ifThenElse(str:contains('3030|3100|3250|4000',data.addr_info_code),'HOUSENUMBER',bool:ifThenElse(str:contains('3100|3200|3220|3250',data.addr_info_code),'BUILDING',bool:ifThenElse(str:contains('3000|3010|3020|3050|3060|3070|5050',data.addr_info_code),'STREET',''))))))))",
           "targetAttributePath": "data.ExtensionResponseInput.operations.ValidateAddressOperationInput.data.validationErrors.field"
         },
         {
           "expressionString": "data.addr_info_code_msg",
           "targetAttributePath": "data.ExtensionResponseInput.operations.ValidateAddressOperationInput.data.validationErrors.message"
+        },
+        {
+          "expressionString": "bool:equal('',data.addr_info_code_msg)",
+          "targetAttributePath": "data.ExtensionResponseInput.operations.ValidateAddressOperationInput.data.addressValid"
         }
       ]
     }
