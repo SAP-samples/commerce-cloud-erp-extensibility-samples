@@ -7,14 +7,14 @@
       "attributes": [
         {
           "name": "data",
-          "path": "/data",
+          "path": "data",
           "dataType": "OBJECT",
           "required": true,
           "multiple": false,
           "attributes": [
             {
               "name": "TransactionCurrency",
-              "path": "/data/TransactionCurrency",
+              "path": "data.TransactionCurrency",
               "dataType": "STRING",
               "required": true,
               "multiple": false,
@@ -22,14 +22,14 @@
             },
             {
               "name": "_Item",
-              "path": "/data/_Item",
+              "path": "data._Item",
               "dataType": "OBJECT",
               "required": true,
               "multiple": true,
               "attributes": [
                 {
                   "name": "SalesOrderItem",
-                  "path": "/data/_Item/SalesOrderItem",
+                  "path": "data._Item.SalesOrderItem",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -37,7 +37,7 @@
                 },
                 {
                   "name": "SalesOrderItemText",
-                  "path": "/data/_Item/SalesOrderItemText",
+                  "path": "data._Item.SalesOrderItemText",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -45,7 +45,7 @@
                 },
                 {
                   "name": "RequestedQuantity",
-                  "path": "/data/_Item/RequestedQuantity",
+                  "path": "data._Item.RequestedQuantity",
                   "dataType": "NUMBER",
                   "required": false,
                   "multiple": false,
@@ -53,7 +53,7 @@
                 },
                 {
                   "name": "Subtotal1Amount",
-                  "path": "/data/_Item/Subtotal1Amount",
+                  "path": "data._Item.Subtotal1Amount",
                   "dataType": "NUMBER",
                   "required": false,
                   "multiple": false,
@@ -61,7 +61,7 @@
                 },
                 {
                   "name": "Subtotal2Amount",
-                  "path": "/data/_Item/Subtotal2Amount",
+                  "path": "data._Item.Subtotal2Amount",
                   "dataType": "NUMBER",
                   "required": false,
                   "multiple": false,
@@ -69,7 +69,7 @@
                 },
                 {
                   "name": "Subtotal3Amount",
-                  "path": "/data/_Item/Subtotal3Amount",
+                  "path": "data._Item.Subtotal3Amount",
                   "dataType": "NUMBER",
                   "required": false,
                   "multiple": false,
@@ -77,7 +77,7 @@
                 },
                 {
                   "name": "Subtotal4Amount",
-                  "path": "/data/_Item/Subtotal4Amount",
+                  "path": "data._Item.Subtotal4Amount",
                   "dataType": "NUMBER",
                   "required": false,
                   "multiple": false,
@@ -85,7 +85,7 @@
                 },
                 {
                   "name": "Subtotal5Amount",
-                  "path": "/data/_Item/Subtotal5Amount",
+                  "path": "data._Item.Subtotal5Amount",
                   "dataType": "NUMBER",
                   "required": false,
                   "multiple": false,
@@ -93,7 +93,7 @@
                 },
                 {
                   "name": "Subtotal6Amount",
-                  "path": "/data/_Item/Subtotal6Amount",
+                  "path": "data._Item.Subtotal6Amount",
                   "dataType": "NUMBER",
                   "required": false,
                   "multiple": false,
@@ -101,14 +101,14 @@
                 },
                 {
                   "name": "_ItemPricingElement",
-                  "path": "/data/_Item/_ItemPricingElement",
+                  "path": "data._Item._ItemPricingElement",
                   "dataType": "OBJECT",
                   "required": false,
                   "multiple": true,
                   "attributes": [
                     {
                       "name": "PricingProcedureStep",
-                      "path": "/data/_Item/_ItemPricingElement/PricingProcedureStep",
+                      "path": "data._Item._ItemPricingElement.PricingProcedureStep",
                       "dataType": "STRING",
                       "required": false,
                       "multiple": false,
@@ -116,7 +116,7 @@
                     },
                     {
                       "name": "ConditionType",
-                      "path": "/data/_Item/_ItemPricingElement/ConditionType",
+                      "path": "data._Item._ItemPricingElement.ConditionType",
                       "dataType": "STRING",
                       "required": false,
                       "multiple": false,
@@ -124,7 +124,7 @@
                     },
                     {
                       "name": "ConditionCalculationType",
-                      "path": "/data/_Item/_ItemPricingElement/ConditionCalculationType",
+                      "path": "data._Item._ItemPricingElement.ConditionCalculationType",
                       "dataType": "STRING",
                       "required": false,
                       "multiple": false,
@@ -132,7 +132,7 @@
                     },
                     {
                       "name": "ConditionAmount",
-                      "path": "/data/_Item/_ItemPricingElement/ConditionAmount",
+                      "path": "data._Item._ItemPricingElement.ConditionAmount",
                       "dataType": "NUMBER",
                       "required": false,
                       "multiple": false,
@@ -140,7 +140,7 @@
                     },
                     {
                       "name": "ConditionBaseQuantity",
-                      "path": "/data/_Item/_ItemPricingElement/ConditionBaseQuantity",
+                      "path": "data._Item._ItemPricingElement.ConditionBaseQuantity",
                       "dataType": "NUMBER",
                       "required": false,
                       "multiple": false,
@@ -148,7 +148,7 @@
                     },
                     {
                       "name": "ConditionRateAmount",
-                      "path": "/data/_Item/_ItemPricingElement/ConditionRateAmount",
+                      "path": "data._Item._ItemPricingElement.ConditionRateAmount",
                       "dataType": "NUMBER",
                       "required": false,
                       "multiple": false,
@@ -156,7 +156,7 @@
                     },
                     {
                       "name": "ConditionRateRatio",
-                      "path": "/data/_Item/_ItemPricingElement/ConditionRateRatio",
+                      "path": "data._Item._ItemPricingElement.ConditionRateRatio",
                       "dataType": "NUMBER",
                       "required": false,
                       "multiple": false,
@@ -164,7 +164,7 @@
                     },
                     {
                       "name": "ConditionQuantity",
-                      "path": "/data/_Item/_ItemPricingElement/ConditionQuantity",
+                      "path": "data._Item._ItemPricingElement.ConditionQuantity",
                       "dataType": "NUMBER",
                       "required": false,
                       "multiple": false,
@@ -176,14 +176,14 @@
             },
             {
               "name": "_PricingElement",
-              "path": "/data/_PricingElement",
+              "path": "data._PricingElement",
               "dataType": "OBJECT",
               "required": false,
               "multiple": true,
               "attributes": [
                 {
                   "name": "PricingProcedureStep",
-                  "path": "/data/_PricingElement/PricingProcedureStep",
+                  "path": "data._PricingElement.PricingProcedureStep",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -191,7 +191,7 @@
                 },
                 {
                   "name": "ConditionType",
-                  "path": "/data/_PricingElement/ConditionType",
+                  "path": "data._PricingElement.ConditionType",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -199,7 +199,7 @@
                 },
                 {
                   "name": "ConditionCalculationType",
-                  "path": "/data/_PricingElement/ConditionCalculationType",
+                  "path": "data._PricingElement.ConditionCalculationType",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -207,7 +207,7 @@
                 },
                 {
                   "name": "ConditionAmount",
-                  "path": "/data/_PricingElement/ConditionAmount",
+                  "path": "data._PricingElement.ConditionAmount",
                   "dataType": "NUMBER",
                   "required": false,
                   "multiple": false,
@@ -215,7 +215,7 @@
                 },
                 {
                   "name": "ConditionBaseQuantity",
-                  "path": "/data/_PricingElement/ConditionBaseQuantity",
+                  "path": "data._PricingElement.ConditionBaseQuantity",
                   "dataType": "NUMBER",
                   "required": false,
                   "multiple": false,
@@ -223,7 +223,7 @@
                 },
                 {
                   "name": "ConditionRateAmount",
-                  "path": "/data/_PricingElement/ConditionRateAmount",
+                  "path": "data._PricingElement.ConditionRateAmount",
                   "dataType": "NUMBER",
                   "required": false,
                   "multiple": false,
@@ -231,7 +231,7 @@
                 },
                 {
                   "name": "ConditionRateRatio",
-                  "path": "/data/_PricingElement/ConditionRateRatio",
+                  "path": "data._PricingElement.ConditionRateRatio",
                   "dataType": "NUMBER",
                   "required": false,
                   "multiple": false,
@@ -239,7 +239,7 @@
                 },
                 {
                   "name": "ConditionQuantity",
-                  "path": "/data/_PricingElement/ConditionQuantity",
+                  "path": "data._PricingElement.ConditionQuantity",
                   "dataType": "NUMBER",
                   "required": false,
                   "multiple": false,
@@ -251,14 +251,14 @@
         },
         {
           "name": "commerceContext",
-          "path": "/commerceContext",
+          "path": "commerceContext",
           "dataType": "OBJECT",
           "required": true,
           "multiple": false,
           "attributes": [
             {
               "name": "storeId",
-              "path": "/commerceContext/storeId",
+              "path": "commerceContext.storeId",
               "dataType": "STRING",
               "required": true,
               "multiple": false,
@@ -268,14 +268,14 @@
         },
         {
           "name": "extensibilityContext",
-          "path": "/extensibilityContext",
+          "path": "extensibilityContext",
           "dataType": "OBJECT",
           "required": true,
           "multiple": false,
           "attributes": [
             {
               "name": "id",
-              "path": "/extensibilityContext/id",
+              "path": "extensibilityContext.id",
               "dataType": "STRING",
               "required": true,
               "multiple": false,
@@ -283,7 +283,7 @@
             },
             {
               "name": "triggeredAt",
-              "path": "/extensibilityContext/triggeredAt",
+              "path": "extensibilityContext.triggeredAt",
               "dataType": "STRING",
               "required": true,
               "multiple": false,
@@ -291,7 +291,7 @@
             },
             {
               "name": "extensionPointId",
-              "path": "/extensibilityContext/extensionPointId",
+              "path": "extensibilityContext.extensionPointId",
               "dataType": "STRING",
               "required": true,
               "multiple": false,
@@ -305,21 +305,21 @@
       "attributes": [
         {
           "name": "data",
-          "path": "/data",
+          "path": "data",
           "dataType": "OBJECT",
           "required": true,
           "multiple": false,
           "attributes": [
             {
               "name": "operations",
-              "path": "/data/operations",
+              "path": "data.operations",
               "dataType": "OBJECT",
               "required": false,
               "multiple": true,
               "attributes": [
                 {
                   "name": "operationId",
-                  "path": "/data/operations/operationId",
+                  "path": "data.operations.operationId",
                   "dataType": "STRING",
                   "required": true,
                   "multiple": false,
@@ -327,14 +327,14 @@
                 },
                 {
                   "name": "data",
-                  "path": "/data/operations/data",
+                  "path": "data.operations.data",
                   "dataType": "OBJECT",
                   "required": true,
                   "multiple": false,
                   "attributes": [
                     {
                       "name": "currencyCode",
-                      "path": "/data/operations/data/currencyCode",
+                      "path": "data.operations.data.currencyCode",
                       "dataType": "STRING",
                       "required": true,
                       "multiple": false,
@@ -342,14 +342,14 @@
                     },
                     {
                       "name": "entries",
-                      "path": "/data/operations/data/entries",
+                      "path": "data.operations.data.entries",
                       "dataType": "OBJECT",
                       "required": true,
                       "multiple": true,
                       "attributes": [
                         {
                           "name": "id",
-                          "path": "/data/operations/data/entries/id",
+                          "path": "data.operations.data.entries.id",
                           "dataType": "STRING",
                           "required": true,
                           "multiple": false,
@@ -357,14 +357,14 @@
                         },
                         {
                           "name": "costs",
-                          "path": "/data/operations/data/entries/costs",
+                          "path": "data.operations.data.entries.costs",
                           "dataType": "OBJECT",
                           "required": true,
                           "multiple": true,
                           "attributes": [
                             {
                               "name": "type",
-                              "path": "/data/operations/data/entries/costs/type",
+                              "path": "data.operations.data.entries.costs.type",
                               "dataType": "STRING",
                               "required": true,
                               "multiple": false,
@@ -372,7 +372,7 @@
                             },
                             {
                               "name": "basePrice",
-                              "path": "/data/operations/data/entries/costs/basePrice",
+                              "path": "data.operations.data.entries.costs.basePrice",
                               "dataType": "NUMBER",
                               "required": true,
                               "multiple": false,
@@ -380,14 +380,14 @@
                             },
                             {
                               "name": "appliedDiscounts",
-                              "path": "/data/operations/data/entries/costs/appliedDiscounts",
+                              "path": "data.operations.data.entries.costs.appliedDiscounts",
                               "dataType": "OBJECT",
                               "required": false,
                               "multiple": true,
                               "attributes": [
                                 {
                                   "name": "code",
-                                  "path": "/data/operations/data/entries/costs/appliedDiscounts/code",
+                                  "path": "data.operations.data.entries.costs.appliedDiscounts.code",
                                   "dataType": "STRING",
                                   "required": true,
                                   "multiple": false,
@@ -395,7 +395,7 @@
                                 },
                                 {
                                   "name": "group",
-                                  "path": "/data/operations/data/entries/costs/appliedDiscounts/group",
+                                  "path": "data.operations.data.entries.costs.appliedDiscounts.group",
                                   "dataType": "STRING",
                                   "required": true,
                                   "multiple": false,
@@ -403,7 +403,7 @@
                                 },
                                 {
                                   "name": "type",
-                                  "path": "/data/operations/data/entries/costs/appliedDiscounts/type",
+                                  "path": "data.operations.data.entries.costs.appliedDiscounts.type",
                                   "dataType": "STRING",
                                   "required": true,
                                   "multiple": false,
@@ -411,7 +411,7 @@
                                 },
                                 {
                                   "name": "rate",
-                                  "path": "/data/operations/data/entries/costs/appliedDiscounts/rate",
+                                  "path": "data.operations.data.entries.costs.appliedDiscounts.rate",
                                   "dataType": "NUMBER",
                                   "required": false,
                                   "multiple": false,
@@ -419,7 +419,7 @@
                                 },
                                 {
                                   "name": "value",
-                                  "path": "/data/operations/data/entries/costs/appliedDiscounts/value",
+                                  "path": "data.operations.data.entries.costs.appliedDiscounts.value",
                                   "dataType": "NUMBER",
                                   "required": true,
                                   "multiple": false,
@@ -427,7 +427,7 @@
                                 },
                                 {
                                   "name": "proRateUnitNr",
-                                  "path": "/data/operations/data/entries/costs/appliedDiscounts/proRateUnitNr",
+                                  "path": "data.operations.data.entries.costs.appliedDiscounts.proRateUnitNr",
                                   "dataType": "NUMBER",
                                   "required": false,
                                   "multiple": false,
@@ -437,14 +437,14 @@
                             },
                             {
                               "name": "appliedTaxes",
-                              "path": "/data/operations/data/entries/costs/appliedTaxes",
+                              "path": "data.operations.data.entries.costs.appliedTaxes",
                               "dataType": "OBJECT",
                               "required": false,
                               "multiple": true,
                               "attributes": [
                                 {
                                   "name": "code",
-                                  "path": "/data/operations/data/entries/costs/appliedTaxes/code",
+                                  "path": "data.operations.data.entries.costs.appliedTaxes.code",
                                   "dataType": "STRING",
                                   "required": true,
                                   "multiple": false,
@@ -452,7 +452,7 @@
                                 },
                                 {
                                   "name": "rate",
-                                  "path": "/data/operations/data/entries/costs/appliedTaxes/rate",
+                                  "path": "data.operations.data.entries.costs.appliedTaxes.rate",
                                   "dataType": "NUMBER",
                                   "required": false,
                                   "multiple": false,
@@ -460,7 +460,7 @@
                                 },
                                 {
                                   "name": "value",
-                                  "path": "/data/operations/data/entries/costs/appliedTaxes/value",
+                                  "path": "data.operations.data.entries.costs.appliedTaxes.value",
                                   "dataType": "NUMBER",
                                   "required": true,
                                   "multiple": false,
@@ -468,7 +468,7 @@
                                 },
                                 {
                                   "name": "absolute",
-                                  "path": "/data/operations/data/entries/costs/appliedTaxes/absolute",
+                                  "path": "data.operations.data.entries.costs.appliedTaxes.absolute",
                                   "dataType": "BOOLEAN",
                                   "required": true,
                                   "multiple": false,
@@ -482,14 +482,14 @@
                     },
                     {
                       "name": "shipmentCosts",
-                      "path": "/data/operations/data/shipmentCosts",
+                      "path": "data.operations.data.shipmentCosts",
                       "dataType": "OBJECT",
                       "required": false,
                       "multiple": false,
                       "attributes": [
                         {
                           "name": "costLevel",
-                          "path": "/data/operations/data/shipmentCosts/costLevel",
+                          "path": "data.operations.data.shipmentCosts.costLevel",
                           "dataType": "STRING",
                           "required": true,
                           "multiple": false,
@@ -497,14 +497,14 @@
                         },
                         {
                           "name": "costs",
-                          "path": "/data/operations/data/shipmentCosts/costs",
+                          "path": "data.operations.data.shipmentCosts.costs",
                           "dataType": "OBJECT",
                           "required": true,
                           "multiple": true,
                           "attributes": [
                             {
                               "name": "type",
-                              "path": "/data/operations/data/shipmentCosts/costs/type",
+                              "path": "data.operations.data.shipmentCosts.costs.type",
                               "dataType": "STRING",
                               "required": true,
                               "multiple": false,
@@ -512,7 +512,7 @@
                             },
                             {
                               "name": "basePrice",
-                              "path": "/data/operations/data/shipmentCosts/costs/basePrice",
+                              "path": "data.operations.data.shipmentCosts.costs.basePrice",
                               "dataType": "NUMBER",
                               "required": true,
                               "multiple": false,
@@ -520,14 +520,14 @@
                             },
                             {
                               "name": "appliedDiscounts",
-                              "path": "/data/operations/data/shipmentCosts/costs/appliedDiscounts",
+                              "path": "data.operations.data.shipmentCosts.costs.appliedDiscounts",
                               "dataType": "OBJECT",
                               "required": false,
                               "multiple": true,
                               "attributes": [
                                 {
                                   "name": "code",
-                                  "path": "/data/operations/data/shipmentCosts/costs/appliedDiscounts/code",
+                                  "path": "data.operations.data.shipmentCosts.costs.appliedDiscounts.code",
                                   "dataType": "STRING",
                                   "required": true,
                                   "multiple": false,
@@ -535,7 +535,7 @@
                                 },
                                 {
                                   "name": "group",
-                                  "path": "/data/operations/data/shipmentCosts/costs/appliedDiscounts/group",
+                                  "path": "data.operations.data.shipmentCosts.costs.appliedDiscounts.group",
                                   "dataType": "STRING",
                                   "required": true,
                                   "multiple": false,
@@ -543,7 +543,7 @@
                                 },
                                 {
                                   "name": "type",
-                                  "path": "/data/operations/data/shipmentCosts/costs/appliedDiscounts/type",
+                                  "path": "data.operations.data.shipmentCosts.costs.appliedDiscounts.type",
                                   "dataType": "STRING",
                                   "required": true,
                                   "multiple": false,
@@ -551,7 +551,7 @@
                                 },
                                 {
                                   "name": "rate",
-                                  "path": "/data/operations/data/shipmentCosts/costs/appliedDiscounts/rate",
+                                  "path": "data.operations.data.shipmentCosts.costs.appliedDiscounts.rate",
                                   "dataType": "NUMBER",
                                   "required": false,
                                   "multiple": false,
@@ -559,7 +559,7 @@
                                 },
                                 {
                                   "name": "value",
-                                  "path": "/data/operations/data/shipmentCosts/costs/appliedDiscounts/value",
+                                  "path": "data.operations.data.shipmentCosts.costs.appliedDiscounts.value",
                                   "dataType": "NUMBER",
                                   "required": true,
                                   "multiple": false,
@@ -567,7 +567,7 @@
                                 },
                                 {
                                   "name": "proRateUnitNr",
-                                  "path": "/data/operations/data/shipmentCosts/costs/appliedDiscounts/proRateUnitNr",
+                                  "path": "data.operations.data.shipmentCosts.costs.appliedDiscounts.proRateUnitNr",
                                   "dataType": "NUMBER",
                                   "required": false,
                                   "multiple": false,
@@ -577,14 +577,14 @@
                             },
                             {
                               "name": "appliedTaxes",
-                              "path": "/data/operations/data/shipmentCosts/costs/appliedTaxes",
+                              "path": "data.operations.data.shipmentCosts.costs.appliedTaxes",
                               "dataType": "OBJECT",
                               "required": false,
                               "multiple": true,
                               "attributes": [
                                 {
                                   "name": "code",
-                                  "path": "/data/operations/data/shipmentCosts/costs/appliedTaxes/code",
+                                  "path": "data.operations.data.shipmentCosts.costs.appliedTaxes.code",
                                   "dataType": "STRING",
                                   "required": true,
                                   "multiple": false,
@@ -592,7 +592,7 @@
                                 },
                                 {
                                   "name": "rate",
-                                  "path": "/data/operations/data/shipmentCosts/costs/appliedTaxes/rate",
+                                  "path": "data.operations.data.shipmentCosts.costs.appliedTaxes.rate",
                                   "dataType": "NUMBER",
                                   "required": false,
                                   "multiple": false,
@@ -600,7 +600,7 @@
                                 },
                                 {
                                   "name": "value",
-                                  "path": "/data/operations/data/shipmentCosts/costs/appliedTaxes/value",
+                                  "path": "data.operations.data.shipmentCosts.costs.appliedTaxes.value",
                                   "dataType": "NUMBER",
                                   "required": true,
                                   "multiple": false,
@@ -608,7 +608,7 @@
                                 },
                                 {
                                   "name": "absolute",
-                                  "path": "/data/operations/data/shipmentCosts/costs/appliedTaxes/absolute",
+                                  "path": "data.operations.data.shipmentCosts.costs.appliedTaxes.absolute",
                                   "dataType": "BOOLEAN",
                                   "required": true,
                                   "multiple": false,
@@ -626,14 +626,14 @@
             },
             {
               "name": "error",
-              "path": "/data/error",
+              "path": "data.error",
               "dataType": "OBJECT",
               "required": false,
               "multiple": false,
               "attributes": [
                 {
                   "name": "code",
-                  "path": "/data/error/code",
+                  "path": "data.error.code",
                   "dataType": "STRING",
                   "required": true,
                   "multiple": false,
@@ -641,7 +641,7 @@
                 },
                 {
                   "name": "message",
-                  "path": "/data/error/message",
+                  "path": "data.error.message",
                   "dataType": "STRING",
                   "required": true,
                   "multiple": false,
@@ -649,7 +649,7 @@
                 },
                 {
                   "name": "target",
-                  "path": "/data/error/target",
+                  "path": "data.error.target",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -657,14 +657,14 @@
                 },
                 {
                   "name": "details",
-                  "path": "/data/error/details",
+                  "path": "data.error.details",
                   "dataType": "OBJECT",
                   "required": false,
                   "multiple": true,
                   "attributes": [
                     {
                       "name": "code",
-                      "path": "/data/error/details/code",
+                      "path": "data.error.details.code",
                       "dataType": "STRING",
                       "required": true,
                       "multiple": false,
@@ -672,7 +672,7 @@
                     },
                     {
                       "name": "message",
-                      "path": "/data/error/details/message",
+                      "path": "data.error.details.message",
                       "dataType": "STRING",
                       "required": true,
                       "multiple": false,
@@ -680,7 +680,7 @@
                     },
                     {
                       "name": "target",
-                      "path": "/data/error/details/target",
+                      "path": "data.error.details.target",
                       "dataType": "STRING",
                       "required": false,
                       "multiple": false,

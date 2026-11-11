@@ -7,21 +7,21 @@
       "attributes": [
         {
           "name": "data",
-          "path": "/data",
+          "path": "data",
           "dataType": "OBJECT",
           "required": true,
           "multiple": false,
           "attributes": [
             {
               "name": "currency",
-              "path": "/data/currency",
+              "path": "data.currency",
               "dataType": "OBJECT",
               "required": true,
               "multiple": false,
               "attributes": [
                 {
                   "name": "code",
-                  "path": "/data/currency/code",
+                  "path": "data.currency.code",
                   "dataType": "STRING",
                   "required": true,
                   "multiple": false,
@@ -29,7 +29,7 @@
                 },
                 {
                   "name": "sapCode",
-                  "path": "/data/currency/sapCode",
+                  "path": "data.currency.sapCode",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -39,7 +39,7 @@
             },
             {
               "name": "net",
-              "path": "/data/net",
+              "path": "data.net",
               "dataType": "BOOLEAN",
               "required": true,
               "multiple": false,
@@ -47,7 +47,7 @@
             },
             {
               "name": "locale",
-              "path": "/data/locale",
+              "path": "data.locale",
               "dataType": "STRING",
               "required": true,
               "multiple": false,
@@ -55,7 +55,7 @@
             },
             {
               "name": "pricingAt",
-              "path": "/data/pricingAt",
+              "path": "data.pricingAt",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -63,14 +63,14 @@
             },
             {
               "name": "customer",
-              "path": "/data/customer",
+              "path": "data.customer",
               "dataType": "OBJECT",
               "required": false,
               "multiple": false,
               "attributes": [
                 {
                   "name": "id",
-                  "path": "/data/customer/id",
+                  "path": "data.customer.id",
                   "dataType": "STRING",
                   "required": true,
                   "multiple": false,
@@ -78,7 +78,7 @@
                 },
                 {
                   "name": "organizationId",
-                  "path": "/data/customer/organizationId",
+                  "path": "data.customer.organizationId",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -88,14 +88,14 @@
             },
             {
               "name": "salesArea",
-              "path": "/data/salesArea",
+              "path": "data.salesArea",
               "dataType": "OBJECT",
               "required": true,
               "multiple": false,
               "attributes": [
                 {
                   "name": "salesOrganization",
-                  "path": "/data/salesArea/salesOrganization",
+                  "path": "data.salesArea.salesOrganization",
                   "dataType": "STRING",
                   "required": true,
                   "multiple": false,
@@ -103,7 +103,7 @@
                 },
                 {
                   "name": "distributionChannel",
-                  "path": "/data/salesArea/distributionChannel",
+                  "path": "data.salesArea.distributionChannel",
                   "dataType": "STRING",
                   "required": true,
                   "multiple": false,
@@ -111,7 +111,7 @@
                 },
                 {
                   "name": "division",
-                  "path": "/data/salesArea/division",
+                  "path": "data.salesArea.division",
                   "dataType": "STRING",
                   "required": true,
                   "multiple": false,
@@ -121,14 +121,14 @@
             },
             {
               "name": "salesPartners",
-              "path": "/data/salesPartners",
+              "path": "data.salesPartners",
               "dataType": "OBJECT",
               "required": false,
               "multiple": true,
               "attributes": [
                 {
                   "name": "functionCode",
-                  "path": "/data/salesPartners/functionCode",
+                  "path": "data.salesPartners.functionCode",
                   "dataType": "STRING",
                   "required": true,
                   "multiple": false,
@@ -136,7 +136,7 @@
                 },
                 {
                   "name": "customerNumber",
-                  "path": "/data/salesPartners/customerNumber",
+                  "path": "data.salesPartners.customerNumber",
                   "dataType": "STRING",
                   "required": true,
                   "multiple": false,
@@ -146,14 +146,14 @@
             },
             {
               "name": "entries",
-              "path": "/data/entries",
+              "path": "data.entries",
               "dataType": "OBJECT",
               "required": true,
               "multiple": true,
               "attributes": [
                 {
                   "name": "id",
-                  "path": "/data/entries/id",
+                  "path": "data.entries.id",
                   "dataType": "STRING",
                   "required": true,
                   "multiple": false,
@@ -161,7 +161,7 @@
                 },
                 {
                   "name": "productId",
-                  "path": "/data/entries/productId",
+                  "path": "data.entries.productId",
                   "dataType": "STRING",
                   "required": true,
                   "multiple": false,
@@ -169,7 +169,7 @@
                 },
                 {
                   "name": "quantity",
-                  "path": "/data/entries/quantity",
+                  "path": "data.entries.quantity",
                   "dataType": "NUMBER",
                   "required": true,
                   "multiple": false,
@@ -177,14 +177,14 @@
                 },
                 {
                   "name": "salesMeasureUnit",
-                  "path": "/data/entries/salesMeasureUnit",
+                  "path": "data.entries.salesMeasureUnit",
                   "dataType": "OBJECT",
                   "required": true,
                   "multiple": false,
                   "attributes": [
                     {
                       "name": "code",
-                      "path": "/data/entries/salesMeasureUnit/code",
+                      "path": "data.entries.salesMeasureUnit.code",
                       "dataType": "STRING",
                       "required": true,
                       "multiple": false,
@@ -192,7 +192,7 @@
                     },
                     {
                       "name": "isoCode",
-                      "path": "/data/entries/salesMeasureUnit/isoCode",
+                      "path": "data.entries.salesMeasureUnit.isoCode",
                       "dataType": "STRING",
                       "required": false,
                       "multiple": false,
@@ -204,14 +204,14 @@
             },
             {
               "name": "shipments",
-              "path": "/data/shipments",
+              "path": "data.shipments",
               "dataType": "OBJECT",
               "required": false,
               "multiple": true,
               "attributes": [
                 {
                   "name": "id",
-                  "path": "/data/shipments/id",
+                  "path": "data.shipments.id",
                   "dataType": "STRING",
                   "required": true,
                   "multiple": false,
@@ -219,7 +219,7 @@
                 },
                 {
                   "name": "fulfillmentSiteId",
-                  "path": "/data/shipments/fulfillmentSiteId",
+                  "path": "data.shipments.fulfillmentSiteId",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -227,7 +227,7 @@
                 },
                 {
                   "name": "shippingConditionCode",
-                  "path": "/data/shipments/shippingConditionCode",
+                  "path": "data.shipments.shippingConditionCode",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -235,14 +235,14 @@
                 },
                 {
                   "name": "shipmentEntries",
-                  "path": "/data/shipments/shipmentEntries",
+                  "path": "data.shipments.shipmentEntries",
                   "dataType": "OBJECT",
                   "required": true,
                   "multiple": true,
                   "attributes": [
                     {
                       "name": "id",
-                      "path": "/data/shipments/shipmentEntries/id",
+                      "path": "data.shipments.shipmentEntries.id",
                       "dataType": "STRING",
                       "required": true,
                       "multiple": false,
@@ -250,7 +250,7 @@
                     },
                     {
                       "name": "quantity",
-                      "path": "/data/shipments/shipmentEntries/quantity",
+                      "path": "data.shipments.shipmentEntries.quantity",
                       "dataType": "NUMBER",
                       "required": true,
                       "multiple": false,
@@ -262,14 +262,14 @@
             },
             {
               "name": "addresses",
-              "path": "/data/addresses",
+              "path": "data.addresses",
               "dataType": "OBJECT",
               "required": false,
               "multiple": true,
               "attributes": [
                 {
                   "name": "type",
-                  "path": "/data/addresses/type",
+                  "path": "data.addresses.type",
                   "dataType": "STRING",
                   "required": true,
                   "multiple": false,
@@ -277,14 +277,14 @@
                 },
                 {
                   "name": "organizationName",
-                  "path": "/data/addresses/organizationName",
+                  "path": "data.addresses.organizationName",
                   "dataType": "OBJECT",
                   "required": false,
                   "multiple": false,
                   "attributes": [
                     {
                       "name": "orgNameLine1",
-                      "path": "/data/addresses/organizationName/orgNameLine1",
+                      "path": "data.addresses.organizationName.orgNameLine1",
                       "dataType": "STRING",
                       "required": true,
                       "multiple": false,
@@ -292,7 +292,7 @@
                     },
                     {
                       "name": "orgNameLine2",
-                      "path": "/data/addresses/organizationName/orgNameLine2",
+                      "path": "data.addresses.organizationName.orgNameLine2",
                       "dataType": "STRING",
                       "required": false,
                       "multiple": false,
@@ -300,7 +300,7 @@
                     },
                     {
                       "name": "orgNameLine3",
-                      "path": "/data/addresses/organizationName/orgNameLine3",
+                      "path": "data.addresses.organizationName.orgNameLine3",
                       "dataType": "STRING",
                       "required": false,
                       "multiple": false,
@@ -310,21 +310,21 @@
                 },
                 {
                   "name": "postalAddress",
-                  "path": "/data/addresses/postalAddress",
+                  "path": "data.addresses.postalAddress",
                   "dataType": "OBJECT",
                   "required": true,
                   "multiple": false,
                   "attributes": [
                     {
                       "name": "country",
-                      "path": "/data/addresses/postalAddress/country",
+                      "path": "data.addresses.postalAddress.country",
                       "dataType": "OBJECT",
                       "required": true,
                       "multiple": false,
                       "attributes": [
                         {
                           "name": "code",
-                          "path": "/data/addresses/postalAddress/country/code",
+                          "path": "data.addresses.postalAddress.country.code",
                           "dataType": "STRING",
                           "required": true,
                           "multiple": false,
@@ -334,14 +334,14 @@
                     },
                     {
                       "name": "primaryRegion",
-                      "path": "/data/addresses/postalAddress/primaryRegion",
+                      "path": "data.addresses.postalAddress.primaryRegion",
                       "dataType": "OBJECT",
                       "required": false,
                       "multiple": false,
                       "attributes": [
                         {
                           "name": "shortCode",
-                          "path": "/data/addresses/postalAddress/primaryRegion/shortCode",
+                          "path": "data.addresses.postalAddress.primaryRegion.shortCode",
                           "dataType": "STRING",
                           "required": false,
                           "multiple": false,
@@ -349,7 +349,7 @@
                         },
                         {
                           "name": "code",
-                          "path": "/data/addresses/postalAddress/primaryRegion/code",
+                          "path": "data.addresses.postalAddress.primaryRegion.code",
                           "dataType": "STRING",
                           "required": true,
                           "multiple": false,
@@ -359,7 +359,7 @@
                     },
                     {
                       "name": "postCode",
-                      "path": "/data/addresses/postalAddress/postCode",
+                      "path": "data.addresses.postalAddress.postCode",
                       "dataType": "STRING",
                       "required": false,
                       "multiple": false,
@@ -367,7 +367,7 @@
                     },
                     {
                       "name": "street",
-                      "path": "/data/addresses/postalAddress/street",
+                      "path": "data.addresses.postalAddress.street",
                       "dataType": "STRING",
                       "required": false,
                       "multiple": false,
@@ -375,7 +375,7 @@
                     },
                     {
                       "name": "houseNumber",
-                      "path": "/data/addresses/postalAddress/houseNumber",
+                      "path": "data.addresses.postalAddress.houseNumber",
                       "dataType": "STRING",
                       "required": false,
                       "multiple": false,
@@ -383,14 +383,14 @@
                     },
                     {
                       "name": "district",
-                      "path": "/data/addresses/postalAddress/district",
+                      "path": "data.addresses.postalAddress.district",
                       "dataType": "OBJECT",
                       "required": false,
                       "multiple": false,
                       "attributes": [
                         {
                           "name": "name",
-                          "path": "/data/addresses/postalAddress/district/name",
+                          "path": "data.addresses.postalAddress.district.name",
                           "dataType": "STRING",
                           "required": true,
                           "multiple": false,
@@ -400,14 +400,14 @@
                     },
                     {
                       "name": "town",
-                      "path": "/data/addresses/postalAddress/town",
+                      "path": "data.addresses.postalAddress.town",
                       "dataType": "OBJECT",
                       "required": false,
                       "multiple": false,
                       "attributes": [
                         {
                           "name": "name",
-                          "path": "/data/addresses/postalAddress/town/name",
+                          "path": "data.addresses.postalAddress.town.name",
                           "dataType": "STRING",
                           "required": true,
                           "multiple": false,
@@ -417,7 +417,7 @@
                     },
                     {
                       "name": "building",
-                      "path": "/data/addresses/postalAddress/building",
+                      "path": "data.addresses.postalAddress.building",
                       "dataType": "STRING",
                       "required": false,
                       "multiple": false,
@@ -425,7 +425,7 @@
                     },
                     {
                       "name": "floor",
-                      "path": "/data/addresses/postalAddress/floor",
+                      "path": "data.addresses.postalAddress.floor",
                       "dataType": "STRING",
                       "required": false,
                       "multiple": false,
@@ -433,7 +433,7 @@
                     },
                     {
                       "name": "door",
-                      "path": "/data/addresses/postalAddress/door",
+                      "path": "data.addresses.postalAddress.door",
                       "dataType": "STRING",
                       "required": false,
                       "multiple": false,
@@ -441,7 +441,7 @@
                     },
                     {
                       "name": "poBox",
-                      "path": "/data/addresses/postalAddress/poBox",
+                      "path": "data.addresses.postalAddress.poBox",
                       "dataType": "STRING",
                       "required": false,
                       "multiple": false,
@@ -455,14 +455,14 @@
         },
         {
           "name": "commerceContext",
-          "path": "/commerceContext",
+          "path": "commerceContext",
           "dataType": "OBJECT",
           "required": true,
           "multiple": false,
           "attributes": [
             {
               "name": "storeId",
-              "path": "/commerceContext/storeId",
+              "path": "commerceContext.storeId",
               "dataType": "STRING",
               "required": true,
               "multiple": false,
@@ -472,14 +472,14 @@
         },
         {
           "name": "extensibilityContext",
-          "path": "/extensibilityContext",
+          "path": "extensibilityContext",
           "dataType": "OBJECT",
           "required": true,
           "multiple": false,
           "attributes": [
             {
               "name": "id",
-              "path": "/extensibilityContext/id",
+              "path": "extensibilityContext.id",
               "dataType": "STRING",
               "required": true,
               "multiple": false,
@@ -487,7 +487,7 @@
             },
             {
               "name": "triggeredAt",
-              "path": "/extensibilityContext/triggeredAt",
+              "path": "extensibilityContext.triggeredAt",
               "dataType": "STRING",
               "required": true,
               "multiple": false,
@@ -495,7 +495,7 @@
             },
             {
               "name": "extensionPointId",
-              "path": "/extensibilityContext/extensionPointId",
+              "path": "extensibilityContext.extensionPointId",
               "dataType": "STRING",
               "required": true,
               "multiple": false,
@@ -509,7 +509,7 @@
       "attributes": [
         {
           "name": "SalesOrderType",
-          "path": "/SalesOrderType",
+          "path": "SalesOrderType",
           "dataType": "STRING",
           "required": true,
           "multiple": false,
@@ -518,7 +518,7 @@
         },
         {
           "name": "SalesOrganization",
-          "path": "/SalesOrganization",
+          "path": "SalesOrganization",
           "dataType": "STRING",
           "required": true,
           "multiple": false,
@@ -527,7 +527,7 @@
         },
         {
           "name": "DistributionChannel",
-          "path": "/DistributionChannel",
+          "path": "DistributionChannel",
           "dataType": "STRING",
           "required": true,
           "multiple": false,
@@ -536,7 +536,7 @@
         },
         {
           "name": "OrganizationDivision",
-          "path": "/OrganizationDivision",
+          "path": "OrganizationDivision",
           "dataType": "STRING",
           "required": true,
           "multiple": false,
@@ -545,7 +545,7 @@
         },
         {
           "name": "SoldToParty",
-          "path": "/SoldToParty",
+          "path": "SoldToParty",
           "dataType": "STRING",
           "required": true,
           "multiple": false,
@@ -554,7 +554,7 @@
         },
         {
           "name": "TransactionCurrency",
-          "path": "/TransactionCurrency",
+          "path": "TransactionCurrency",
           "dataType": "STRING",
           "required": true,
           "multiple": false,
@@ -563,7 +563,7 @@
         },
         {
           "name": "ShippingCondition",
-          "path": "/ShippingCondition",
+          "path": "ShippingCondition",
           "dataType": "STRING",
           "required": false,
           "multiple": false,
@@ -572,14 +572,14 @@
         },
         {
           "name": "_Item",
-          "path": "/_Item",
+          "path": "_Item",
           "dataType": "OBJECT",
           "required": true,
           "multiple": true,
           "attributes": [
             {
               "name": "SalesOrderItemText",
-              "path": "/_Item/SalesOrderItemText",
+              "path": "_Item.SalesOrderItemText",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -588,7 +588,7 @@
             },
             {
               "name": "Product",
-              "path": "/_Item/Product",
+              "path": "_Item.Product",
               "dataType": "STRING",
               "required": true,
               "multiple": false,
@@ -597,7 +597,7 @@
             },
             {
               "name": "RequestedQuantity",
-              "path": "/_Item/RequestedQuantity",
+              "path": "_Item.RequestedQuantity",
               "dataType": "NUMBER",
               "required": true,
               "multiple": false,
@@ -605,7 +605,7 @@
             },
             {
               "name": "RequestedQuantityISOUnit",
-              "path": "/_Item/RequestedQuantityISOUnit",
+              "path": "_Item.RequestedQuantityISOUnit",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -614,7 +614,7 @@
             },
             {
               "name": "Plant",
-              "path": "/_Item/Plant",
+              "path": "_Item.Plant",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -622,14 +622,14 @@
             },
             {
               "name": "_ItemPricingElement",
-              "path": "/_Item/_ItemPricingElement",
+              "path": "_Item._ItemPricingElement",
               "dataType": "OBJECT",
               "required": true,
               "multiple": true,
               "attributes": [
                 {
                   "name": "ConditionType",
-                  "path": "/_Item/_ItemPricingElement/ConditionType",
+                  "path": "_Item._ItemPricingElement.ConditionType",
                   "dataType": "STRING",
                   "required": false,
                   "multiple": false,
@@ -642,14 +642,14 @@
         },
         {
           "name": "_PricingElement",
-          "path": "/_PricingElement",
+          "path": "_PricingElement",
           "dataType": "OBJECT",
           "required": true,
           "multiple": true,
           "attributes": [
             {
               "name": "ConditionType",
-              "path": "/_PricingElement/ConditionType",
+              "path": "_PricingElement.ConditionType",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -660,14 +660,14 @@
         },
         {
           "name": "_Partner",
-          "path": "/_Partner",
+          "path": "_Partner",
           "dataType": "OBJECT",
           "required": false,
           "multiple": true,
           "attributes": [
             {
               "name": "PartnerFunction",
-              "path": "/_Partner/PartnerFunction",
+              "path": "_Partner.PartnerFunction",
               "dataType": "STRING",
               "required": true,
               "multiple": false,
@@ -676,7 +676,7 @@
             },
             {
               "name": "Customer",
-              "path": "/_Partner/Customer",
+              "path": "_Partner.Customer",
               "dataType": "STRING",
               "required": true,
               "multiple": false,
@@ -685,7 +685,7 @@
             },
             {
               "name": "BusinessPartnerName1",
-              "path": "/_Partner/BusinessPartnerName1",
+              "path": "_Partner.BusinessPartnerName1",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -694,7 +694,7 @@
             },
             {
               "name": "StreetName",
-              "path": "/_Partner/StreetName",
+              "path": "_Partner.StreetName",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -703,7 +703,7 @@
             },
             {
               "name": "HouseNumber",
-              "path": "/_Partner/HouseNumber",
+              "path": "_Partner.HouseNumber",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -712,7 +712,7 @@
             },
             {
               "name": "PostalCode",
-              "path": "/_Partner/PostalCode",
+              "path": "_Partner.PostalCode",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -721,7 +721,7 @@
             },
             {
               "name": "CityName",
-              "path": "/_Partner/CityName",
+              "path": "_Partner.CityName",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -730,7 +730,7 @@
             },
             {
               "name": "DistrictName",
-              "path": "/_Partner/DistrictName",
+              "path": "_Partner.DistrictName",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -739,7 +739,7 @@
             },
             {
               "name": "Region",
-              "path": "/_Partner/Region",
+              "path": "_Partner.Region",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -748,7 +748,7 @@
             },
             {
               "name": "Country",
-              "path": "/_Partner/Country",
+              "path": "_Partner.Country",
               "dataType": "STRING",
               "required": false,
               "multiple": false,
@@ -757,7 +757,7 @@
             },
             {
               "name": "CorrespondenceLanguage",
-              "path": "/_Partner/CorrespondenceLanguage",
+              "path": "_Partner.CorrespondenceLanguage",
               "dataType": "STRING",
               "required": false,
               "multiple": false,

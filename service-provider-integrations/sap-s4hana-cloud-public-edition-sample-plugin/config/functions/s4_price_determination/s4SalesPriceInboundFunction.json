@@ -1,0 +1,14 @@
+{
+  "name": "s4SalesPriceInbound",
+  "id": "f7732d09-d057-4556-a89c-a6a7d6c91a9a",
+  "type": "FUNCTION",
+  "binaryResources": [
+    {
+      "id": "spinbound",
+      "type": "ZIP",
+      "size": 4410
+    }
+  ],
+  "numberOfFiles": 1,
+  "size": 16640
+}
