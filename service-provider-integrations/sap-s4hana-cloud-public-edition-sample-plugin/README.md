@@ -2,16 +2,22 @@
 
 ## Description
 
-SAP Commerce Cloud, cloud ERP edition exposes an extension point for Cart and Checkout Calculation with an external provider. This extension point lets you add custom business logic to the Cart and Checkout APIs to perform the entire calculation with an external service provider to, for example, apply custom prices, taxes, discounts, and delivery costs.
+SAP Commerce Cloud, cloud ERP edition supports external providers for Cart and Checkout Calculation and Price Determination. This sample plugin integrates both extension points with SAP S/4HANA Cloud Public Edition and installs the extension configurations, data mappings, and mapping functions together.
 
-The SAP S/4HANA Cloud Public Edition Sample Plugin demonstrates how to integrate SAP S/4HANA Cloud Public Edition with the performCalculation extension point in SAP Commerce Cloud, cloud ERP edition. The plugin creates the "Perform Calculation by External Provider" extension configuration and provides the required data mappings for this extension. It uses the Sales Order Simulation API to simulate sales order pricing, discounts, taxes, and freight charges in the cart and during checkout.
+For Cart and Checkout Calculation, the plugin integrates with the `Perform Calculation by External Provider` extension point. This extension point lets you add custom business logic to the Cart and Checkout APIs to perform the entire calculation with an external service provider to, for example, apply custom prices, taxes, discounts, and delivery costs.It uses the Sales Order Simulation API to simulate sales order pricing, discounts, taxes, and freight charges in the cart and during checkout.
 
-For detailed guidance on integrating SAP Commerce Cloud, cloud ERP edition with calculation service providers, refer to [this page](https://help.sap.com/docs/CC_CEE/ad2d84908ea94e9a83c3a8e7c3e41646/e982613a3a4147cc8e3bedc4df10a249.html). To learn more about the SAP S/4HANA Cloud Public Edition Sample Plugin, visit [this documentation](https://help.sap.com/docs/CC_CEE/ad2d84908ea94e9a83c3a8e7c3e41646/c1090a4d762c4f79a34fb9400cdd3891.html).
+For Price Determination, the plugin integrates with the `Determine Prices by External Provider` extension point. It uses the Sales Price - Retrieve (Version 2) API to retrieve product prices for the requested sales area, customer, currency, quantity, and pricing date. This allows applications to obtain product prices from S/4HANA, for example when displaying prices before a customer adds products to a cart.
+
+For detailed guidance on integrating SAP Commerce Cloud, cloud ERP edition with calculation service providers, refer to [Sales Order Simulation](https://help.sap.com/docs/CC_CEE/ad2d84908ea94e9a83c3a8e7c3e41646/e982613a3a4147cc8e3bedc4df10a249.html) ,determination service provider, [Price Determination](https://help.sap.com/docs/CC_CEE/2bde64d55a304fe19cd6be4a2bc303d6/c819a03166784014bc6014460cbd7562.html?version=DEV&state=DRAFT&ai=true&profile=21067360). 
+To learn more about the SAP S/4HANA Cloud Public Edition Sample Plugin, visit [SAP S/4HANA Order Simulation Sample Plugin](https://help.sap.com/docs/CC_CEE/ad2d84908ea94e9a83c3a8e7c3e41646/c1090a4d762c4f79a34fb9400cdd3891.html).
 
 ## Requirements
 
 - SAP Commerce Cloud, cloud ERP edition
-- SAP S/4HANA Cloud Public Edition system with Sales Order Simulation API enabled
+- SAP S/4HANA Cloud Public Edition system with:
+  - Sales Order Simulation API enabled
+  - Sales Price - Retrieve (Version 2) API enabled
+- A destination named `s4-salesprice` configured in the CCE destination service pointing to the S/4HANA system
 
 ## Download and Installation
 
@@ -26,7 +32,7 @@ For detailed guidance on integrating SAP Commerce Cloud, cloud ERP edition with 
    ```
    For example, on Unix/macOS:
    ```bash
-   zip -r sap-s4hana-cloud-public-edition-sample-plugin-<version>.zip plugin-manifest.yaml config
+   zip -r sap-s4hana-cloud-public-edition-sample-plugin-<version>.zip plugin-manifest.yaml config -x "*.DS_Store"
    ```
 2. Follow the installation instructions provided on [this help page](https://help.sap.com/docs/CC_CEE/ad2d84908ea94e9a83c3a8e7c3e41646/c1090a4d762c4f79a34fb9400cdd3891.html).
 

@@ -1,8 +1,8 @@
 name: SAP S4HANA Cloud Public Edition Plugin
-version: 1.0.0
+version: 2.0.0
 sourceAccountId: "SAP"
 sourceTenantId: "SAP_CCS"
-description: Integrate with SAP S4HANA Cloud Public Edition to enable real-time pricing in cart and checkout solutions into your SAP Commerce Cloud, cloud ERP edition.
+description: Integrate with SAP S/4HANA Cloud Public Edition to enable real-time sales price determination and cart and checkout calculation into your SAP Commerce Cloud, cloud ERP edition.
 author: SAP Commerce Cloud, cloud ERP edition
 pluginId: a8adcc4c-7656-4874-b5f8-da89ed50144d
 license: Apache-2.0
@@ -10,16 +10,31 @@ repository: https://github.com/SAP-samples/commerce-cloud-erp-extensibility-samp
 components:
   - type: synchronous_extension
     componentId: 5613dc2b-c748-4979-9623-63d9a9b86371
-    path: "config/synchronous_extensions/s4ordersimulation.json"
+    path: "config/synchronous_extensions/s4_order_simulation/s4ordersimulation.json"
   - type: "function"
     componentId: "d7ce55ea-836b-45c3-bb69-3eeb8291fdcf"
-    path: "config/functions/s4ordersimulationOutboundFunction.json"
+    path: "config/functions/s4_order_simulation/s4ordersimulationOutboundFunction.json"
   - type: "function"
     componentId: "169853d9-4540-48d8-9759-3d85a8c13bf0"
-    path: "config/functions/s4ordersimulationInboundFunction.json"
+    path: "config/functions/s4_order_simulation/s4ordersimulationInboundFunction.json"
   - type: "data_mapper"
     componentId: "8a13b4ff-7c81-4614-82fd-26dd65937c15"
-    path: "config/data_mappers/s4ordersimulation_outbound.json"
+    path: "config/data_mappers/s4_order_simulation/s4ordersimulation_outbound.json"
   - type: "data_mapper"
     componentId: "1be45619-aeb1-47b5-b0e6-a7acd747871a"
-    path: "config/data_mappers/s4ordersimulation_inbound.json"
+    path: "config/data_mappers/s4_order_simulation/s4ordersimulation_inbound.json"
+  - type: synchronous_extension
+    componentId: 5f31b656-6cf3-4489-b839-e2f65dcd0a8c
+    path: "config/synchronous_extensions/s4_price_determination/s4salesprice.json"
+  - type: "function"
+    componentId: "00ba9120-f829-4810-abdf-64bb61e8cfc9"
+    path: "config/functions/s4_price_determination/s4SalesPriceOutboundFunction.json"
+  - type: "function"
+    componentId: "f7732d09-d057-4556-a89c-a6a7d6c91a9a"
+    path: "config/functions/s4_price_determination/s4SalesPriceInboundFunction.json"
+  - type: "data_mapper"
+    componentId: "84c4ff71-e62e-4da2-a2b4-11c231a129f6"
+    path: "config/data_mappers/s4_price_determination/s4salesprice_outbound.json"
+  - type: "data_mapper"
+    componentId: "49d30884-453b-4c66-9b35-4a6464ada65d"
+    path: "config/data_mappers/s4_price_determination/s4salesprice_inbound.json"
